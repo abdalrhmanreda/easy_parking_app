@@ -1,0 +1,21 @@
+{
+  "onBoardingTitle1": "ابحث عن أقرب موقف للسيارات",
+  "onBoardingDescription1": "مع Easy Parking، يمكنك بسهولة العثور على أقرب موقف للسيارات والحصول على توجيهات بسيطة للوصول",
+  "onBoardingTitle2": "ابحث عن أقرب موقف للسيارات",
+  "onBoardingDescription2": "مع Easy Parking، يمكنك بسهولة العثور على أقرب موقف للسيارات والحصول على توجيهات بسيطة للوصول",
+  "onBoardingTitle3": "ابحث عن أقرب موقف للسيارات",
+  "onBoardingDescription3": "مع Easy Parking، يمكنك بسهولة العثور على أقرب موقف للسيارات والحصول على توجيهات بسيطة للوصول",
+  "onBoardingTextButtonText": "تخطي",
+  "onBoardingButtonText": "التالي" ,
+  "enableLocationTitle": "السماح بموقعك",
+  "enableLocationDescription": "سنحتاج إلى موقعك لنقدم لك تجربة أفضل" ,
+  "enableLocationButton" : "تمكين الموقع" ,
+  "loginScreenEmailAddress": "البريد الالكترونى" ,
+  "loginScreenPassword": "كلمة المرور"  ,
+  "loginScreenForgetPassword": "هل نسيت كلمة السر"   ,
+  "loginScreenButton": "تسجيل الدخول"   ,
+  "loginScreenLoginWithGoogleButton": "تسجيل الدخول باستخدام جوجول" ,
+  "forgetScreenDescription":"لا تقلق، قد يحدث ذلك. يرجى إدخال عنوان البريد الإلكتروني المرتبط بحسابك" ,
+  "forgetPassButton": "ارسال"
+
+}
