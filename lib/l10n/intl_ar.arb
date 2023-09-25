@@ -16,6 +16,13 @@
   "loginScreenButton": "تسجيل الدخول"   ,
   "loginScreenLoginWithGoogleButton": "تسجيل الدخول باستخدام جوجول" ,
   "forgetScreenDescription":"لا تقلق، قد يحدث ذلك. يرجى إدخال عنوان البريد الإلكتروني المرتبط بحسابك" ,
-  "forgetPassButton": "ارسال"
+  "forgetPassButton": "ارسال" ,
+  "otpScreenTitle":"ادخل رمز الدخول" ,
+  "otpScreenDescription": "تم إرسال 4 أرقام إلى" ,
+  "otpScreenLabel": "رمز الدخول" ,
+  "resetPassScreenTitle":"إعادة تعيين كلمة المرور" ,
+  "resetPassScreenDescription": "ادخل كلمة المرور الجديدة"  ,
+  "resetPassScreenLabel": "كلمة المرور الجديدة"
+
 
 }

@@ -1,3 +1,5 @@
+import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -11,7 +13,9 @@ Column buildLoginButtons(BuildContext context) {
     children: [
       CustomTextButton(
         text: S.of(context).loginScreenForgetPassword,
-        onPressed: () {},
+        onPressed: () {
+          CustomNavigation.navigateByNamedTo(context, RoutePath.forgetPass);
+        },
       ),
       SizedBox(
         height: MediaQuery.of(context).size.height / 50,

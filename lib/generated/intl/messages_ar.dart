@@ -55,6 +55,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "onBoardingTitle2":
             MessageLookupByLibrary.simpleMessage("ابحث عن أقرب موقف للسيارات"),
         "onBoardingTitle3":
-            MessageLookupByLibrary.simpleMessage("ابحث عن أقرب موقف للسيارات")
+            MessageLookupByLibrary.simpleMessage("ابحث عن أقرب موقف للسيارات"),
+        "otpScreenDescription":
+            MessageLookupByLibrary.simpleMessage("تم إرسال 4 أرقام إلى"),
+        "otpScreenLabel": MessageLookupByLibrary.simpleMessage("رمز الدخول"),
+        "otpScreenTitle":
+            MessageLookupByLibrary.simpleMessage("ادخل رمز الدخول"),
+        "resetPassScreenDescription":
+            MessageLookupByLibrary.simpleMessage("ادخل كلمة المرور الجديدة"),
+        "resetPassScreenLabel":
+            MessageLookupByLibrary.simpleMessage("كلمة المرور الجديدة"),
+        "resetPassScreenTitle":
+            MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور")
       };
 }

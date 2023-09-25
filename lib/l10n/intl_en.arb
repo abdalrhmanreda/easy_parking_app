@@ -16,5 +16,11 @@
   "loginScreenButton": "Login"   ,
   "loginScreenLoginWithGoogleButton": "Login With Google" ,
   "forgetScreenDescription": "Don't worry it happens. Please enter email address associated with your account" ,
-  "forgetPassButton": "Submit"
+  "forgetPassButton": "Submit" ,
+  "otpScreenTitle":"Enter OTP" ,
+  "otpScreenDescription": "An 4 digit has been sent to "  ,
+  "otpScreenLabel": "OTP Code"  ,
+  "resetPassScreenTitle":"Reset Password" ,
+  "resetPassScreenDescription": "Enter New Password"  ,
+  "resetPassScreenLabel": "New Password"
 }

@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../../../../../generated/l10n.dart';
-
-Column buildTextsForgetScreen(BuildContext context) {
+Column buildTexts({
+  required BuildContext context,
+  required String title,
+  required String description,
+}) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       Text(
-        S.of(context).loginScreenForgetPassword,
+        title,
         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
               fontSize: 20.sp,
               fontWeight: FontWeight.w600,
@@ -19,7 +21,7 @@ Column buildTextsForgetScreen(BuildContext context) {
         height: MediaQuery.of(context).size.height / 50,
       ),
       Text(
-        S.of(context).forgetScreenDescription,
+        description,
         style: Theme.of(context).textTheme.bodySmall!.copyWith(
               fontSize: 13.sp,
               color: Colors.grey,

@@ -42,7 +42,7 @@ class EasyParkingApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
-          initialRoute: RoutePath.forgetPass,
+          initialRoute: RoutePath.login,
           onGenerateRoute: generateRoute,
           locale: const Locale('en', 'US'),
           localizationsDelegates: const [

@@ -52,7 +52,17 @@ class MessageLookup extends MessageLookupByLibrary {
             "Find the nearest parking lot"),
         "onBoardingTitle2": MessageLookupByLibrary.simpleMessage(
             "Find the nearest parking lot"),
-        "onBoardingTitle3":
-            MessageLookupByLibrary.simpleMessage("Find the nearest parking lot")
+        "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
+            "Find the nearest parking lot"),
+        "otpScreenDescription": MessageLookupByLibrary.simpleMessage(
+            "An 4 digit has been sent to "),
+        "otpScreenLabel": MessageLookupByLibrary.simpleMessage("OTP Code"),
+        "otpScreenTitle": MessageLookupByLibrary.simpleMessage("Enter OTP"),
+        "resetPassScreenDescription":
+            MessageLookupByLibrary.simpleMessage("Enter New Password"),
+        "resetPassScreenLabel":
+            MessageLookupByLibrary.simpleMessage("New Password"),
+        "resetPassScreenTitle":
+            MessageLookupByLibrary.simpleMessage("Reset Password")
       };
 }

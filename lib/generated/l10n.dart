@@ -229,6 +229,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Enter OTP`
+  String get otpScreenTitle {
+    return Intl.message(
+      'Enter OTP',
+      name: 'otpScreenTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `An 4 digit has been sent to `
+  String get otpScreenDescription {
+    return Intl.message(
+      'An 4 digit has been sent to ',
+      name: 'otpScreenDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OTP Code`
+  String get otpScreenLabel {
+    return Intl.message(
+      'OTP Code',
+      name: 'otpScreenLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reset Password`
+  String get resetPassScreenTitle {
+    return Intl.message(
+      'Reset Password',
+      name: 'resetPassScreenTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter New Password`
+  String get resetPassScreenDescription {
+    return Intl.message(
+      'Enter New Password',
+      name: 'resetPassScreenDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New Password`
+  String get resetPassScreenLabel {
+    return Intl.message(
+      'New Password',
+      name: 'resetPassScreenLabel',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
