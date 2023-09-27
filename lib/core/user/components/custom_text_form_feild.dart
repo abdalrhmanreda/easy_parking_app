@@ -1,6 +1,6 @@
 import 'package:easy_parking_app/config/colors/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomTextFormField extends StatelessWidget {
   CustomTextFormField({
@@ -34,6 +34,7 @@ class CustomTextFormField extends StatelessWidget {
     this.hintMaxLines,
     this.onSaved,
     this.label,
+    this.align,
   });
 
   ScrollController? scrollController;
@@ -65,9 +66,12 @@ class CustomTextFormField extends StatelessWidget {
   TextDirection? hintTextDirection;
   int? hintMaxLines;
   Key? formFieldKey;
+  TextAlign? align;
+
   Widget build(BuildContext context) {
     return TextFormField(
       key: formFieldKey,
+      textAlign: align!,
       scrollController: scrollController,
       obscureText: isPassword,
       keyboardType: type,
@@ -96,11 +100,19 @@ class CustomTextFormField extends StatelessWidget {
         border: border,
         focusedBorder: focusedBorder,
         enabledBorder: enabledBorder,
-        hintStyle: GoogleFonts.aBeeZee(color: Colors.grey),
+        hintStyle: Theme.of(context).textTheme.bodySmall!.copyWith(
+              color: Colors.grey,
+              fontSize: 15.sp,
+            ),
         hintText: hint,
         labelText: label ?? '',
         suffixIcon: suffixIcon != null
-            ? IconButton(onPressed: suffixPressed, icon: Icon(suffixIcon))
+            ? IconButton(
+                onPressed: suffixPressed,
+                icon: Icon(
+                  suffixIcon,
+                  color: Theme.of(context).colorScheme.onSurface,
+                ))
             : null,
         labelStyle: Theme.of(context).textTheme.bodyMedium,
         floatingLabelStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(

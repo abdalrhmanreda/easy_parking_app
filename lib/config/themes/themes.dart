@@ -124,7 +124,6 @@ class Style {
       backgroundColor: Color(AppColors.kPrimaryColor),
     ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-      backgroundColor: Color(AppColors.kDarkThemColor),
       selectedItemColor: Color(AppColors.kPrimaryColor),
       unselectedItemColor: Colors.grey,
       type: BottomNavigationBarType.fixed,

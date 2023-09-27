@@ -331,10 +331,20 @@ class S {
   }
 
   /// `Register`
-  String get registerScreenUserButton {
+  String get registerScreenButton {
     return Intl.message(
       'Register',
-      name: 'registerScreenUserButton',
+      name: 'registerScreenButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have account`
+  String get registerScreenHaveAccount {
+    return Intl.message(
+      'Already have account',
+      name: 'registerScreenHaveAccount',
       desc: '',
       args: [],
     );

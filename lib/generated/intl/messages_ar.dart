@@ -65,8 +65,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "otpScreenLabel": MessageLookupByLibrary.simpleMessage("رمز الدخول"),
         "otpScreenTitle":
             MessageLookupByLibrary.simpleMessage("ادخل رمز الدخول"),
-        "registerScreenUserButton":
-            MessageLookupByLibrary.simpleMessage("تسجيل"),
+        "registerScreenHaveAccount":
+            MessageLookupByLibrary.simpleMessage("الفعل لدى حساب"),
         "registerScreenUserName":
             MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "registerScreenUserPhone":

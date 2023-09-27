@@ -62,8 +62,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "An 4 digit has been sent to "),
         "otpScreenLabel": MessageLookupByLibrary.simpleMessage("OTP Code"),
         "otpScreenTitle": MessageLookupByLibrary.simpleMessage("Enter OTP"),
-        "registerScreenUserButton":
+        "registerScreenButton":
             MessageLookupByLibrary.simpleMessage("Register"),
+        "registerScreenHaveAccount":
+            MessageLookupByLibrary.simpleMessage("Already have account"),
         "registerScreenUserName":
             MessageLookupByLibrary.simpleMessage("username"),
         "registerScreenUserPhone":

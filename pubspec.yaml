@@ -63,6 +63,8 @@ dependencies:
   iconly: ^1.0.1
   flutter_svg: ^2.0.7
   localization: ^2.1.0
+  google_maps_flutter: ^2.5.0
+  custom_bottom_navigation: ^0.0.1+1
 
 dev_dependencies:
   flutter_test:

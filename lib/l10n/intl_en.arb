@@ -27,6 +27,7 @@
   "createAccountButton": "create account" ,
   "registerScreenUserName": "username" ,
   "registerScreenUserPhone": "phone number" ,
-  "registerScreenUserButton": "Register"
+  "registerScreenButton": "Register" ,
+  "registerScreenHaveAccount": "Already have account"
 
 }

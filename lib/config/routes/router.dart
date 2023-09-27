@@ -4,10 +4,13 @@ import 'package:easy_parking_app/ui/user/features/authentication/presentation/sc
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/screens/reset_pass_screen.dart';
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/register_screen/presentation/screens/register_screen.dart';
 import 'package:easy_parking_app/ui/user/features/enable_location/presentation/screens/enable_location_screen.dart';
+import 'package:easy_parking_app/ui/user/features/user/presentation/screens/profile_screen.dart';
 import 'package:easy_parking_app/ui/user/intro_screens/screens/on_boarding_screen.dart';
+import 'package:easy_parking_app/ui/user/layout/layout_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../ui/user/features/authentication/presentation/screens/login_screen/presentation/screens/login_screen.dart';
+import '../../ui/user/features/maps/home/presentation/screens/home_screen.dart';
 
 Route? generateRoute(RouteSettings settings) {
   switch (settings.name) {
@@ -35,5 +38,14 @@ Route? generateRoute(RouteSettings settings) {
     case RoutePath.register:
       return MaterialPageRoute<dynamic>(
           builder: (BuildContext context) => const RegisterScreen());
+    case RoutePath.layout:
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => const LayoutScreen());
+    case RoutePath.home:
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => const HomeScreen());
+    case RoutePath.profile:
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => const ProfileScreen());
   }
 }

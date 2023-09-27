@@ -7,4 +7,7 @@ class RoutePath {
   static const String otp = '/otpScreen';
   static const String resetPass = '/resetPasswordScreen';
   static const String register = '/registerScreen';
+  static const String layout = '/layoutScreen';
+  static const String home = '/homeScreen';
+  static const String profile = '/profileScreen';
 }

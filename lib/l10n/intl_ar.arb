@@ -27,7 +27,8 @@
   "createAccountButton": "انشاء حساب" ,
   "registerScreenUserName": "اسم المستخدم" ,
   "registerScreenUserPhone": "رقم الهاتف" ,
-  "registerScreenUserButton": "تسجيل"
+  "registerScreenUserButton": "تسجيل" ,
+  "registerScreenHaveAccount": "الفعل لدى حساب"
 
 
 }

@@ -32,7 +32,7 @@ Padding buildRegisterScreenBody(
         bulidLoginWithGoogle(context: context, onTap: () {}),
         CustomButton(
           onPressed: () {},
-          text: S.of(context).registerScreenUserButton,
+          text: S.of(context).registerScreenButton,
           height: 37.h,
           width: MediaQuery.of(context).size.width,
           vertical: 15.h,
@@ -44,7 +44,7 @@ Padding buildRegisterScreenBody(
         ),
         bulidDoNotHaveAccountAndIfHaveAccount(
           context: context,
-          text: 'Already Have Account',
+          text: S.of(context).registerScreenHaveAccount,
           textButton: S.of(context).loginScreenButton,
         )
       ],

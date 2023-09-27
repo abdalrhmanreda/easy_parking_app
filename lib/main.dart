@@ -14,7 +14,9 @@
 
 import 'package:easy_parking_app/config/routes/router.dart';
 import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/ui/user/cubit/app_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
@@ -42,21 +44,26 @@ class EasyParkingApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return SafeArea(
-          child: MaterialApp(
-            initialRoute: RoutePath.login,
-            onGenerateRoute: generateRoute,
-            locale: const Locale('en', 'US'),
-            localizationsDelegates: const [
-              S.delegate,
-              GlobalMaterialLocalizations.delegate,
-              GlobalWidgetsLocalizations.delegate,
-              GlobalCupertinoLocalizations.delegate,
+          child: MultiBlocProvider(
+            providers: [
+              BlocProvider(create: (context) => AppCubit()),
             ],
-            supportedLocales: S.delegate.supportedLocales,
-            debugShowCheckedModeBanner: false,
-            theme: Style.lightTheme,
-            darkTheme: Style.darkTheme,
-            themeMode: ThemeMode.dark,
+            child: MaterialApp(
+              initialRoute: RoutePath.layout,
+              onGenerateRoute: generateRoute,
+              locale: const Locale('en', 'US'),
+              localizationsDelegates: const [
+                S.delegate,
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate,
+                GlobalCupertinoLocalizations.delegate,
+              ],
+              supportedLocales: S.delegate.supportedLocales,
+              debugShowCheckedModeBanner: false,
+              theme: Style.lightTheme,
+              darkTheme: Style.darkTheme,
+              themeMode: ThemeMode.light,
+            ),
           ),
         );
       },
