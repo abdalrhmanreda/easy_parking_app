@@ -289,6 +289,56 @@ class S {
       args: [],
     );
   }
+
+  /// `Don't have account ?`
+  String get doNotHaveAccount {
+    return Intl.message(
+      'Don\'t have account ?',
+      name: 'doNotHaveAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `create account`
+  String get createAccountButton {
+    return Intl.message(
+      'create account',
+      name: 'createAccountButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `username`
+  String get registerScreenUserName {
+    return Intl.message(
+      'username',
+      name: 'registerScreenUserName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `phone number`
+  String get registerScreenUserPhone {
+    return Intl.message(
+      'phone number',
+      name: 'registerScreenUserPhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register`
+  String get registerScreenUserButton {
+    return Intl.message(
+      'Register',
+      name: 'registerScreenUserButton',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

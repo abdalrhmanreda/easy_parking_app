@@ -1,3 +1,5 @@
+import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:easy_parking_app/generated/assets.dart';
 import 'package:easy_parking_app/ui/user/intro_screens/components/on_boarding_item.dart';
 import 'package:easy_parking_app/ui/user/intro_screens/components/on_boarding_item_content/on_boarding_item_content.dart';
@@ -29,7 +31,9 @@ class EnableLocationScreenBody extends StatelessWidget {
               ),
               context: context),
           CustomButton(
-            onPressed: () {},
+            onPressed: () {
+              CustomNavigation.navigateByNamedTo(context, RoutePath.login);
+            },
             text: S.of(context).enableLocationButton,
             height: 35.h,
             width: MediaQuery.of(context).size.width / 2,

@@ -14,7 +14,7 @@ class ForgetPassBody extends StatelessWidget {
   Widget build(BuildContext context) {
     var emailController = TextEditingController();
     return CommonScreen(
-      image: Assets.authCode,
+      image: Assets.authForgetPass,
       prefixIcon: IconlyBroken.message,
       title: S.of(context).loginScreenForgetPassword,
       description: S.of(context).forgetScreenDescription,

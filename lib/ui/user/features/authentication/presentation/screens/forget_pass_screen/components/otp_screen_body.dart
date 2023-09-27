@@ -15,7 +15,7 @@ class OTPScreenBody extends StatelessWidget {
     var otpCodeController = TextEditingController();
     return CommonScreen(
       prefixIcon: IconlyBroken.unlock,
-      image: Assets.authForgetPass,
+      image: Assets.authCode,
       title: S.of(context).otpScreenTitle,
       description: S.of(context).otpScreenDescription,
       controller: otpCodeController,

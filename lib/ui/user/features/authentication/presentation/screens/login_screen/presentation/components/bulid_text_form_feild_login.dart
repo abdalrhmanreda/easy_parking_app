@@ -39,6 +39,9 @@ Column buildLoginTextFormFeild(TextEditingController emailController,
           borderRadius: BorderRadius.circular(15),
         ),
       ),
+      SizedBox(
+        height: MediaQuery.of(context).size.height / 50,
+      ),
     ],
   );
 }

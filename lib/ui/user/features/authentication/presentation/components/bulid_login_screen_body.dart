@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../../../../../../../generated/assets.dart';
-import 'bulid_login_buttons.dart';
-import 'bulid_login_with_google_container.dart';
-import 'bulid_text_form_feild_login.dart';
+import '../../../../../../generated/assets.dart';
+import '../../../../../../generated/l10n.dart';
+import '../screens/login_screen/presentation/components/bulid_login_buttons.dart';
+import '../screens/login_screen/presentation/components/bulid_login_with_google_container.dart';
+import '../screens/login_screen/presentation/components/bulid_text_form_feild_login.dart';
+import 'bulid_do_not_have_account.dart';
 
 Center buildLoginScreenBody(
     BuildContext context,
@@ -28,14 +30,15 @@ Center buildLoginScreenBody(
               height: MediaQuery.of(context).size.height / 20,
             ),
             buildLoginTextFormFeild(emailController, context, passController),
-            SizedBox(
-              height: MediaQuery.of(context).size.height / 50,
-            ),
             buildLoginButtons(context),
+            bulidLoginWithGoogle(context: context, onTap: () {}),
             SizedBox(
-              height: MediaQuery.of(context).size.height / 50,
+              height: MediaQuery.of(context).size.height / 40,
             ),
-            bulidLoginWithGoogle(context),
+            bulidDoNotHaveAccountAndIfHaveAccount(
+                context: context,
+                text: S.of(context).doNotHaveAccount,
+                textButton: S.of(context).createAccountButton),
           ],
         ),
       ),

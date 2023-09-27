@@ -22,5 +22,11 @@
   "otpScreenLabel": "OTP Code"  ,
   "resetPassScreenTitle":"Reset Password" ,
   "resetPassScreenDescription": "Enter New Password"  ,
-  "resetPassScreenLabel": "New Password"
+  "resetPassScreenLabel": "New Password"  ,
+  "doNotHaveAccount": "Don't have account ?",
+  "createAccountButton": "create account" ,
+  "registerScreenUserName": "username" ,
+  "registerScreenUserPhone": "phone number" ,
+  "registerScreenUserButton": "Register"
+
 }

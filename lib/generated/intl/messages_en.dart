@@ -22,6 +22,10 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "createAccountButton":
+            MessageLookupByLibrary.simpleMessage("create account"),
+        "doNotHaveAccount":
+            MessageLookupByLibrary.simpleMessage("Don\'t have account ?"),
         "enableLocationButton":
             MessageLookupByLibrary.simpleMessage("Enable Location"),
         "enableLocationDescription": MessageLookupByLibrary.simpleMessage(
@@ -58,6 +62,12 @@ class MessageLookup extends MessageLookupByLibrary {
             "An 4 digit has been sent to "),
         "otpScreenLabel": MessageLookupByLibrary.simpleMessage("OTP Code"),
         "otpScreenTitle": MessageLookupByLibrary.simpleMessage("Enter OTP"),
+        "registerScreenUserButton":
+            MessageLookupByLibrary.simpleMessage("Register"),
+        "registerScreenUserName":
+            MessageLookupByLibrary.simpleMessage("username"),
+        "registerScreenUserPhone":
+            MessageLookupByLibrary.simpleMessage("phone number"),
         "resetPassScreenDescription":
             MessageLookupByLibrary.simpleMessage("Enter New Password"),
         "resetPassScreenLabel":

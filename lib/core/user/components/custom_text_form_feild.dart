@@ -91,6 +91,7 @@ class CustomTextFormField extends StatelessWidget {
         prefixIcon: Icon(
           prefixIcon,
           size: 20,
+          color: Theme.of(context).colorScheme.onSurface,
         ),
         border: border,
         focusedBorder: focusedBorder,

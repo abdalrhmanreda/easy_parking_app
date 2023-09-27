@@ -22,6 +22,10 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "createAccountButton":
+            MessageLookupByLibrary.simpleMessage("انشاء حساب"),
+        "doNotHaveAccount":
+            MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟"),
         "enableLocationButton":
             MessageLookupByLibrary.simpleMessage("تمكين الموقع"),
         "enableLocationDescription": MessageLookupByLibrary.simpleMessage(
@@ -61,6 +65,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "otpScreenLabel": MessageLookupByLibrary.simpleMessage("رمز الدخول"),
         "otpScreenTitle":
             MessageLookupByLibrary.simpleMessage("ادخل رمز الدخول"),
+        "registerScreenUserButton":
+            MessageLookupByLibrary.simpleMessage("تسجيل"),
+        "registerScreenUserName":
+            MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
+        "registerScreenUserPhone":
+            MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
         "resetPassScreenDescription":
             MessageLookupByLibrary.simpleMessage("ادخل كلمة المرور الجديدة"),
         "resetPassScreenLabel":

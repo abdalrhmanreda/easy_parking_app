@@ -32,6 +32,9 @@ Column buildLoginButtons(BuildContext context) {
         textColor: 0xffffffff,
         fontSize: 14.sp,
       ),
+      SizedBox(
+        height: MediaQuery.of(context).size.height / 50,
+      ),
     ],
   );
 }

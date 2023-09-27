@@ -41,21 +41,23 @@ class EasyParkingApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return MaterialApp(
-          initialRoute: RoutePath.login,
-          onGenerateRoute: generateRoute,
-          locale: const Locale('en', 'US'),
-          localizationsDelegates: const [
-            S.delegate,
-            GlobalMaterialLocalizations.delegate,
-            GlobalWidgetsLocalizations.delegate,
-            GlobalCupertinoLocalizations.delegate,
-          ],
-          supportedLocales: S.delegate.supportedLocales,
-          debugShowCheckedModeBanner: false,
-          theme: Style.lightTheme,
-          darkTheme: Style.darkTheme,
-          themeMode: ThemeMode.light,
+        return SafeArea(
+          child: MaterialApp(
+            initialRoute: RoutePath.login,
+            onGenerateRoute: generateRoute,
+            locale: const Locale('en', 'US'),
+            localizationsDelegates: const [
+              S.delegate,
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: S.delegate.supportedLocales,
+            debugShowCheckedModeBanner: false,
+            theme: Style.lightTheme,
+            darkTheme: Style.darkTheme,
+            themeMode: ThemeMode.dark,
+          ),
         );
       },
     );

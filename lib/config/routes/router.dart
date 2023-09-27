@@ -2,6 +2,7 @@ import 'package:easy_parking_app/config/routes/routes_path.dart';
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/screens/forget_pass_screen.dart';
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/screens/otp_screen.dart';
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/screens/reset_pass_screen.dart';
+import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/register_screen/presentation/screens/register_screen.dart';
 import 'package:easy_parking_app/ui/user/features/enable_location/presentation/screens/enable_location_screen.dart';
 import 'package:easy_parking_app/ui/user/intro_screens/screens/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
@@ -31,5 +32,8 @@ Route? generateRoute(RouteSettings settings) {
     case RoutePath.resetPass:
       return MaterialPageRoute<dynamic>(
           builder: (BuildContext context) => const ResetPasswordScreen());
+    case RoutePath.register:
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => const RegisterScreen());
   }
 }

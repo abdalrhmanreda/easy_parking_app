@@ -22,7 +22,12 @@
   "otpScreenLabel": "رمز الدخول" ,
   "resetPassScreenTitle":"إعادة تعيين كلمة المرور" ,
   "resetPassScreenDescription": "ادخل كلمة المرور الجديدة"  ,
-  "resetPassScreenLabel": "كلمة المرور الجديدة"
+  "resetPassScreenLabel": "كلمة المرور الجديدة" ,
+  "doNotHaveAccount": "ليس لديك حساب ؟",
+  "createAccountButton": "انشاء حساب" ,
+  "registerScreenUserName": "اسم المستخدم" ,
+  "registerScreenUserPhone": "رقم الهاتف" ,
+  "registerScreenUserButton": "تسجيل"
 
 
 }
