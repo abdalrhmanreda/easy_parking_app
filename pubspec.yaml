@@ -65,6 +65,8 @@ dependencies:
   localization: ^2.1.0
   google_maps_flutter: ^2.5.0
   custom_bottom_navigation: ^0.0.1+1
+  geolocator: ^10.0.1
+  geocoding: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -119,5 +121,6 @@ flutter:
     - assets/images/on_boarding/
     - assets/images/enable_location/
     - assets/images/auth/
+    - assets/images/test/
 flutter_intl:
   enabled: true

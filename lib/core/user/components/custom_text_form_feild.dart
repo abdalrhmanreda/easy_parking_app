@@ -34,7 +34,6 @@ class CustomTextFormField extends StatelessWidget {
     this.hintMaxLines,
     this.onSaved,
     this.label,
-    this.align,
   });
 
   ScrollController? scrollController;
@@ -66,12 +65,10 @@ class CustomTextFormField extends StatelessWidget {
   TextDirection? hintTextDirection;
   int? hintMaxLines;
   Key? formFieldKey;
-  TextAlign? align;
 
   Widget build(BuildContext context) {
     return TextFormField(
       key: formFieldKey,
-      textAlign: align!,
       scrollController: scrollController,
       obscureText: isPassword,
       keyboardType: type,

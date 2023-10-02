@@ -15,4 +15,6 @@ class Assets {
       'assets/images/on_boarding/parking2.svg';
   static const String onBoardingParking3 =
       'assets/images/on_boarding/parking3.svg';
+  static const String test1652687833047 =
+      'assets/images/test/1652687833047.jpg';
 }

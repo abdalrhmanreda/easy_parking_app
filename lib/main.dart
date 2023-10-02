@@ -1,20 +1,16 @@
 /*
-*  /$$$$$$$$                                     /$$$$$$$                     /$$       /$$
-| $$_____/                                    | $$__  $$                   | $$      |__/
-| $$        /$$$$$$   /$$$$$$$ /$$   /$$      | $$  \ $$ /$$$$$$   /$$$$$$ | $$   /$$ /$$ /$$$$$$$   /$$$$$$
-| $$$$$    |____  $$ /$$_____/| $$  | $$      | $$$$$$$/|____  $$ /$$__  $$| $$  /$$/| $$| $$__  $$ /$$__  $$
-| $$__/     /$$$$$$$|  $$$$$$ | $$  | $$      | $$____/  /$$$$$$$| $$  \__/| $$$$$$/ | $$| $$  \ $$| $$  \ $$
-| $$       /$$__  $$ \____  $$| $$  | $$      | $$      /$$__  $$| $$      | $$_  $$ | $$| $$  | $$| $$  | $$
-| $$$$$$$$|  $$$$$$$ /$$$$$$$/|  $$$$$$$      | $$     |  $$$$$$$| $$      | $$ \  $$| $$| $$  | $$|  $$$$$$$
-|________/ \_______/|_______/  \____  $$      |__/      \_______/|__/      |__/  \__/|__/|__/  |__/ \____  $$
-                               /$$  | $$                                                            /$$  \ $$
-                              |  $$$$$$/                                                           |  $$$$$$/
-                               \______/                                                             \______/
-* */
+░█████╗░ ██████╗░██████╗░░█████╗░██╗░░░░░██████╗░░█████╗░██╗░░██╗███╗░░░███╗░█████╗░███╗░░██╗
+██╔══██╗ ██╔══██╗██╔══██╗██╔══██╗██║░░░░░██╔══██╗██╔══██╗██║░░██║████╗░████║██╔══██╗████╗░██║
+███████║ ██████╦╝██║░░██║███████║██║░░░░░██████╔╝███████║███████║██╔████╔██║███████║██╔██╗██║
+██╔══██║ ██╔══██╗██║░░██║██╔══██║██║░░░░░██╔══██╗██╔══██║██╔══██║██║╚██╔╝██║██╔══██║██║╚████║
+██║░░██║ ██████╦╝██████╔╝██║░░██║███████╗██║░░██║██║░░██║██║░░██║██║░╚═╝░██║██║░░██║██║░╚███║
+╚═╝░░╚═╝ ╚═════╝░╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
+*/
 
 import 'package:easy_parking_app/config/routes/router.dart';
 import 'package:easy_parking_app/config/routes/routes_path.dart';
 import 'package:easy_parking_app/ui/user/cubit/app_cubit.dart';
+import 'package:easy_parking_app/ui/user/cubit/observer/blocObserver.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -28,6 +24,7 @@ import 'generated/l10n.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  Bloc.observer = MyBlocObserver();
   DioHelper.init();
   CacheHelper.init();
   runApp(const EasyParkingApp());
@@ -49,7 +46,7 @@ class EasyParkingApp extends StatelessWidget {
               BlocProvider(create: (context) => AppCubit()),
             ],
             child: MaterialApp(
-              initialRoute: RoutePath.layout,
+              initialRoute: RoutePath.onBoarding,
               onGenerateRoute: generateRoute,
               locale: const Locale('en', 'US'),
               localizationsDelegates: const [
