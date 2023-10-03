@@ -17,4 +17,7 @@ class Assets {
       'assets/images/on_boarding/parking3.svg';
   static const String test1652687833047 =
       'assets/images/test/1652687833047.jpg';
+  static const String testDb = 'assets/images/test/db.json';
+  static const String testPCPPhoto3sizedforWeb =
+      'assets/images/test/PCPPhoto3sizedforWeb.jpg';
 }

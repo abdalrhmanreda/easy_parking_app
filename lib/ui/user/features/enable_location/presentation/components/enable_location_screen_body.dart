@@ -20,7 +20,7 @@ class EnableLocationScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<AppCubit, AppStates>(
       listener: (context, state) {
-        if (state is GetLatAndLonSuccessState) {
+        if (state is GetLocationSuccessState) {
           CustomNavigation.navigateByNamedTo(context, RoutePath.layout);
         }
       },

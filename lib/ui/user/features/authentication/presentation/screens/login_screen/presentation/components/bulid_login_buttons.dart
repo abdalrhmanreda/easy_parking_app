@@ -8,7 +8,8 @@ import '../../../../../../../../../core/user/components/custom_button.dart';
 import '../../../../../../../../../core/user/components/custom_text_button.dart';
 import '../../../../../../../../../generated/l10n.dart';
 
-Column buildLoginButtons(BuildContext context) {
+Column buildLoginButtons(
+    BuildContext context, TextEditingController controller) {
   return Column(
     children: [
       CustomTextButton(
@@ -21,7 +22,11 @@ Column buildLoginButtons(BuildContext context) {
         height: MediaQuery.of(context).size.height / 50,
       ),
       CustomButton(
-        onPressed: () {},
+        onPressed: () {
+          if (controller.text == 'abdo@gmail.com') {
+            CustomNavigation.navigateByNamedTo(context, RoutePath.layout);
+          }
+        },
         text: S.of(context).loginScreenButton,
         height: 37.h,
         width: MediaQuery.of(context).size.width,

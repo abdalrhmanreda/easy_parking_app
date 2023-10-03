@@ -1,6 +1,7 @@
 import 'package:easy_parking_app/config/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../main.dart';
@@ -16,7 +17,7 @@ class Style {
       elevation: 0,
       titleTextStyle: GoogleFonts.aBeeZee(
         color: Colors.black,
-        fontSize: 18,
+        fontSize: 16.sp,
       ),
       systemOverlayStyle: const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
@@ -85,7 +86,7 @@ class Style {
       elevation: 0,
       titleTextStyle: GoogleFonts.aBeeZee(
         color: Colors.white,
-        fontSize: 18,
+        fontSize: 18.sp,
       ),
       systemOverlayStyle: const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,

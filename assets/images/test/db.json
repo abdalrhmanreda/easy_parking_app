@@ -1,0 +1,13 @@
+{
+    "garges":[
+        {"id" : 1 , "name": "Elgomhorya" ,"location": "Assiut" , "lat": "27.188568", "long": "31.186112", "rate": 1.5 , "distance": 450},
+        {"id" : 2 , "name": "Stop car" ,"location": "Assiut" , "lat": "27.187347", "long": "31.183439", "rate": 3.5, "distance": 450},
+        {"id" : 3 , "name": "Barkat mall" ,"location": "Assiut" , "lat": "27.185345", "long": "31.186922", "rate": 2.5, "distance": 450},
+        {"id" : 4 , "name": "Inhabitants" ,"location": "Cairo" , "lat": "29.981903", "long": "31.441808", "rate": 4.5, "distance": 450},
+        {"id" : 5 , "name": "CFC" ,"location": "Cairo" , "lat": "30.024832", "long": "31.403212", "rate": 1.5, "distance": 450},
+        {"id" : 6 , "name": "TKH" ,"location": "Cairo" , "lat": "29.973371", "long": "31.709059", "rate": 2.5, "distance": 450},
+        {"id" : 7 , "name": "Dr jamal" ,"location": "El Minya" , "lat": "27.930479", "long": "30.824631", "rate": 4.5, "distance": 450},
+        {"id" : 8 , "name": "mshmsh" ,"location": "El Minya" , "lat": "28.101730", "long": "30.753693", "rate": 3.5, "distance": 450},
+        {"id" : 9 , "name": "Elma3hd" ,"location": "El Minya" , "lat": "28.019653", "long": "30.856716", "rate": 2.5, "distance": 450}
+    ]
+}

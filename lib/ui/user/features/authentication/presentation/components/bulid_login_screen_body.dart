@@ -30,7 +30,7 @@ Center buildLoginScreenBody(
               height: MediaQuery.of(context).size.height / 20,
             ),
             buildLoginTextFormFeild(emailController, context, passController),
-            buildLoginButtons(context),
+            buildLoginButtons(context, emailController),
             bulidLoginWithGoogle(context: context, onTap: () {}),
             SizedBox(
               height: MediaQuery.of(context).size.height / 40,

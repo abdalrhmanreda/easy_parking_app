@@ -1,4 +1,6 @@
 import 'package:easy_parking_app/ui/user/cubit/app_state.dart';
+import 'package:easy_parking_app/ui/user/features/bookmark/presentation/screens/bookmark_screen.dart';
+import 'package:easy_parking_app/ui/user/features/saved/presentation/screens/saved_screen.dart';
 import 'package:easy_parking_app/ui/user/features/user/presentation/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -26,8 +28,8 @@ class AppCubit extends Cubit<AppStates> {
 
   List<Widget> screens = const [
     HomeScreen(),
-    HomeScreen(),
-    ProfileScreen(),
+    SavedScreen(),
+    BookMarkScreen(),
     ProfileScreen(),
   ];
 
