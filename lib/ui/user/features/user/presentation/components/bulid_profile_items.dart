@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../../../generated/l10n.dart';
+
 Widget bulidProfileItems(BuildContext context) => Column(
-      children: items
+      children: items(context)
           .map(
             (e) => ListTile(
               title: Text(
@@ -29,11 +31,19 @@ class ProfileItem {
   ProfileItem({required this.icon, required this.title});
 }
 
-List<ProfileItem> items = [
-  ProfileItem(icon: IconlyBroken.setting, title: 'Setting'),
-  ProfileItem(icon: IconlyBroken.wallet, title: 'Payment'),
-  ProfileItem(icon: IconlyBroken.notification, title: 'Notification'),
-  ProfileItem(icon: Icons.translate_outlined, title: 'Language'),
-  ProfileItem(icon: Icons.help_outline_sharp, title: 'Center help'),
-  ProfileItem(icon: IconlyBroken.logout, title: 'Logout'),
-];
+List<ProfileItem> items(context) => [
+      ProfileItem(
+          icon: IconlyBroken.setting, title: S.of(context).profileSettings),
+      ProfileItem(
+          icon: IconlyBroken.wallet, title: S.of(context).profilePayment),
+      ProfileItem(
+          icon: IconlyBroken.notification,
+          title: S.of(context).profileNotification),
+      ProfileItem(
+          icon: Icons.translate_outlined, title: S.of(context).profileLanguage),
+      ProfileItem(
+          icon: Icons.help_outline_sharp,
+          title: S.of(context).profileCenterHelp),
+      ProfileItem(
+          icon: IconlyBroken.logout, title: S.of(context).profileLogout),
+    ];

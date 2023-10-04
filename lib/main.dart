@@ -7,8 +7,6 @@
 ╚═╝░░╚═╝ ╚═════╝░╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
 */
 
-import 'package:easy_parking_app/config/routes/router.dart';
-import 'package:easy_parking_app/config/routes/routes_path.dart';
 import 'package:easy_parking_app/ui/user/cubit/app_cubit.dart';
 import 'package:easy_parking_app/ui/user/cubit/observer/blocObserver.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +15,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 
+import 'config/routes/router.dart';
+import 'config/routes/routes_path.dart';
 import 'config/themes/themes.dart';
 import 'core/user/api/dio_helper.dart';
 import 'core/user/cache/cache_helper.dart';
@@ -46,7 +46,7 @@ class EasyParkingApp extends StatelessWidget {
               BlocProvider(create: (context) => AppCubit()),
             ],
             child: MaterialApp(
-              initialRoute: RoutePath.onBoarding,
+              initialRoute: RoutePath.layout,
               onGenerateRoute: generateRoute,
               locale: const Locale('en', 'US'),
               localizationsDelegates: const [

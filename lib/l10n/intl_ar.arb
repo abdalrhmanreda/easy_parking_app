@@ -28,7 +28,17 @@
   "registerScreenUserName": "اسم المستخدم" ,
   "registerScreenUserPhone": "رقم الهاتف" ,
   "registerScreenUserButton": "تسجيل" ,
-  "registerScreenHaveAccount": "الفعل لدى حساب"
+  "registerScreenHaveAccount": "الفعل لدى حساب" ,
+  "profileAppBarTitle": "الملف الشخصي" ,
+  "profileEditProfile": "تعديل الملف الشخصي" ,
+  "profileSettings": "الاعدادات" ,
+  "profilePayment": "الدفع" ,
+  "profileNotification": "الاشعارات" ,
+  "profileLanguage": "اللغة" ,
+  "profileCenterHelp": "مركز المساعدة" ,
+  "profileLogout": "تسجيل الخروج"
+
+
 
 
 }

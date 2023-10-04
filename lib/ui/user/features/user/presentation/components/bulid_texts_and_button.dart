@@ -3,6 +3,7 @@ import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../../config/colors/app_colors.dart';
+import '../../../../../../generated/l10n.dart';
 
 Column bulidTextsAndButton(BuildContext context) {
   return Column(
@@ -47,7 +48,7 @@ Column bulidTextsAndButton(BuildContext context) {
                 width: MediaQuery.of(context).size.width / 50,
               ),
               Text(
-                'Edit Profile',
+                S.of(context).profileEditProfile,
                 style: Theme.of(context).textTheme.bodySmall!.copyWith(
                       fontSize: 13.sp,
                       color: Colors.white,

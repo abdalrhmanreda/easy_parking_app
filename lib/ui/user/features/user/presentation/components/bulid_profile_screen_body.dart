@@ -11,19 +11,21 @@ Padding buildProfileScreenBody(BuildContext context) {
     padding: EdgeInsets.symmetric(
       horizontal: MediaQuery.of(context).size.width / 50,
     ),
-    child: Column(
-      children: [
-        bulidProfilePhotoStack(),
-        SizedBox(
-          height: MediaQuery.of(context).size.height / 50,
-        ),
-        bulidTextsAndButton(context),
-        myDivider(MediaQuery.of(context).size.width, 1.h),
-        SizedBox(
-          height: MediaQuery.of(context).size.height / 50,
-        ),
-        bulidProfileItems(context),
-      ],
+    child: SingleChildScrollView(
+      child: Column(
+        children: [
+          bulidProfilePhotoStack(),
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 50,
+          ),
+          bulidTextsAndButton(context),
+          myDivider(MediaQuery.of(context).size.width, 1.h),
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 50,
+          ),
+          bulidProfileItems(context),
+        ],
+      ),
     ),
   );
 }

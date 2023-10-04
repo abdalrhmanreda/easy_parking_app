@@ -28,6 +28,13 @@
   "registerScreenUserName": "username" ,
   "registerScreenUserPhone": "phone number" ,
   "registerScreenButton": "Register" ,
-  "registerScreenHaveAccount": "Already have account"
-
+  "registerScreenHaveAccount": "Already have account" ,
+  "profileAppBarTitle": "Profile" ,
+  "profileSettings": "Settings" ,
+  "profilePayment": "Payment" ,
+  "profileNotification": "Notification" ,
+  "profileLanguage": "Language" ,
+  "profileCenterHelp": "Center Help" ,
+  "profileLogout": "Logout" ,
+  "profileEditProfile":"Edit Profile"
 }

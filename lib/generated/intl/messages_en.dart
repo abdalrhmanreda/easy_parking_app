@@ -62,6 +62,17 @@ class MessageLookup extends MessageLookupByLibrary {
             "An 4 digit has been sent to "),
         "otpScreenLabel": MessageLookupByLibrary.simpleMessage("OTP Code"),
         "otpScreenTitle": MessageLookupByLibrary.simpleMessage("Enter OTP"),
+        "profileAppBarTitle": MessageLookupByLibrary.simpleMessage("Profile"),
+        "profileCenterHelp":
+            MessageLookupByLibrary.simpleMessage("Center Help"),
+        "profileEditProfile":
+            MessageLookupByLibrary.simpleMessage("Edit Profile"),
+        "profileLanguage": MessageLookupByLibrary.simpleMessage("Language"),
+        "profileLogout": MessageLookupByLibrary.simpleMessage("Logout"),
+        "profileNotification":
+            MessageLookupByLibrary.simpleMessage("Notification"),
+        "profilePayment": MessageLookupByLibrary.simpleMessage("Payment"),
+        "profileSettings": MessageLookupByLibrary.simpleMessage("Settings"),
         "registerScreenButton":
             MessageLookupByLibrary.simpleMessage("Register"),
         "registerScreenHaveAccount":

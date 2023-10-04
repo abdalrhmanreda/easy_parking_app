@@ -65,6 +65,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "otpScreenLabel": MessageLookupByLibrary.simpleMessage("رمز الدخول"),
         "otpScreenTitle":
             MessageLookupByLibrary.simpleMessage("ادخل رمز الدخول"),
+        "profileAppBarTitle":
+            MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
+        "profileCenterHelp":
+            MessageLookupByLibrary.simpleMessage("مركز المساعدة"),
+        "profileEditProfile":
+            MessageLookupByLibrary.simpleMessage("تعديل الملف الشخصي"),
+        "profileLanguage": MessageLookupByLibrary.simpleMessage("اللغة"),
+        "profileLogout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
+        "profileNotification":
+            MessageLookupByLibrary.simpleMessage("الاشعارات"),
+        "profilePayment": MessageLookupByLibrary.simpleMessage("الدفع"),
+        "profileSettings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
         "registerScreenHaveAccount":
             MessageLookupByLibrary.simpleMessage("الفعل لدى حساب"),
         "registerScreenUserName":
