@@ -124,5 +124,7 @@ flutter:
     - assets/images/enable_location/
     - assets/images/auth/
     - assets/images/test/
+    - assets/vechicle_type/
+
 flutter_intl:
   enabled: true

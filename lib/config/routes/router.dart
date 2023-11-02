@@ -3,12 +3,14 @@ import 'package:easy_parking_app/ui/user/features/authentication/presentation/sc
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/screens/otp_screen.dart';
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/screens/reset_pass_screen.dart';
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/register_screen/presentation/screens/register_screen.dart';
+import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/vechicle_details/screens/vechicle_details.dart';
 import 'package:easy_parking_app/ui/user/features/enable_location/presentation/screens/enable_location_screen.dart';
 import 'package:easy_parking_app/ui/user/features/user/presentation/screens/profile_screen.dart';
 import 'package:easy_parking_app/ui/user/intro_screens/screens/on_boarding_screen.dart';
 import 'package:easy_parking_app/ui/user/layout/layout_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../../ui/admin/feature/add_garage/presentation/add_garage_details_screen.dart';
 import '../../ui/user/features/authentication/presentation/screens/login_screen/presentation/screens/login_screen.dart';
 import '../../ui/user/features/maps/home/presentation/screens/home_screen.dart';
 
@@ -47,5 +49,13 @@ Route? generateRoute(RouteSettings settings) {
     case RoutePath.profile:
       return MaterialPageRoute<dynamic>(
           builder: (BuildContext context) => const ProfileScreen());
+    case RoutePath.vechicleDetails:
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => const VechicleDetailsScreen());
+
+    //----------------------------------- Admin ------------------------------------
+    case AdminRoutePath.addGarage:
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => const AddGarageDetailsScreen());
   }
 }

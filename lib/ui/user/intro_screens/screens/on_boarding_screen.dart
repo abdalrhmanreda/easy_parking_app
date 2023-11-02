@@ -20,7 +20,7 @@ class OnBoardingScreen extends StatelessWidget {
             child: CustomTextButton(
               onPressed: () {
                 CustomNavigation.navigateAndFinishNyNamed(
-                    context, RoutePath.enableLocation);
+                    context, RoutePath.login);
               },
               text: S.of(context).onBoardingTextButtonText,
             ),

@@ -36,7 +36,17 @@
   "profileNotification": "الاشعارات" ,
   "profileLanguage": "اللغة" ,
   "profileCenterHelp": "مركز المساعدة" ,
-  "profileLogout": "تسجيل الخروج"
+  "profileLogout": "تسجيل الخروج" ,
+  "vechicleDetailsHello" : "مرحبًا" ,
+  "vechicleDetailsDescription": "لنقم بإعداد ملفك الشخصي لتجربة أفضل" ,
+  "vechicleDetails": "تفاصيل مركبتك" ,
+  "vechicleDetailsNumber": "رقم المركبة" ,
+  "vechicleDetailsCar": "سيارة" ,
+  "vechicleDetailsMoto": "دراجة نارية" ,
+  "vechicleDetailsVan": "حافلة" ,
+  "vechicleDetailsType": "نوع المركبة"
+
+
 
 
 

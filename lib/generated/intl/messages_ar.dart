@@ -88,6 +88,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "resetPassScreenLabel":
             MessageLookupByLibrary.simpleMessage("كلمة المرور الجديدة"),
         "resetPassScreenTitle":
-            MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور")
+            MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
+        "vechicleDetails":
+            MessageLookupByLibrary.simpleMessage("تفاصيل مركبتك"),
+        "vechicleDetailsCar": MessageLookupByLibrary.simpleMessage("سيارة"),
+        "vechicleDetailsDescription": MessageLookupByLibrary.simpleMessage(
+            "لنقم بإعداد ملفك الشخصي لتجربة أفضل"),
+        "vechicleDetailsHello": MessageLookupByLibrary.simpleMessage("مرحبًا"),
+        "vechicleDetailsMoto":
+            MessageLookupByLibrary.simpleMessage("دراجة نارية"),
+        "vechicleDetailsNumber":
+            MessageLookupByLibrary.simpleMessage("رقم المركبة"),
+        "vechicleDetailsType":
+            MessageLookupByLibrary.simpleMessage("نوع المركبة"),
+        "vechicleDetailsVan": MessageLookupByLibrary.simpleMessage("حافلة")
       };
 }

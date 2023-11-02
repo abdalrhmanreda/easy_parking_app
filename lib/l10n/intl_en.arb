@@ -36,5 +36,13 @@
   "profileLanguage": "Language" ,
   "profileCenterHelp": "Center Help" ,
   "profileLogout": "Logout" ,
-  "profileEditProfile":"Edit Profile"
+  "profileEditProfile":"Edit Profile" ,
+  "vechicleDetailsHello" : "Hello" ,
+  "vechicleDetailsDescription": "Let's setup your profile for a better experience" ,
+  "vechicleDetails": "Your Vechicle Details" ,
+  "vechicleDetailsNumber": "Vechicle Number" ,
+  "vechicleDetailsCar": "Car" ,
+  "vechicleDetailsMoto": "Moto" ,
+  "vechicleDetailsVan": "Van" ,
+  "vechicleDetailsType": "Vechicle Type"
 }

@@ -1,3 +1,5 @@
+import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -31,7 +33,10 @@ Padding buildRegisterScreenBody(
             emailController, phoneController, passController),
         bulidLoginWithGoogle(context: context, onTap: () {}),
         CustomButton(
-          onPressed: () {},
+          onPressed: () {
+            CustomNavigation.navigateByNamedTo(
+                context, RoutePath.vechicleDetails);
+          },
           text: S.of(context).registerScreenButton,
           height: 37.h,
           width: MediaQuery.of(context).size.width,

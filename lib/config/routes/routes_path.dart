@@ -10,4 +10,9 @@ class RoutePath {
   static const String layout = '/layoutScreen';
   static const String home = '/homeScreen';
   static const String profile = '/profileScreen';
+  static const String vechicleDetails = '/vechicleDetailsScreen';
+}
+
+class AdminRoutePath {
+  static const String addGarage = 'addGarage';
 }

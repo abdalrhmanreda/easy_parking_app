@@ -86,6 +86,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "resetPassScreenLabel":
             MessageLookupByLibrary.simpleMessage("New Password"),
         "resetPassScreenTitle":
-            MessageLookupByLibrary.simpleMessage("Reset Password")
+            MessageLookupByLibrary.simpleMessage("Reset Password"),
+        "vechicleDetails":
+            MessageLookupByLibrary.simpleMessage("Your Vechicle Details"),
+        "vechicleDetailsCar": MessageLookupByLibrary.simpleMessage("Car"),
+        "vechicleDetailsDescription": MessageLookupByLibrary.simpleMessage(
+            "Let\'s setup your profile for a better experience"),
+        "vechicleDetailsHello": MessageLookupByLibrary.simpleMessage("Hello"),
+        "vechicleDetailsMoto": MessageLookupByLibrary.simpleMessage("Moto"),
+        "vechicleDetailsNumber":
+            MessageLookupByLibrary.simpleMessage("Vechicle Number"),
+        "vechicleDetailsType":
+            MessageLookupByLibrary.simpleMessage("Vechicle Type"),
+        "vechicleDetailsVan": MessageLookupByLibrary.simpleMessage("Van")
       };
 }

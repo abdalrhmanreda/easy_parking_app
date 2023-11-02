@@ -429,6 +429,86 @@ class S {
       args: [],
     );
   }
+
+  /// `Hello`
+  String get vechicleDetailsHello {
+    return Intl.message(
+      'Hello',
+      name: 'vechicleDetailsHello',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Let's setup your profile for a better experience`
+  String get vechicleDetailsDescription {
+    return Intl.message(
+      'Let\'s setup your profile for a better experience',
+      name: 'vechicleDetailsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your Vechicle Details`
+  String get vechicleDetails {
+    return Intl.message(
+      'Your Vechicle Details',
+      name: 'vechicleDetails',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Vechicle Number`
+  String get vechicleDetailsNumber {
+    return Intl.message(
+      'Vechicle Number',
+      name: 'vechicleDetailsNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Car`
+  String get vechicleDetailsCar {
+    return Intl.message(
+      'Car',
+      name: 'vechicleDetailsCar',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Moto`
+  String get vechicleDetailsMoto {
+    return Intl.message(
+      'Moto',
+      name: 'vechicleDetailsMoto',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Van`
+  String get vechicleDetailsVan {
+    return Intl.message(
+      'Van',
+      name: 'vechicleDetailsVan',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Vechicle Type`
+  String get vechicleDetailsType {
+    return Intl.message(
+      'Vechicle Type',
+      name: 'vechicleDetailsType',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
