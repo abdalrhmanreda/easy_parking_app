@@ -22,8 +22,12 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "NumberOfFloorAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("Number of floors"),
         "createAccountButton":
             MessageLookupByLibrary.simpleMessage("create account"),
+        "descriptionAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("Description"),
         "doNotHaveAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have account ?"),
         "enableLocationButton":
@@ -35,6 +39,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgetPassButton": MessageLookupByLibrary.simpleMessage("Submit"),
         "forgetScreenDescription": MessageLookupByLibrary.simpleMessage(
             "Don\'t worry it happens. Please enter email address associated with your account"),
+        "garageDetailsTitleAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("Garage Details"),
+        "garageFeatureAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("Garage Feature"),
+        "garageImagesAdminInterFace": MessageLookupByLibrary.simpleMessage(
+            "Upload Some Photo to Your Garage"),
+        "garageNameAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("Garage Name"),
+        "insert": MessageLookupByLibrary.simpleMessage("Insert"),
+        "latitudesAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("Latitude"),
+        "locationAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("Location"),
         "loginScreenButton": MessageLookupByLibrary.simpleMessage("Login"),
         "loginScreenEmailAddress":
             MessageLookupByLibrary.simpleMessage("Email Address"),
@@ -43,6 +60,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginScreenLoginWithGoogleButton":
             MessageLookupByLibrary.simpleMessage("Login With Google"),
         "loginScreenPassword": MessageLookupByLibrary.simpleMessage("Password"),
+        "longitudesAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("Longitude"),
         "onBoardingButtonText": MessageLookupByLibrary.simpleMessage("Next"),
         "onBoardingDescription1": MessageLookupByLibrary.simpleMessage(
             "With Easy Parking, you can easily find the closest garage and get simple directions to arrive"),

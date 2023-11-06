@@ -7,6 +7,7 @@
 ╚═╝░░╚═╝ ╚═════╝░╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
 */
 
+import 'package:easy_parking_app/ui/admin/cubit/admin_cubit.dart';
 import 'package:easy_parking_app/ui/user/cubit/app_cubit.dart';
 import 'package:easy_parking_app/ui/user/cubit/observer/blocObserver.dart';
 import 'package:flutter/material.dart';
@@ -44,6 +45,7 @@ class EasyParkingApp extends StatelessWidget {
           child: MultiBlocProvider(
             providers: [
               BlocProvider(create: (context) => AppCubit()),
+              BlocProvider(create: (context) => AdminCubit()),
             ],
             child: MaterialApp(
               initialRoute: AdminRoutePath.addGarage,

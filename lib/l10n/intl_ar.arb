@@ -44,7 +44,13 @@
   "vechicleDetailsCar": "سيارة" ,
   "vechicleDetailsMoto": "دراجة نارية" ,
   "vechicleDetailsVan": "حافلة" ,
-  "vechicleDetailsType": "نوع المركبة"
+  "vechicleDetailsType": "نوع المركبة" ,
+  "garageDetailsTitleAdminInterFace": "تفاصيل الجراج",
+  "garageNameAdminInterFace": "اسم الجراج",
+  "NumberOfFloorAdminInterFace": "عدد الطوابق",
+  "descriptionAdminInterFace": "الوصف" ,
+  "locationAdminInterFace": "الموقع"
+
 
 
 

@@ -4,8 +4,8 @@ import 'package:easy_parking_app/ui/user/features/saved/presentation/screens/sav
 import 'package:easy_parking_app/ui/user/features/user/presentation/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:iconly/iconly.dart';
 
 import '../features/maps/home/presentation/screens/home_screen.dart';
 

@@ -44,5 +44,20 @@
   "vechicleDetailsCar": "Car" ,
   "vechicleDetailsMoto": "Moto" ,
   "vechicleDetailsVan": "Van" ,
-  "vechicleDetailsType": "Vechicle Type"
+  "vechicleDetailsType": "Vechicle Type"  ,
+
+  "garageDetailsTitleAdminInterFace": "Garage Details" ,
+  "garageNameAdminInterFace": "Garage Name" ,
+  "NumberOfFloorAdminInterFace": "Number of floors" ,
+  "descriptionAdminInterFace": "Description" ,
+  "locationAdminInterFace": "Location"  ,
+  "garageFeatureAdminInterFace": "Garage Feature",
+  "garageImagesAdminInterFace": "Upload Some Photo to Your Garage" ,
+  "latitudesAdminInterFace": "Latitude" ,
+  "longitudesAdminInterFace": "Longitude" ,
+  "insert": "Insert"
+
+
+
+
 }

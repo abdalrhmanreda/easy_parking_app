@@ -22,8 +22,12 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "NumberOfFloorAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("عدد الطوابق"),
         "createAccountButton":
             MessageLookupByLibrary.simpleMessage("انشاء حساب"),
+        "descriptionAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("الوصف"),
         "doNotHaveAccount":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟"),
         "enableLocationButton":
@@ -35,6 +39,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgetPassButton": MessageLookupByLibrary.simpleMessage("ارسال"),
         "forgetScreenDescription": MessageLookupByLibrary.simpleMessage(
             "لا تقلق، قد يحدث ذلك. يرجى إدخال عنوان البريد الإلكتروني المرتبط بحسابك"),
+        "garageDetailsTitleAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("تفاصيل الجراج"),
+        "garageNameAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("اسم الجراج"),
+        "locationAdminInterFace":
+            MessageLookupByLibrary.simpleMessage("الموقع"),
         "loginScreenButton":
             MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginScreenEmailAddress":

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../../config/colors/app_colors.dart';
-import '../../../../../core/user/components/custom_text_form_feild.dart';
-import '../../../../../core/user/components/validate_method.dart';
-import '../../../../../core/user/constant/app_constant.dart';
+import '../../../../../../config/colors/app_colors.dart';
+import '../../../../../../core/user/components/custom_text_form_feild.dart';
+import '../../../../../../core/user/components/validate_method.dart';
+import '../../../../../../core/user/constant/app_constant.dart';
 
 class AddGarageItem extends StatelessWidget {
   AddGarageItem({
@@ -12,14 +12,14 @@ class AddGarageItem extends StatelessWidget {
     required this.title,
     required this.isRequired,
     required this.controller,
-    this.suffixPressed,
-    this.suffixIcon,
+    this.maxLine,
+    required this.height,
   });
-  final String title;
+  String? title;
   final bool isRequired;
   final TextEditingController controller;
-  VoidCallback? suffixPressed;
-  IconData? suffixIcon;
+  int? maxLine;
+  final double height;
 
   @override
   Widget build(BuildContext context) {
@@ -57,16 +57,13 @@ class AddGarageItem extends StatelessWidget {
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
             ),
-            maxLine: 1,
-            edgeInsetsGeometry: const EdgeInsetsDirectional.symmetric(
-              vertical: 15,
+            maxLine: maxLine,
+            edgeInsetsGeometry: EdgeInsetsDirectional.symmetric(
+              vertical: height,
             ),
             validate: (value) {
-              return validateMethod(value, title.toLowerCase());
+              return validateMethod(value, title?.toLowerCase());
             },
-            suffixPressed: suffixPressed,
-            suffixIcon: suffixIcon,
-            hint: title,
           ),
         ],
       ),

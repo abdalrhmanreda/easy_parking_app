@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:iconly/iconly.dart';
 
 import '../../../../../../../../generated/assets.dart';
 import '../../../../../../../../generated/l10n.dart';

@@ -2,8 +2,9 @@ import 'package:easy_parking_app/config/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+@immutable
 class CustomTextFormField extends StatelessWidget {
-  CustomTextFormField({
+  const CustomTextFormField({
     super.key,
     this.formFieldKey,
     required this.isPassword,
@@ -36,36 +37,37 @@ class CustomTextFormField extends StatelessWidget {
     this.label,
   });
 
-  ScrollController? scrollController;
-  bool isPassword;
-  bool? autofocus;
-  TextInputType? type;
-  TextEditingController? controller;
-  String? Function(String?)? onSubmitted;
-  String? Function(String?)? onSaved;
-  String? Function(String?)? onChanged;
-  String? Function(String?)? validate;
-  String? hint;
-  IconData? prefixIcon;
-  IconData? suffixIcon;
-  VoidCallback? onTap;
-  VoidCallback? suffixPressed;
-  InputBorder? border;
-  InputBorder? focusedBorder;
-  InputBorder? enabledBorder;
-  EdgeInsetsGeometry? edgeInsetsGeometry;
-  String? label;
-  TextStyle? hintStyle;
-  TextStyle? labelStyle;
-  bool? isEnable;
-  int? maxLine;
-  int? minLine;
-  FocusNode? focusNode;
-  FloatingLabelBehavior? floatingLabelBehavior;
-  TextDirection? hintTextDirection;
-  int? hintMaxLines;
-  Key? formFieldKey;
+  final ScrollController? scrollController;
+  final bool isPassword;
+  final bool? autofocus;
+  final TextInputType? type;
+  final TextEditingController? controller;
+  final String? Function(String?)? onSubmitted;
+  final String? Function(String?)? onSaved;
+  final String? Function(String?)? onChanged;
+  final String? Function(String?)? validate;
+  final String? hint;
+  final IconData? prefixIcon;
+  final IconData? suffixIcon;
+  final VoidCallback? onTap;
+  final VoidCallback? suffixPressed;
+  final InputBorder? border;
+  final InputBorder? focusedBorder;
+  final InputBorder? enabledBorder;
+  final EdgeInsetsGeometry? edgeInsetsGeometry;
+  final String? label;
+  final TextStyle? hintStyle;
+  final TextStyle? labelStyle;
+  final bool? isEnable;
+  final int? maxLine;
+  final int? minLine;
+  final FocusNode? focusNode;
+  final FloatingLabelBehavior? floatingLabelBehavior;
+  final TextDirection? hintTextDirection;
+  final int? hintMaxLines;
+  final Key? formFieldKey;
 
+  @override
   Widget build(BuildContext context) {
     return TextFormField(
       key: formFieldKey,
@@ -82,6 +84,7 @@ class CustomTextFormField extends StatelessWidget {
       onTap: onTap,
       enabled: isEnable,
       focusNode: focusNode,
+      textInputAction: TextInputAction.done,
       decoration: InputDecoration(
         hintTextDirection: hintTextDirection,
         hintMaxLines: hintMaxLines,

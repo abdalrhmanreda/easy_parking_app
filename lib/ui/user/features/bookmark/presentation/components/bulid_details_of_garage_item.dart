@@ -1,7 +1,7 @@
 import 'package:easy_parking_app/config/colors/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:iconly/iconly.dart';
 import 'package:icons_plus/icons_plus.dart';
 
 Column bulidDetailsOfGarageItem(BuildContext context) {

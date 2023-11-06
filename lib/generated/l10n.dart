@@ -509,6 +509,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Garage Details`
+  String get garageDetailsTitleAdminInterFace {
+    return Intl.message(
+      'Garage Details',
+      name: 'garageDetailsTitleAdminInterFace',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Garage Name`
+  String get garageNameAdminInterFace {
+    return Intl.message(
+      'Garage Name',
+      name: 'garageNameAdminInterFace',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Number of floors`
+  String get NumberOfFloorAdminInterFace {
+    return Intl.message(
+      'Number of floors',
+      name: 'NumberOfFloorAdminInterFace',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Description`
+  String get descriptionAdminInterFace {
+    return Intl.message(
+      'Description',
+      name: 'descriptionAdminInterFace',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Location`
+  String get locationAdminInterFace {
+    return Intl.message(
+      'Location',
+      name: 'locationAdminInterFace',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Garage Feature`
+  String get garageFeatureAdminInterFace {
+    return Intl.message(
+      'Garage Feature',
+      name: 'garageFeatureAdminInterFace',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Upload Some Photo to Your Garage`
+  String get garageImagesAdminInterFace {
+    return Intl.message(
+      'Upload Some Photo to Your Garage',
+      name: 'garageImagesAdminInterFace',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Latitude`
+  String get latitudesAdminInterFace {
+    return Intl.message(
+      'Latitude',
+      name: 'latitudesAdminInterFace',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Longitude`
+  String get longitudesAdminInterFace {
+    return Intl.message(
+      'Longitude',
+      name: 'longitudesAdminInterFace',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insert`
+  String get insert {
+    return Intl.message(
+      'Insert',
+      name: 'insert',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
