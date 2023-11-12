@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:multi_image_picker/multi_image_picker.dart';
 
-import '../../../../../../core/user/constant/app_constant.dart';
+import '../../../../../../../core/user/constant/app_constant.dart';
 
 SizedBox buildPageViewForGarage({
   required BuildContext context,

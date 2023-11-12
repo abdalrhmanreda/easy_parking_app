@@ -609,6 +609,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Additional features`
+  String get garageFeature {
+    return Intl.message(
+      'Additional features',
+      name: 'garageFeature',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `24/7 support ? `
+  String get support {
+    return Intl.message(
+      '24/7 support ? ',
+      name: 'support',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `washing car ?`
+  String get washingCar {
+    return Intl.message(
+      'washing car ?',
+      name: 'washingCar',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `security camara ?`
+  String get securityCamara {
+    return Intl.message(
+      'security camara ?',
+      name: 'securityCamara',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `emergency exit ?`
+  String get emergencyExit {
+    return Intl.message(
+      'emergency exit ?',
+      name: 'emergencyExit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `car lifts ?`
+  String get carLifts {
+    return Intl.message(
+      'car lifts ?',
+      name: 'carLifts',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

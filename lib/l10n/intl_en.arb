@@ -55,7 +55,15 @@
   "garageImagesAdminInterFace": "Upload Some Photo to Your Garage" ,
   "latitudesAdminInterFace": "Latitude" ,
   "longitudesAdminInterFace": "Longitude" ,
-  "insert": "Insert"
+  "insert": "Insert" ,
+  "garageFeature": "Additional features" ,
+  "support" : "24/7 support ? " ,
+  "washingCar" : "washing car ?" ,
+  "securityCamara" : "security camara ?" ,
+  "emergencyExit" : "emergency exit ?" ,
+  "carLifts" : "car lifts ?"
+
+
 
 
 

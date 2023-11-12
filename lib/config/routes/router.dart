@@ -1,5 +1,5 @@
 import 'package:easy_parking_app/config/routes/routes_path.dart';
-import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/garage_feature.dart';
+import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/screens/garage_feature.dart';
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/screens/forget_pass_screen.dart';
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/screens/otp_screen.dart';
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/screens/reset_pass_screen.dart';
@@ -11,7 +11,7 @@ import 'package:easy_parking_app/ui/user/intro_screens/screens/on_boarding_scree
 import 'package:easy_parking_app/ui/user/layout/layout_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../../ui/admin/feature/insert_garage/presentation/add_garage_details_screen.dart';
+import '../../ui/admin/feature/insert_garage/presentation/screens/add_garage_details_screen.dart';
 import '../../ui/user/features/authentication/presentation/screens/login_screen/presentation/screens/login_screen.dart';
 import '../../ui/user/features/maps/home/presentation/screens/home_screen.dart';
 

@@ -24,12 +24,15 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "NumberOfFloorAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Number of floors"),
+        "carLifts": MessageLookupByLibrary.simpleMessage("car lifts ?"),
         "createAccountButton":
             MessageLookupByLibrary.simpleMessage("create account"),
         "descriptionAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Description"),
         "doNotHaveAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have account ?"),
+        "emergencyExit":
+            MessageLookupByLibrary.simpleMessage("emergency exit ?"),
         "enableLocationButton":
             MessageLookupByLibrary.simpleMessage("Enable Location"),
         "enableLocationDescription": MessageLookupByLibrary.simpleMessage(
@@ -41,6 +44,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Don\'t worry it happens. Please enter email address associated with your account"),
         "garageDetailsTitleAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Garage Details"),
+        "garageFeature":
+            MessageLookupByLibrary.simpleMessage("Additional features"),
         "garageFeatureAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Garage Feature"),
         "garageImagesAdminInterFace": MessageLookupByLibrary.simpleMessage(
@@ -106,6 +111,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("New Password"),
         "resetPassScreenTitle":
             MessageLookupByLibrary.simpleMessage("Reset Password"),
+        "securityCamara":
+            MessageLookupByLibrary.simpleMessage("security camara ?"),
+        "support": MessageLookupByLibrary.simpleMessage("24/7 support ? "),
         "vechicleDetails":
             MessageLookupByLibrary.simpleMessage("Your Vechicle Details"),
         "vechicleDetailsCar": MessageLookupByLibrary.simpleMessage("Car"),
@@ -117,6 +125,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Vechicle Number"),
         "vechicleDetailsType":
             MessageLookupByLibrary.simpleMessage("Vechicle Type"),
-        "vechicleDetailsVan": MessageLookupByLibrary.simpleMessage("Van")
+        "vechicleDetailsVan": MessageLookupByLibrary.simpleMessage("Van"),
+        "washingCar": MessageLookupByLibrary.simpleMessage("washing car ?")
       };
 }

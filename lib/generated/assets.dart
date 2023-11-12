@@ -7,15 +7,23 @@ class Assets {
   static const String authLogin = 'assets/images/auth/login.svg';
   static const String authRegister = 'assets/images/auth/register.svg';
   static const String authResetPass = 'assets/images/auth/reset_pass.svg';
-  static const String enableLocationEnableLocation = 'assets/images/enable_location/enable_location.svg';
-  static const String onBoardingParking1 = 'assets/images/on_boarding/parking1.svg';
-  static const String onBoardingParking2 = 'assets/images/on_boarding/parking2.svg';
-  static const String onBoardingParking3 = 'assets/images/on_boarding/parking3.svg';
-  static const String test1652687833047 = 'assets/images/test/1652687833047.jpg';
+  static const String enableLocationEnableLocation =
+      'assets/images/enable_location/enable_location.svg';
+  static const String locationDataLocations =
+      'assets/location_data/locations.json';
+  static const String onBoardingParking1 =
+      'assets/images/on_boarding/parking1.svg';
+  static const String onBoardingParking2 =
+      'assets/images/on_boarding/parking2.svg';
+  static const String onBoardingParking3 =
+      'assets/images/on_boarding/parking3.svg';
+  static const String test1652687833047 =
+      'assets/images/test/1652687833047.jpg';
   static const String testDb = 'assets/images/test/db.json';
-  static const String testPCPPhoto3sizedforWeb = 'assets/images/test/PCPPhoto3sizedforWeb.jpg';
+  static const String testPCPPhoto3sizedforWeb =
+      'assets/images/test/PCPPhoto3sizedforWeb.jpg';
   static const String vechicleTypeCar = 'assets/vechicle_type/car.png';
-  static const String vechicleTypeMotorcycle = 'assets/vechicle_type/motorcycle.png';
+  static const String vechicleTypeMotorcycle =
+      'assets/vechicle_type/motorcycle.png';
   static const String vechicleTypeVan = 'assets/vechicle_type/van.png';
-
 }

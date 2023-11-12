@@ -1,8 +1,8 @@
-import 'package:easy_parking_app/ui/admin/feature/insert_garage/components/add_garage_details/add_garage_details_body.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/admin/components/build_app_bar.dart';
-import '../../../../../generated/l10n.dart';
+import '../../../../../../core/admin/components/build_app_bar.dart';
+import '../../../../../../generated/l10n.dart';
+import '../components/add_garage_details/add_garage_details_body.dart';
 
 class AddGarageDetailsScreen extends StatelessWidget {
   const AddGarageDetailsScreen({super.key});

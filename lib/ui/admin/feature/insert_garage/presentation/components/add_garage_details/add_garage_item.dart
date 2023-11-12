@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../../../config/colors/app_colors.dart';
-import '../../../../../../core/user/components/custom_text_form_feild.dart';
-import '../../../../../../core/user/components/validate_method.dart';
-import '../../../../../../core/user/constant/app_constant.dart';
+import '../../../../../../../config/colors/app_colors.dart';
+import '../../../../../../../core/user/components/custom_text_form_feild.dart';
+import '../../../../../../../core/user/components/validate_method.dart';
+import '../../../../../../../core/user/constant/app_constant.dart';
 
 class AddGarageItem extends StatelessWidget {
   AddGarageItem({
