@@ -1,4 +1,5 @@
 import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/core/user/cache/hive_cache.dart';
 import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -80,8 +81,11 @@ class _OnBoardingScreenBodyState extends State<OnBoardingScreenBody> {
           CustomButton(
             onPressed: () {
               if (isLast) {
-                CustomNavigation.navigateAndFinishNyNamed(
-                    context, RoutePath.enableLocation);
+                HiveCache.saveData(key: 'onBoarding', value: true)
+                    .then((value) {
+                  CustomNavigation.navigateAndFinishNyNamed(
+                      context, RoutePath.login);
+                });
               } else {
                 pageController.nextPage(
                     duration: const Duration(milliseconds: 1000),

@@ -24,8 +24,11 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "NumberOfFloorAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Number of floors"),
+        "bookingParkingDate":
+            MessageLookupByLibrary.simpleMessage("Book Parking Date"),
         "carLifts": MessageLookupByLibrary.simpleMessage("car lifts ?"),
         "city": MessageLookupByLibrary.simpleMessage("city"),
+        "continueButton": MessageLookupByLibrary.simpleMessage("Continue"),
         "createAccountButton":
             MessageLookupByLibrary.simpleMessage("create account"),
         "descriptionAdminInterFace":
@@ -34,6 +37,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Don\'t have account ?"),
         "doesGarageContain":
             MessageLookupByLibrary.simpleMessage("Does garage Contain"),
+        "duration": MessageLookupByLibrary.simpleMessage("Duration"),
         "emergencyExit":
             MessageLookupByLibrary.simpleMessage("emergency exit ?"),
         "enableLocationButton":
@@ -42,6 +46,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "We will need your location to give you better experience"),
         "enableLocationTitle":
             MessageLookupByLibrary.simpleMessage("Allow Your Location"),
+        "endHour": MessageLookupByLibrary.simpleMessage("End Hour"),
+        "endTime": MessageLookupByLibrary.simpleMessage("End Time"),
         "enter": MessageLookupByLibrary.simpleMessage("Entry"),
         "exit": MessageLookupByLibrary.simpleMessage("Exit"),
         "forgetPassButton": MessageLookupByLibrary.simpleMessage("Submit"),
@@ -124,7 +130,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Reset Password"),
         "securityCamara":
             MessageLookupByLibrary.simpleMessage("security camara ?"),
+        "startHour": MessageLookupByLibrary.simpleMessage("Start Hour"),
+        "startTime": MessageLookupByLibrary.simpleMessage("Start Time"),
         "support": MessageLookupByLibrary.simpleMessage("24/7 support ? "),
+        "total": MessageLookupByLibrary.simpleMessage("Total"),
         "vechicleDetails":
             MessageLookupByLibrary.simpleMessage("Your Vechicle Details"),
         "vechicleDetailsCar": MessageLookupByLibrary.simpleMessage("Car"),

@@ -5,10 +5,11 @@ import 'package:flutter/material.dart';
 
 import '../../../../../../core/user/components/custom_text_button.dart';
 
-Row bulidDoNotHaveAccountAndIfHaveAccount(
-    {required BuildContext context,
-    required String text,
-    required String textButton}) {
+Row bulidDoNotHaveAccountAndIfHaveAccount({
+  required BuildContext context,
+  required String text,
+  required String textButton,
+}) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
@@ -17,7 +18,11 @@ Row bulidDoNotHaveAccountAndIfHaveAccount(
       ),
       CustomTextButton(
         onPressed: () {
-          CustomNavigation.navigateByNamedTo(context, RoutePath.register);
+          if (textButton != "Login") {
+            CustomNavigation.navigateByNamedTo(context, RoutePath.register);
+          } else {
+            Navigator.pop(context);
+          }
         },
         text: textButton,
       ),

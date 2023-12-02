@@ -3,6 +3,7 @@ import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:easy_parking_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/user/cache/hive_cache.dart';
 import '../../../../core/user/components/custom_text_button.dart';
 import '../components/on_boarding_screen_body.dart';
 
@@ -19,8 +20,11 @@ class OnBoardingScreen extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: CustomTextButton(
               onPressed: () {
-                CustomNavigation.navigateAndFinishNyNamed(
-                    context, RoutePath.login);
+                HiveCache.saveData(key: 'onBoarding', value: true)
+                    .then((value) {
+                  CustomNavigation.navigateAndFinishNyNamed(
+                      context, RoutePath.login);
+                });
               },
               text: S.of(context).onBoardingTextButtonText,
             ),

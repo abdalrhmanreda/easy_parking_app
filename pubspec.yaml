@@ -46,7 +46,6 @@ dependencies:
   dio: ^5.0.1
   conditional_builder_null_safety: ^0.0.6
   fluttertoast: ^8.2.1
-  shared_preferences: ^2.0.18
   custom_navigation_bar: ^0.8.2
   animated_text_kit: ^4.2.2
   smooth_page_indicator: ^1.1.0
@@ -57,26 +56,21 @@ dependencies:
   flutter_screenutil: ^5.8.4
   flutter_asset_generator: ^1.0.2
   widget_and_text_animator: ^1.0.9
-  sweet_nav_bar: ^1.0.5
   iconly: ^1.0.1
   flutter_svg: ^2.0.7
   localization: ^2.1.0
   google_maps_flutter: ^2.5.0
-  custom_bottom_navigation: ^0.0.1+1
   geolocator: ^10.0.1
   geocoding: ^2.1.0
-  flutter_rating_bar: ^4.0.1
-  chips_choice: ^3.0.1
   multi_image_picker: ^4.8.01
   gap: ^3.0.1
   image_picker: ^1.0.4
-  quickalert: ^1.0.2
   google_fonts: ^6.1.0
   csc_picker: ^0.2.7
-  dotted_line: ^3.2.2
   dotted_dashed_line: ^0.0.3
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  table_calendar: ^3.0.9
 
 dev_dependencies:
   flutter_test:

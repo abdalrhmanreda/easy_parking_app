@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../main.dart';
+import '../../core/user/methods/get_current_local.dart';
 
 class Style {
   static final ThemeData lightTheme = ThemeData(

@@ -749,6 +749,86 @@ class S {
       args: [],
     );
   }
+
+  /// `Book Parking Date`
+  String get bookingParkingDate {
+    return Intl.message(
+      'Book Parking Date',
+      name: 'bookingParkingDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Duration`
+  String get duration {
+    return Intl.message(
+      'Duration',
+      name: 'duration',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start Hour`
+  String get startHour {
+    return Intl.message(
+      'Start Hour',
+      name: 'startHour',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `End Hour`
+  String get endHour {
+    return Intl.message(
+      'End Hour',
+      name: 'endHour',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total`
+  String get total {
+    return Intl.message(
+      'Total',
+      name: 'total',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue`
+  String get continueButton {
+    return Intl.message(
+      'Continue',
+      name: 'continueButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start Time`
+  String get startTime {
+    return Intl.message(
+      'Start Time',
+      name: 'startTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `End Time`
+  String get endTime {
+    return Intl.message(
+      'End Time',
+      name: 'endTime',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

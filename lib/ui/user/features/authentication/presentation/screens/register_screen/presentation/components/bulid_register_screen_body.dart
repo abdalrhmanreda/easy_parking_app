@@ -35,7 +35,7 @@ Padding buildRegisterScreenBody(
         CustomButton(
           onPressed: () {
             CustomNavigation.navigateByNamedTo(
-                context, AdminRoutePath.addGarage);
+                context, RoutePath.enableLocation);
           },
           text: S.of(context).registerScreenButton,
           height: 37.h,

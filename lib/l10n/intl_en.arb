@@ -69,7 +69,15 @@
   "garages": "Garages" ,
   "garagesPlaces": "Pick Parking spot " ,
   "exit": "Exit" ,
-  "enter": "Entry"
+  "enter": "Entry" ,
+  "bookingParkingDate": "Book Parking Date" ,
+  "duration" : "Duration" ,
+  "startHour" : "Start Hour" ,
+  "endHour" : "End Hour"  ,
+  "total": "Total",
+  "continueButton":"Continue" ,
+  "startTime": "Start Time" ,
+  "endTime" : "End Time"
 
 
 
