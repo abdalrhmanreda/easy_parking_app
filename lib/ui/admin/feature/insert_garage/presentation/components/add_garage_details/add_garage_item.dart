@@ -5,9 +5,10 @@ import '../../../../../../../config/colors/app_colors.dart';
 import '../../../../../../../core/user/components/custom_text_form_feild.dart';
 import '../../../../../../../core/user/components/validate_method.dart';
 import '../../../../../../../core/user/constant/app_constant.dart';
+import '../../../../../../../core/user/methods/validate_email/vaildate_email.dart';
 
-class AddGarageItem extends StatelessWidget {
-  AddGarageItem({
+class AddTextFormFeildWithRichText extends StatelessWidget {
+  AddTextFormFeildWithRichText({
     super.key,
     required this.title,
     required this.isRequired,
@@ -51,7 +52,7 @@ class AddGarageItem extends StatelessWidget {
             height: AppConstant.deviceHeight(context) / 75,
           ),
           CustomTextFormField(
-            isPassword: false,
+            isPassword: title == 'Password' ? true : false,
             controller: controller,
             type: TextInputType.text,
             border: OutlineInputBorder(
@@ -62,7 +63,14 @@ class AddGarageItem extends StatelessWidget {
               vertical: height,
             ),
             validate: (value) {
-              return validateMethod(value, title?.toLowerCase());
+              if (title == 'Email Address') {
+                if (!isEmailValid(value!)) {
+                  return 'Email must contain @ & .com' ;
+                }
+              }
+              if (value!.isEmpty) {
+                return validateMethod(value, title?.toLowerCase());
+              }
             },
           ),
         ],

@@ -25,12 +25,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "NumberOfFloorAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Number of floors"),
         "carLifts": MessageLookupByLibrary.simpleMessage("car lifts ?"),
+        "city": MessageLookupByLibrary.simpleMessage("city"),
         "createAccountButton":
             MessageLookupByLibrary.simpleMessage("create account"),
         "descriptionAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Description"),
         "doNotHaveAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have account ?"),
+        "doesGarageContain":
+            MessageLookupByLibrary.simpleMessage("Does garage Contain"),
         "emergencyExit":
             MessageLookupByLibrary.simpleMessage("emergency exit ?"),
         "enableLocationButton":
@@ -39,9 +42,13 @@ class MessageLookup extends MessageLookupByLibrary {
             "We will need your location to give you better experience"),
         "enableLocationTitle":
             MessageLookupByLibrary.simpleMessage("Allow Your Location"),
+        "enter": MessageLookupByLibrary.simpleMessage("Entry"),
+        "exit": MessageLookupByLibrary.simpleMessage("Exit"),
         "forgetPassButton": MessageLookupByLibrary.simpleMessage("Submit"),
         "forgetScreenDescription": MessageLookupByLibrary.simpleMessage(
             "Don\'t worry it happens. Please enter email address associated with your account"),
+        "garageAddedSuccessfully":
+            MessageLookupByLibrary.simpleMessage("garage Added Successfully"),
         "garageDetailsTitleAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Garage Details"),
         "garageFeature":
@@ -52,6 +59,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "Upload Some Photo to Your Garage"),
         "garageNameAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Garage Name"),
+        "garages": MessageLookupByLibrary.simpleMessage("Garages"),
+        "garagesPlaces":
+            MessageLookupByLibrary.simpleMessage("Pick Parking spot "),
+        "government": MessageLookupByLibrary.simpleMessage("government"),
         "insert": MessageLookupByLibrary.simpleMessage("Insert"),
         "latitudesAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Latitude"),

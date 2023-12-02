@@ -610,6 +610,16 @@ class S {
     );
   }
 
+  /// `Does garage Contain`
+  String get doesGarageContain {
+    return Intl.message(
+      'Does garage Contain',
+      name: 'doesGarageContain',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Additional features`
   String get garageFeature {
     return Intl.message(
@@ -665,6 +675,76 @@ class S {
     return Intl.message(
       'car lifts ?',
       name: 'carLifts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `city`
+  String get city {
+    return Intl.message(
+      'city',
+      name: 'city',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `government`
+  String get government {
+    return Intl.message(
+      'government',
+      name: 'government',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `garage Added Successfully`
+  String get garageAddedSuccessfully {
+    return Intl.message(
+      'garage Added Successfully',
+      name: 'garageAddedSuccessfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Garages`
+  String get garages {
+    return Intl.message(
+      'Garages',
+      name: 'garages',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pick Parking spot `
+  String get garagesPlaces {
+    return Intl.message(
+      'Pick Parking spot ',
+      name: 'garagesPlaces',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Exit`
+  String get exit {
+    return Intl.message(
+      'Exit',
+      name: 'exit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Entry`
+  String get enter {
+    return Intl.message(
+      'Entry',
+      name: 'enter',
       desc: '',
       args: [],
     );

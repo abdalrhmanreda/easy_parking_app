@@ -1,4 +1,6 @@
 import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/ui/admin/feature/garages/screens/garage_places.dart';
+import 'package:easy_parking_app/ui/admin/feature/garages/screens/get_all_garage.dart';
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/screens/garage_feature.dart';
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/screens/forget_pass_screen.dart';
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/screens/otp_screen.dart';
@@ -57,9 +59,15 @@ Route? generateRoute(RouteSettings settings) {
     //----------------------------------- Admin ------------------------------------
     case AdminRoutePath.addGarage:
       return MaterialPageRoute<dynamic>(
-          builder: (BuildContext context) => AddGarageDetailsScreen());
+          builder: (BuildContext context) => const AddGarageDetailsScreen());
     case AdminRoutePath.garageFeature:
       return MaterialPageRoute<dynamic>(
-          builder: (BuildContext context) => GarageFeatureScreen());
+          builder: (BuildContext context) => const GarageFeatureScreen());
+    case AdminRoutePath.getAllGarages:
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => const GetAllGarageListScreen());
+    case AdminRoutePath.garagePlaces:
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => const GaragePlacesScreen());
   }
 }

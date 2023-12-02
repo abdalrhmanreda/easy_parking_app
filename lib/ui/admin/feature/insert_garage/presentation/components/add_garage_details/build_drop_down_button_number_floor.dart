@@ -1,3 +1,4 @@
+import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/controller/insert_garage_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconly/iconly.dart';
@@ -11,7 +12,6 @@ class BuildDropDownButtonNumberOfFloorAndNumberOfSpot extends StatefulWidget {
   BuildDropDownButtonNumberOfFloorAndNumberOfSpot(
       {super.key, required this.controller});
   List<int> floors = [1, 2, 3, 4, 5];
-  int selectedValue = 1;
   final TextEditingController controller;
 
   @override
@@ -63,7 +63,7 @@ class _BuildDropDownButtonNumberOfFloorAndNumberOfSpotState
                 child: DropdownButton(
                   icon: const Icon(IconlyBroken.arrow_down_2),
                   isExpanded: true,
-                  value: widget.selectedValue,
+                  value: InsertGarageCubit.get(context).selectedValue,
                   underline: const SizedBox(),
                   padding: const EdgeInsets.symmetric(
                     horizontal: 10,
@@ -76,7 +76,7 @@ class _BuildDropDownButtonNumberOfFloorAndNumberOfSpotState
                       .toList(),
                   onChanged: (value) {
                     setState(() {
-                      widget.selectedValue = value!;
+                      InsertGarageCubit.get(context).selectedValue = value!;
                     });
                   },
                   hint: Text(
@@ -99,7 +99,7 @@ class _BuildDropDownButtonNumberOfFloorAndNumberOfSpotState
           ),
         ),
         Expanded(
-          child: AddGarageItem(
+          child: AddTextFormFeildWithRichText(
             title: 'Number of places',
             isRequired: true,
             controller: widget.controller,

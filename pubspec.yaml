@@ -52,7 +52,6 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   loading_indicator: ^3.1.0
   icons_plus: ^4.0.0
-  google_fonts: ^4.0.4
   url_launcher: ^6.1.11
   intl: ^0.18.1
   flutter_screenutil: ^5.8.4
@@ -69,6 +68,15 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   chips_choice: ^3.0.1
   multi_image_picker: ^4.8.01
+  gap: ^3.0.1
+  image_picker: ^1.0.4
+  quickalert: ^1.0.2
+  google_fonts: ^6.1.0
+  csc_picker: ^0.2.7
+  dotted_line: ^3.2.2
+  dotted_dashed_line: ^0.0.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -126,6 +134,7 @@ flutter:
     - assets/images/test/
     - assets/vechicle_type/
     - assets/location_data/
+    - assets/garage_cars/
 
 flutter_intl:
   enabled: true

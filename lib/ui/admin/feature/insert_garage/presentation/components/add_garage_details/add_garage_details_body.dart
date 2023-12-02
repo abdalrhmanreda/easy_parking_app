@@ -1,13 +1,15 @@
+import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
+import 'package:easy_parking_app/core/user/components/flutter_toast.dart';
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/components/add_garage_details/select_location.dart';
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/controller/insert_garage_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:gap/gap.dart';
 
 import '../../../../../../../config/colors/app_colors.dart';
-import '../../../../../../../config/routes/routes_path.dart';
 import '../../../../../../../core/user/components/custom_button.dart';
-import '../../../../../../../core/user/components/custom_navigatation.dart';
 import '../../../../../../../core/user/constant/app_constant.dart';
 import '../../../../../../../generated/l10n.dart';
 import 'add_garage_item.dart';
@@ -24,6 +26,10 @@ class AddGarageDetailsScreenBody extends StatelessWidget {
     TextEditingController descController = TextEditingController();
     TextEditingController latController = TextEditingController();
     TextEditingController lonController = TextEditingController();
+    TextEditingController emailController = TextEditingController();
+    TextEditingController passController = TextEditingController();
+    TextEditingController nameController = TextEditingController();
+    TextEditingController phoneController = TextEditingController();
     TextEditingController numberOfSpotsController = TextEditingController();
 
     return Padding(
@@ -31,8 +37,12 @@ class AddGarageDetailsScreenBody extends StatelessWidget {
       child: Form(
         key: formKey,
         child: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
           child: BlocConsumer<InsertGarageCubit, InsertGarageStates>(
             listener: (context, state) {
+              if (state is FailureState) {
+                showToast(message: state.error, state: ToastState.ERROR);
+              }
               // TODO: implement listener
             },
             builder: (context, state) {
@@ -40,7 +50,7 @@ class AddGarageDetailsScreenBody extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  AddGarageItem(
+                  AddTextFormFeildWithRichText(
                     title: S.of(context).garageNameAdminInterFace,
                     maxLine: 1,
                     height: 15,
@@ -48,23 +58,55 @@ class AddGarageDetailsScreenBody extends StatelessWidget {
                     controller: garageNameController,
                   ),
                   const SelectLocation(),
-                  buildLatAndLonFeild(
-                    context: context,
+                  const Gap(15),
+                  BuildTextFormFeildLatAndLon(
                     latController: latController,
                     lonController: lonController,
                   ),
                   BuildDropDownButtonNumberOfFloorAndNumberOfSpot(
                       controller: numberOfSpotsController),
-                  AddGarageItem(
+                  AddTextFormFeildWithRichText(
+                    title: S.of(context).loginScreenEmailAddress,
+                    maxLine: null,
+                    isRequired: true,
+                    height: 15,
+                    controller: emailController,
+                  ),
+                  AddTextFormFeildWithRichText(
+                    title: S.of(context).registerScreenUserName,
+                    maxLine: null,
+                    isRequired: true,
+                    height: 15,
+                    controller: nameController,
+                  ),
+                  AddTextFormFeildWithRichText(
+                    title: S.of(context).registerScreenUserPhone,
+                    maxLine: null,
+                    isRequired: true,
+                    height: 15,
+                    controller: phoneController,
+                  ),
+                  AddTextFormFeildWithRichText(
                     title: S.of(context).descriptionAdminInterFace,
                     maxLine: null,
                     isRequired: true,
-                    height: 20,
+                    height: 15,
                     controller: descController,
                   ),
                   CustomButton(
                     onPressed: () {
                       if (formKey.currentState!.validate()) {
+                        // InsertGarageCubit.get(context).addGarage(
+                        //   garageName: garageNameController.text,
+                        //   location: 'Cairo',
+                        //   numFloor:
+                        //       InsertGarageCubit.get(context).selectedValue,
+                        //   numOfSpace: int.parse(numberOfSpotsController.text),
+                        //   lat: latController.text,
+                        //   lon: lonController.text,
+                        //   description: descController.text,
+                        //   price: '30 \$',
+                        // );
                         CustomNavigation.navigateByNamedTo(
                             context, AdminRoutePath.garageFeature);
                       }

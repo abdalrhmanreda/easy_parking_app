@@ -14,3 +14,15 @@ class FailureState extends InsertGarageStates {
 }
 
 class GetPhotoForGarageSuccessState extends InsertGarageStates {}
+
+class GetGovernmentSOfGaragesSuccessState extends InsertGarageStates {}
+
+class PickGarageImageSuccessState extends InsertGarageStates {}
+
+class AddGarageSuccessState extends InsertGarageStates {}
+
+class UpdatedFeaturesState extends InsertGarageStates {
+  final List<FeatureModel> updatedFeatures;
+
+  UpdatedFeaturesState(this.updatedFeatures);
+}

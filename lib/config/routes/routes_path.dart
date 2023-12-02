@@ -16,4 +16,6 @@ class RoutePath {
 class AdminRoutePath {
   static const String addGarage = '/addGarage';
   static const String garageFeature = '/garageFeature';
+  static const String getAllGarages = '/getAllGarages';
+  static const String garagePlaces = '/garagePlaces';
 }

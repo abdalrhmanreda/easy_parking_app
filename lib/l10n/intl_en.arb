@@ -56,12 +56,20 @@
   "latitudesAdminInterFace": "Latitude" ,
   "longitudesAdminInterFace": "Longitude" ,
   "insert": "Insert" ,
+  "doesGarageContain": "Does garage Contain",
   "garageFeature": "Additional features" ,
   "support" : "24/7 support ? " ,
   "washingCar" : "washing car ?" ,
   "securityCamara" : "security camara ?" ,
   "emergencyExit" : "emergency exit ?" ,
-  "carLifts" : "car lifts ?"
+  "carLifts" : "car lifts ?" ,
+  "city" : "city" ,
+  "government": "government",
+  "garageAddedSuccessfully"  : "garage Added Successfully" ,
+  "garages": "Garages" ,
+  "garagesPlaces": "Pick Parking spot " ,
+  "exit": "Exit" ,
+  "enter": "Entry"
 
 
 

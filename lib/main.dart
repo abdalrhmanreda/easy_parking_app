@@ -7,7 +7,9 @@
 ╚═╝░░╚═╝ ╚═════╝░╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
 */
 
+import 'package:easy_parking_app/core/user/cache/hive_cache.dart';
 import 'package:easy_parking_app/ui/admin/cubit/admin_cubit.dart';
+import 'package:easy_parking_app/ui/admin/feature/garages/controller/garage_cubit.dart';
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/controller/insert_garage_cubit.dart';
 import 'package:easy_parking_app/ui/user/cubit/app_cubit.dart';
 import 'package:easy_parking_app/ui/user/cubit/observer/blocObserver.dart';
@@ -21,14 +23,13 @@ import 'config/routes/router.dart';
 import 'config/routes/routes_path.dart';
 import 'config/themes/themes.dart';
 import 'core/user/api/dio_helper.dart';
-import 'core/user/cache/cache_helper.dart';
 import 'generated/l10n.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Bloc.observer = MyBlocObserver();
   DioHelper.init();
-  CacheHelper.init();
+  HiveCache.openHive();
   runApp(const EasyParkingApp());
 }
 
@@ -47,8 +48,8 @@ class EasyParkingApp extends StatelessWidget {
             providers: [
               BlocProvider(create: (context) => AppCubit()),
               BlocProvider(create: (context) => AdminCubit()),
-              BlocProvider(
-                  create: (context) => InsertGarageCubit()..getGarage()),
+              BlocProvider(create: (context) => GarageCubit()),
+              BlocProvider(create: (context) => InsertGarageCubit()),
             ],
             child: MaterialApp(
               initialRoute: AdminRoutePath.addGarage,

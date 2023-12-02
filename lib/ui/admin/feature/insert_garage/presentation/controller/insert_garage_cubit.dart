@@ -1,7 +1,10 @@
+import 'dart:io';
+
 import 'package:easy_parking_app/core/user/api/api_constant.dart';
 import 'package:easy_parking_app/core/user/api/dio_helper.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:multi_image_picker/multi_image_picker.dart';
 
 import '../../../../../../core/admin/constant/constants.dart';
@@ -13,6 +16,8 @@ part 'insert_garage_state.dart';
 class InsertGarageCubit extends Cubit<InsertGarageStates> {
   InsertGarageCubit() : super(InsertGarageInitial());
   static InsertGarageCubit get(context) => BlocProvider.of(context);
+  int selectedValue = 1;
+
   List<FeatureModel> features(context) => [
         FeatureModel(
             title: '${AdminConstant.garage}${S.of(context).support}',
@@ -32,6 +37,20 @@ class InsertGarageCubit extends Cubit<InsertGarageStates> {
       ];
 
   List<Asset> images = <Asset>[];
+
+  File? garageImage;
+  final picker = ImagePicker();
+
+  Future<void> pickGarageImage() async {
+    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
+    if (pickedFile != null) {
+      garageImage = File(pickedFile.path);
+      emit(PickGarageImageSuccessState());
+    } else {
+      print('No Image Selected');
+      emit(FailureState(error: 'No Image Selected'));
+    }
+  }
 
   void loadAssets() {
     emit(LoadingState());
@@ -55,11 +74,42 @@ class InsertGarageCubit extends Cubit<InsertGarageStates> {
     });
   }
 
-  void getGarage() {
-    DioHelper.getData(url: ApiConstant.apiUrl)!.then((value) {
-      print(value.data);
+  void updateFeatureValue(int index, bool newValue, context) {
+    List<FeatureModel> updatedFeatures = List.from(features(context));
+    updatedFeatures[index] = FeatureModel(
+      title: updatedFeatures[index].title,
+      value: newValue,
+    );
+    emit(UpdatedFeaturesState(updatedFeatures));
+  }
+
+  void addGarage({
+    required String garageName,
+    required String location,
+    required int numFloor,
+    required int numOfSpace,
+    required String lat,
+    required String lon,
+    required String description,
+    required String price,
+  }) {
+    emit(LoadingState());
+    DioHelper.postData(url: ApiConstant.getAllGarage, data: {
+      'name': garageName,
+      'numFloors': numFloor,
+      'lat': lat,
+      'rate': 1,
+      'longt': lon,
+      'location': location,
+      'desc': description,
+      'price': price,
+      'numSpaces': numOfSpace,
+      "id": 10,
+    }).then((value) {
+      emit(AddGarageSuccessState());
     }).catchError((error) {
       print(error.toString());
+      emit(FailureState(error: error.toString()));
     });
   }
 }

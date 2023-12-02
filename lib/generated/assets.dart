@@ -9,6 +9,9 @@ class Assets {
   static const String authResetPass = 'assets/images/auth/reset_pass.svg';
   static const String enableLocationEnableLocation =
       'assets/images/enable_location/enable_location.svg';
+  static const String garageCarsEnterCar = 'assets/garage_cars/enter_car.png';
+  static const String garageCarsLeftCar = 'assets/garage_cars/left_car.png';
+  static const String garageCarsRightCar = 'assets/garage_cars/right_car.png';
   static const String locationDataLocations =
       'assets/location_data/locations.json';
   static const String onBoardingParking1 =
@@ -20,6 +23,7 @@ class Assets {
   static const String test1652687833047 =
       'assets/images/test/1652687833047.jpg';
   static const String testDb = 'assets/images/test/db.json';
+  static const String testGarage = 'assets/images/test/garage.jpg';
   static const String testPCPPhoto3sizedforWeb =
       'assets/images/test/PCPPhoto3sizedforWeb.jpg';
   static const String vechicleTypeCar = 'assets/vechicle_type/car.png';
