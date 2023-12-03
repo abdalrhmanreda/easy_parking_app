@@ -46,6 +46,7 @@ class _SliderPartState extends State<SliderPart> {
             activeColor: const Color(AppColors.kDarkSkyBlueColor),
           ),
           Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Expanded(
                 child: Column(
@@ -54,6 +55,9 @@ class _SliderPartState extends State<SliderPart> {
                     Text(S.of(context).startTime),
                     const Gap(10),
                     Container(
+                      margin: const EdgeInsets.symmetric(
+                        horizontal: 5,
+                      ),
                       decoration: BoxDecoration(
                         color: const Color(AppColors.kLightGreyColor),
                         borderRadius: BorderRadius.circular(15),
@@ -89,7 +93,12 @@ class _SliderPartState extends State<SliderPart> {
                   ],
                 ),
               ),
-              const Gap(25),
+              const Padding(
+                padding: EdgeInsets.only(
+                  top: 20,
+                ),
+                child: Icon(IconlyBroken.arrow_right),
+              ),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -97,6 +106,9 @@ class _SliderPartState extends State<SliderPart> {
                     Text(S.of(context).endTime),
                     const Gap(10),
                     Container(
+                      margin: const EdgeInsets.symmetric(
+                        horizontal: 5,
+                      ),
                       decoration: BoxDecoration(
                         color: const Color(AppColors.kLightGreyColor),
                         borderRadius: BorderRadius.circular(15),

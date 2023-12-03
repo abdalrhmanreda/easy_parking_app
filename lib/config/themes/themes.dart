@@ -8,12 +8,12 @@ import '../../core/user/methods/get_current_local.dart';
 
 class Style {
   static final ThemeData lightTheme = ThemeData(
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: const Color(AppColors.kScaffoldColor),
     colorScheme: ThemeData()
         .colorScheme
         .copyWith(primary: const Color(AppColors.kPrimaryColor)),
     appBarTheme: AppBarTheme(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(AppColors.kScaffoldColor),
       elevation: 0,
       titleTextStyle: GoogleFonts.aBeeZee(
         color: Colors.black,

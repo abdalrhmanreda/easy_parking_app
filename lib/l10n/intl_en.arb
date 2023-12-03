@@ -58,10 +58,11 @@
   "insert": "Insert" ,
   "doesGarageContain": "Does garage Contain",
   "garageFeature": "Additional features" ,
-  "support" : "24/7 support ? " ,
-  "washingCar" : "washing car ?" ,
-  "securityCamara" : "security camara ?" ,
-  "emergencyExit" : "emergency exit ?" ,
+  "support" : "24/7 support  " ,
+  "washingCar" : "washing car " ,
+  "onlinePayment": "Online Payment",
+  "securityCamara" : "security camara " ,
+  "emergencyExit" : "emergency exit " ,
   "carLifts" : "car lifts ?" ,
   "city" : "city" ,
   "government": "government",
@@ -77,7 +78,22 @@
   "total": "Total",
   "continueButton":"Continue" ,
   "startTime": "Start Time" ,
-  "endTime" : "End Time"
+  "endTime" : "End Time" ,
+  "parkingDetails" : "Parking Details" ,
+  "parkName" : "Square O Park" ,
+  "serviceProvide": "Service we provide" ,
+  "garageDescription": "A garage is a dedicated space typically attached to a residential property or as a standalone structure, designed to provide shelter and storage for vehicles such as cars, motorcycles, and bicycles. It serves as a secure enclosure to protect vehicles from external elements like weather, theft, and vandalism. Garages often feature large doors, commonly overhead, to allow convenient entry and exit for vehicles. Additionally, garages can serve as versatile spaces, offering storage for tools, equipment, and other household items. Many homeowners use garages as workshops or hobby areas, providing a functional and flexible extension of their living space. Overall, a garage plays a crucial role in enhancing the safety, security, and utility of a property.",
+  "bookNow": "Book Now" ,
+  "reviewSummary": "Review Summary" ,
+  "parkingArea": "Parking Area" ,
+  "address": "Address" ,
+  "parkingSpot": "Parking Spot" ,
+  "date" : "Date" ,
+  "hour": "Hour" ,
+  "amount": "Amount" ,
+  "tax" : "Tax( 10% )" ,
+  "proceed": "Proceed"
+
 
 
 

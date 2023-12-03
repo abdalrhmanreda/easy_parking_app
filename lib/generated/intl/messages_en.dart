@@ -24,6 +24,9 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "NumberOfFloorAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Number of floors"),
+        "address": MessageLookupByLibrary.simpleMessage("Address"),
+        "amount": MessageLookupByLibrary.simpleMessage("Amount"),
+        "bookNow": MessageLookupByLibrary.simpleMessage("Book Now"),
         "bookingParkingDate":
             MessageLookupByLibrary.simpleMessage("Book Parking Date"),
         "carLifts": MessageLookupByLibrary.simpleMessage("car lifts ?"),
@@ -31,6 +34,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "continueButton": MessageLookupByLibrary.simpleMessage("Continue"),
         "createAccountButton":
             MessageLookupByLibrary.simpleMessage("create account"),
+        "date": MessageLookupByLibrary.simpleMessage("Date"),
         "descriptionAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Description"),
         "doNotHaveAccount":
@@ -39,7 +43,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Does garage Contain"),
         "duration": MessageLookupByLibrary.simpleMessage("Duration"),
         "emergencyExit":
-            MessageLookupByLibrary.simpleMessage("emergency exit ?"),
+            MessageLookupByLibrary.simpleMessage("emergency exit "),
         "enableLocationButton":
             MessageLookupByLibrary.simpleMessage("Enable Location"),
         "enableLocationDescription": MessageLookupByLibrary.simpleMessage(
@@ -55,6 +59,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Don\'t worry it happens. Please enter email address associated with your account"),
         "garageAddedSuccessfully":
             MessageLookupByLibrary.simpleMessage("garage Added Successfully"),
+        "garageDescription": MessageLookupByLibrary.simpleMessage(
+            "A garage is a dedicated space typically attached to a residential property or as a standalone structure, designed to provide shelter and storage for vehicles such as cars, motorcycles, and bicycles. It serves as a secure enclosure to protect vehicles from external elements like weather, theft, and vandalism. Garages often feature large doors, commonly overhead, to allow convenient entry and exit for vehicles. Additionally, garages can serve as versatile spaces, offering storage for tools, equipment, and other household items. Many homeowners use garages as workshops or hobby areas, providing a functional and flexible extension of their living space. Overall, a garage plays a crucial role in enhancing the safety, security, and utility of a property."),
         "garageDetailsTitleAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Garage Details"),
         "garageFeature":
@@ -69,6 +75,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "garagesPlaces":
             MessageLookupByLibrary.simpleMessage("Pick Parking spot "),
         "government": MessageLookupByLibrary.simpleMessage("government"),
+        "hour": MessageLookupByLibrary.simpleMessage("Hour"),
         "insert": MessageLookupByLibrary.simpleMessage("Insert"),
         "latitudesAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Latitude"),
@@ -99,10 +106,17 @@ class MessageLookup extends MessageLookupByLibrary {
             "Find the nearest parking lot"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "Find the nearest parking lot"),
+        "onlinePayment": MessageLookupByLibrary.simpleMessage("Online Payment"),
         "otpScreenDescription": MessageLookupByLibrary.simpleMessage(
             "An 4 digit has been sent to "),
         "otpScreenLabel": MessageLookupByLibrary.simpleMessage("OTP Code"),
         "otpScreenTitle": MessageLookupByLibrary.simpleMessage("Enter OTP"),
+        "parkName": MessageLookupByLibrary.simpleMessage("Square O Park"),
+        "parkingArea": MessageLookupByLibrary.simpleMessage("Parking Area"),
+        "parkingDetails":
+            MessageLookupByLibrary.simpleMessage("Parking Details"),
+        "parkingSpot": MessageLookupByLibrary.simpleMessage("Parking Spot"),
+        "proceed": MessageLookupByLibrary.simpleMessage("Proceed"),
         "profileAppBarTitle": MessageLookupByLibrary.simpleMessage("Profile"),
         "profileCenterHelp":
             MessageLookupByLibrary.simpleMessage("Center Help"),
@@ -128,11 +142,15 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("New Password"),
         "resetPassScreenTitle":
             MessageLookupByLibrary.simpleMessage("Reset Password"),
+        "reviewSummary": MessageLookupByLibrary.simpleMessage("Review Summary"),
         "securityCamara":
-            MessageLookupByLibrary.simpleMessage("security camara ?"),
+            MessageLookupByLibrary.simpleMessage("security camara "),
+        "serviceProvide":
+            MessageLookupByLibrary.simpleMessage("Service we provide"),
         "startHour": MessageLookupByLibrary.simpleMessage("Start Hour"),
         "startTime": MessageLookupByLibrary.simpleMessage("Start Time"),
-        "support": MessageLookupByLibrary.simpleMessage("24/7 support ? "),
+        "support": MessageLookupByLibrary.simpleMessage("24/7 support  "),
+        "tax": MessageLookupByLibrary.simpleMessage("Tax( 10% )"),
         "total": MessageLookupByLibrary.simpleMessage("Total"),
         "vechicleDetails":
             MessageLookupByLibrary.simpleMessage("Your Vechicle Details"),
@@ -146,6 +164,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "vechicleDetailsType":
             MessageLookupByLibrary.simpleMessage("Vechicle Type"),
         "vechicleDetailsVan": MessageLookupByLibrary.simpleMessage("Van"),
-        "washingCar": MessageLookupByLibrary.simpleMessage("washing car ?")
+        "washingCar": MessageLookupByLibrary.simpleMessage("washing car ")
       };
 }

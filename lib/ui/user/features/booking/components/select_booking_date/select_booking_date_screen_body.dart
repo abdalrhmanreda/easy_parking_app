@@ -1,3 +1,5 @@
+import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:easy_parking_app/ui/user/features/booking/components/select_booking_date/slider.dart';
 import 'package:easy_parking_app/ui/user/features/booking/components/select_booking_date/table_calender.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +33,10 @@ class SelectBookingDateScreenBody extends StatelessWidget {
             const SliderPart(),
             const Gap(15),
             CustomButton(
-              onPressed: () {},
+              onPressed: () {
+                CustomNavigation.navigateByNamedTo(
+                    context, RoutePath.bookingSummary);
+              },
               text: S.of(context).continueButton,
               height: 37.h,
               width: MediaQuery.of(context).size.width,

@@ -630,40 +630,50 @@ class S {
     );
   }
 
-  /// `24/7 support ? `
+  /// `24/7 support  `
   String get support {
     return Intl.message(
-      '24/7 support ? ',
+      '24/7 support  ',
       name: 'support',
       desc: '',
       args: [],
     );
   }
 
-  /// `washing car ?`
+  /// `washing car `
   String get washingCar {
     return Intl.message(
-      'washing car ?',
+      'washing car ',
       name: 'washingCar',
       desc: '',
       args: [],
     );
   }
 
-  /// `security camara ?`
+  /// `Online Payment`
+  String get onlinePayment {
+    return Intl.message(
+      'Online Payment',
+      name: 'onlinePayment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `security camara `
   String get securityCamara {
     return Intl.message(
-      'security camara ?',
+      'security camara ',
       name: 'securityCamara',
       desc: '',
       args: [],
     );
   }
 
-  /// `emergency exit ?`
+  /// `emergency exit `
   String get emergencyExit {
     return Intl.message(
-      'emergency exit ?',
+      'emergency exit ',
       name: 'emergencyExit',
       desc: '',
       args: [],
@@ -825,6 +835,146 @@ class S {
     return Intl.message(
       'End Time',
       name: 'endTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Parking Details`
+  String get parkingDetails {
+    return Intl.message(
+      'Parking Details',
+      name: 'parkingDetails',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Square O Park`
+  String get parkName {
+    return Intl.message(
+      'Square O Park',
+      name: 'parkName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Service we provide`
+  String get serviceProvide {
+    return Intl.message(
+      'Service we provide',
+      name: 'serviceProvide',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A garage is a dedicated space typically attached to a residential property or as a standalone structure, designed to provide shelter and storage for vehicles such as cars, motorcycles, and bicycles. It serves as a secure enclosure to protect vehicles from external elements like weather, theft, and vandalism. Garages often feature large doors, commonly overhead, to allow convenient entry and exit for vehicles. Additionally, garages can serve as versatile spaces, offering storage for tools, equipment, and other household items. Many homeowners use garages as workshops or hobby areas, providing a functional and flexible extension of their living space. Overall, a garage plays a crucial role in enhancing the safety, security, and utility of a property.`
+  String get garageDescription {
+    return Intl.message(
+      'A garage is a dedicated space typically attached to a residential property or as a standalone structure, designed to provide shelter and storage for vehicles such as cars, motorcycles, and bicycles. It serves as a secure enclosure to protect vehicles from external elements like weather, theft, and vandalism. Garages often feature large doors, commonly overhead, to allow convenient entry and exit for vehicles. Additionally, garages can serve as versatile spaces, offering storage for tools, equipment, and other household items. Many homeowners use garages as workshops or hobby areas, providing a functional and flexible extension of their living space. Overall, a garage plays a crucial role in enhancing the safety, security, and utility of a property.',
+      name: 'garageDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Book Now`
+  String get bookNow {
+    return Intl.message(
+      'Book Now',
+      name: 'bookNow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Review Summary`
+  String get reviewSummary {
+    return Intl.message(
+      'Review Summary',
+      name: 'reviewSummary',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Parking Area`
+  String get parkingArea {
+    return Intl.message(
+      'Parking Area',
+      name: 'parkingArea',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Address`
+  String get address {
+    return Intl.message(
+      'Address',
+      name: 'address',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Parking Spot`
+  String get parkingSpot {
+    return Intl.message(
+      'Parking Spot',
+      name: 'parkingSpot',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Date`
+  String get date {
+    return Intl.message(
+      'Date',
+      name: 'date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hour`
+  String get hour {
+    return Intl.message(
+      'Hour',
+      name: 'hour',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Amount`
+  String get amount {
+    return Intl.message(
+      'Amount',
+      name: 'amount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tax( 10% )`
+  String get tax {
+    return Intl.message(
+      'Tax( 10% )',
+      name: 'tax',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Proceed`
+  String get proceed {
+    return Intl.message(
+      'Proceed',
+      name: 'proceed',
       desc: '',
       args: [],
     );
