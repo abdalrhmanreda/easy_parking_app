@@ -104,11 +104,21 @@ class InsertGarageCubit extends Cubit<InsertGarageStates> {
       'desc': description,
       'price': price,
       'numSpaces': numOfSpace,
-      "id": 10,
+      "id": 19,
     }).then((value) {
       emit(AddGarageSuccessState());
     }).catchError((error) {
       print(error.toString());
+      emit(FailureState(error: error.toString()));
+    });
+  }
+
+  void getAllGarage() {
+    emit(LoadingState());
+    DioHelper.getData(url: ApiConstant.getAllGarage)!.then((value) {
+      print(value);
+    }).catchError((error) {
+      print('---------------------${error.toString()}');
       emit(FailureState(error: error.toString()));
     });
   }

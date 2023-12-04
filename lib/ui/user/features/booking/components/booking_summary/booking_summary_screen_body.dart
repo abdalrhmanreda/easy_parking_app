@@ -1,3 +1,5 @@
+import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:easy_parking_app/ui/user/features/booking/components/booking_summary/custom_white_container.dart';
 import 'package:easy_parking_app/ui/user/features/booking/components/booking_summary/list_tile_item.dart';
 import 'package:easy_parking_app/ui/user/features/booking/models/review_summary_model.dart';
@@ -64,7 +66,10 @@ class BookingSummaryScreenBody extends StatelessWidget {
         )),
         const Gap(25),
         CustomButton(
-          onPressed: () {},
+          onPressed: () {
+            CustomNavigation.navigateByNamedTo(
+                context, RoutePath.paymentMethods);
+          },
           text: S.of(context).proceed,
           height: 37.h,
           width: MediaQuery.of(context).size.width,

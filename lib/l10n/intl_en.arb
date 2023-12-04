@@ -92,7 +92,26 @@
   "hour": "Hour" ,
   "amount": "Amount" ,
   "tax" : "Tax( 10% )" ,
-  "proceed": "Proceed"
+  "proceed": "Proceed" ,
+  "search": "Search" ,
+  "home": "Home" ,
+  "bookMark": "Book Mark" ,
+  "saved": "Saved" ,
+  "myBookMark": "My Bookmark" ,
+  "viewTicket": "View Ticket" ,
+  "choosePayment": "Choose Pay Method" ,
+  "walletDesc": "you can choose the most suitable \npayment method for payment" ,
+  "vodafone": "Vodafone cash",
+  "cash": "Cash" ,
+  "visa" : "Visa" ,
+  "parkingTicket": "Parking Ticket" ,
+  "scanCode": "Scan this on the QR code\nwhen you are in this parking lot" ,
+  "name": "Name" ,
+  "vechicle": "Vechicle",
+  "phone": "Phone" ,
+  "navigateToParkingLot":"Navigate to parking lot" ,
+  "ok" : "OK"
+
 
 
 

@@ -26,10 +26,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Number of floors"),
         "address": MessageLookupByLibrary.simpleMessage("Address"),
         "amount": MessageLookupByLibrary.simpleMessage("Amount"),
+        "bookMark": MessageLookupByLibrary.simpleMessage("Book Mark"),
         "bookNow": MessageLookupByLibrary.simpleMessage("Book Now"),
         "bookingParkingDate":
             MessageLookupByLibrary.simpleMessage("Book Parking Date"),
         "carLifts": MessageLookupByLibrary.simpleMessage("car lifts ?"),
+        "cash": MessageLookupByLibrary.simpleMessage("Cash"),
+        "choosePayment":
+            MessageLookupByLibrary.simpleMessage("Choose Pay Method"),
         "city": MessageLookupByLibrary.simpleMessage("city"),
         "continueButton": MessageLookupByLibrary.simpleMessage("Continue"),
         "createAccountButton":
@@ -75,6 +79,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "garagesPlaces":
             MessageLookupByLibrary.simpleMessage("Pick Parking spot "),
         "government": MessageLookupByLibrary.simpleMessage("government"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
         "hour": MessageLookupByLibrary.simpleMessage("Hour"),
         "insert": MessageLookupByLibrary.simpleMessage("Insert"),
         "latitudesAdminInterFace":
@@ -91,6 +96,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginScreenPassword": MessageLookupByLibrary.simpleMessage("Password"),
         "longitudesAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Longitude"),
+        "myBookMark": MessageLookupByLibrary.simpleMessage("My Bookmark"),
+        "name": MessageLookupByLibrary.simpleMessage("Name"),
+        "navigateToParkingLot":
+            MessageLookupByLibrary.simpleMessage("Navigate to parking lot"),
+        "ok": MessageLookupByLibrary.simpleMessage("OK"),
         "onBoardingButtonText": MessageLookupByLibrary.simpleMessage("Next"),
         "onBoardingDescription1": MessageLookupByLibrary.simpleMessage(
             "With Easy Parking, you can easily find the closest garage and get simple directions to arrive"),
@@ -116,6 +126,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "parkingDetails":
             MessageLookupByLibrary.simpleMessage("Parking Details"),
         "parkingSpot": MessageLookupByLibrary.simpleMessage("Parking Spot"),
+        "parkingTicket": MessageLookupByLibrary.simpleMessage("Parking Ticket"),
+        "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "proceed": MessageLookupByLibrary.simpleMessage("Proceed"),
         "profileAppBarTitle": MessageLookupByLibrary.simpleMessage("Profile"),
         "profileCenterHelp":
@@ -143,6 +155,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "resetPassScreenTitle":
             MessageLookupByLibrary.simpleMessage("Reset Password"),
         "reviewSummary": MessageLookupByLibrary.simpleMessage("Review Summary"),
+        "saved": MessageLookupByLibrary.simpleMessage("Saved"),
+        "scanCode": MessageLookupByLibrary.simpleMessage(
+            "Scan this on the QR code\nwhen you are in this parking lot"),
+        "search": MessageLookupByLibrary.simpleMessage("Search"),
         "securityCamara":
             MessageLookupByLibrary.simpleMessage("security camara "),
         "serviceProvide":
@@ -152,6 +168,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "support": MessageLookupByLibrary.simpleMessage("24/7 support  "),
         "tax": MessageLookupByLibrary.simpleMessage("Tax( 10% )"),
         "total": MessageLookupByLibrary.simpleMessage("Total"),
+        "vechicle": MessageLookupByLibrary.simpleMessage("Vechicle"),
         "vechicleDetails":
             MessageLookupByLibrary.simpleMessage("Your Vechicle Details"),
         "vechicleDetailsCar": MessageLookupByLibrary.simpleMessage("Car"),
@@ -164,6 +181,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "vechicleDetailsType":
             MessageLookupByLibrary.simpleMessage("Vechicle Type"),
         "vechicleDetailsVan": MessageLookupByLibrary.simpleMessage("Van"),
+        "viewTicket": MessageLookupByLibrary.simpleMessage("View Ticket"),
+        "visa": MessageLookupByLibrary.simpleMessage("Visa"),
+        "vodafone": MessageLookupByLibrary.simpleMessage("Vodafone cash"),
+        "walletDesc": MessageLookupByLibrary.simpleMessage(
+            "you can choose the most suitable \npayment method for payment"),
         "washingCar": MessageLookupByLibrary.simpleMessage("washing car ")
       };
 }

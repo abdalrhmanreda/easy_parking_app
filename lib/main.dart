@@ -56,11 +56,12 @@ class EasyParkingApp extends StatelessWidget {
             providers: [
               BlocProvider(create: (context) => AppCubit()),
               BlocProvider(create: (context) => AdminCubit()),
-              BlocProvider(create: (context) => GarageCubit()),
-              BlocProvider(create: (context) => InsertGarageCubit()),
+              BlocProvider(create: (context) => GarageCubit()..getAllGarage()),
+              BlocProvider(
+                  create: (context) => InsertGarageCubit()..getAllGarage()),
             ],
             child: MaterialApp(
-              initialRoute: RoutePath.garageDetails,
+              initialRoute: RoutePath.layout,
               // home: startWidget,
               onGenerateRoute: generateRoute,
               locale: const Locale('en', 'US'),

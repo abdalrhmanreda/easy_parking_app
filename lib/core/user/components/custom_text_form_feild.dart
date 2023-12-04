@@ -81,6 +81,7 @@ class CustomTextFormField extends StatelessWidget {
       validator: validate,
       maxLines: maxLine,
       minLines: minLine,
+      textAlign: TextAlign.start,
       onTap: onTap,
       enabled: isEnable,
       focusNode: focusNode,

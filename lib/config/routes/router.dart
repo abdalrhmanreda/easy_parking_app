@@ -8,6 +8,8 @@ import 'package:easy_parking_app/ui/user/features/authentication/presentation/sc
 import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/register_screen/presentation/screens/register_screen.dart';
 import 'package:easy_parking_app/ui/user/features/booking/screens/booking_summary_screen.dart';
 import 'package:easy_parking_app/ui/user/features/enable_location/presentation/screens/enable_location_screen.dart';
+import 'package:easy_parking_app/ui/user/features/payment/screens/payment_methods_screen.dart';
+import 'package:easy_parking_app/ui/user/features/ticket/screens/go_to_parking_lot.dart';
 import 'package:easy_parking_app/ui/user/features/user/presentation/screens/profile_screen.dart';
 import 'package:easy_parking_app/ui/user/intro_screens/screens/on_boarding_screen.dart';
 import 'package:easy_parking_app/ui/user/layout/layout_screen.dart';
@@ -19,6 +21,7 @@ import '../../ui/user/features/booking/screens/garage_derails.dart';
 import '../../ui/user/features/booking/screens/select_booking_date_screen.dart';
 import '../../ui/user/features/booking/screens/type_of_vehicle_screen.dart';
 import '../../ui/user/features/maps/home/presentation/screens/home_screen.dart';
+import '../../ui/user/features/ticket/screens/parking_ticket.dart';
 
 Route? generateRoute(RouteSettings settings) {
   switch (settings.name) {
@@ -67,6 +70,15 @@ Route? generateRoute(RouteSettings settings) {
     case RoutePath.bookingSummary:
       return MaterialPageRoute<dynamic>(
           builder: (BuildContext context) => const BookingSummaryScreen());
+    case RoutePath.paymentMethods:
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => const PaymentMethodsScreen());
+    case RoutePath.parkingTicket:
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => const ParkingTicketScreen());
+    case RoutePath.goToParkingLot:
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => const GoToParkingLotScreen());
 
     //----------------------------------- Admin ------------------------------------
     case AdminRoutePath.addGarage:

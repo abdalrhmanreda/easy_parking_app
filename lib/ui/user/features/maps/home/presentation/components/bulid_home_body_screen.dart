@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:iconly/iconly.dart';
 
+import '../../../../../../../generated/l10n.dart';
 import 'bulid_search_bottom_sheet.dart';
 
 Stack buildHomeBodyScreen(BuildContext context, HashSet<Marker> markers,
@@ -40,13 +41,14 @@ Stack buildHomeBodyScreen(BuildContext context, HashSet<Marker> markers,
             ),
             child: CustomTextFormField(
               isPassword: false,
-              label: 'search',
+              label: S.of(context).search,
               type: TextInputType.text,
               isEnable: false,
               border: InputBorder.none,
               prefixIcon: IconlyBroken.search,
               suffixIcon: IconlyBroken.voice,
               suffixPressed: () {},
+              edgeInsetsGeometry: const EdgeInsets.symmetric(vertical: 7),
             ),
           ),
         ),

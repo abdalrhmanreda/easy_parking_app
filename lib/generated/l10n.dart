@@ -979,6 +979,186 @@ class S {
       args: [],
     );
   }
+
+  /// `Search`
+  String get search {
+    return Intl.message(
+      'Search',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Book Mark`
+  String get bookMark {
+    return Intl.message(
+      'Book Mark',
+      name: 'bookMark',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Saved`
+  String get saved {
+    return Intl.message(
+      'Saved',
+      name: 'saved',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Bookmark`
+  String get myBookMark {
+    return Intl.message(
+      'My Bookmark',
+      name: 'myBookMark',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `View Ticket`
+  String get viewTicket {
+    return Intl.message(
+      'View Ticket',
+      name: 'viewTicket',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose Pay Method`
+  String get choosePayment {
+    return Intl.message(
+      'Choose Pay Method',
+      name: 'choosePayment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `you can choose the most suitable \npayment method for payment`
+  String get walletDesc {
+    return Intl.message(
+      'you can choose the most suitable \npayment method for payment',
+      name: 'walletDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Vodafone cash`
+  String get vodafone {
+    return Intl.message(
+      'Vodafone cash',
+      name: 'vodafone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cash`
+  String get cash {
+    return Intl.message(
+      'Cash',
+      name: 'cash',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Visa`
+  String get visa {
+    return Intl.message(
+      'Visa',
+      name: 'visa',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Parking Ticket`
+  String get parkingTicket {
+    return Intl.message(
+      'Parking Ticket',
+      name: 'parkingTicket',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Scan this on the QR code\nwhen you are in this parking lot`
+  String get scanCode {
+    return Intl.message(
+      'Scan this on the QR code\nwhen you are in this parking lot',
+      name: 'scanCode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get name {
+    return Intl.message(
+      'Name',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Vechicle`
+  String get vechicle {
+    return Intl.message(
+      'Vechicle',
+      name: 'vechicle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone`
+  String get phone {
+    return Intl.message(
+      'Phone',
+      name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Navigate to parking lot`
+  String get navigateToParkingLot {
+    return Intl.message(
+      'Navigate to parking lot',
+      name: 'navigateToParkingLot',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OK`
+  String get ok {
+    return Intl.message(
+      'OK',
+      name: 'ok',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

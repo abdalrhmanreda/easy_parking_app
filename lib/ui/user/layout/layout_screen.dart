@@ -1,4 +1,3 @@
-import 'package:custom_navigation_bar/custom_navigation_bar.dart';
 import 'package:easy_parking_app/ui/user/cubit/app_cubit.dart';
 import 'package:easy_parking_app/ui/user/cubit/app_state.dart';
 import 'package:flutter/material.dart';
@@ -15,18 +14,19 @@ class LayoutScreen extends StatelessWidget {
       },
       builder: (context, state) {
         return Scaffold(
-          bottomNavigationBar: CustomNavigationBar(
+          bottomNavigationBar: BottomNavigationBar(
             currentIndex: AppCubit.get(context).currentIndex,
             backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             elevation: 20,
             onTap: (index) {
               AppCubit.get(context).changeNavBar(index);
             },
-            borderRadius: const Radius.circular(15),
-            items: AppCubit.get(context)
-                .bottomNavigationBarItems
-                .map((e) => CustomNavigationBarItem(icon: e))
-                .toList(),
+            type: BottomNavigationBarType.fixed,
+            selectedLabelStyle:
+                Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 12),
+            unselectedLabelStyle:
+                Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 12),
+            items: AppCubit.get(context).bottomNavigationBarItems(context),
           ),
           body:
               AppCubit.get(context).screens[AppCubit.get(context).currentIndex],

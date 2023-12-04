@@ -12,6 +12,7 @@ class Assets {
   static const String garageCarsEnterCar = 'assets/garage_cars/enter_car.png';
   static const String garageCarsLeftCar = 'assets/garage_cars/left_car.png';
   static const String garageCarsRightCar = 'assets/garage_cars/right_car.png';
+  static const String iconsCar = 'assets/icons/car.png';
   static const String locationDataLocations =
       'assets/location_data/locations.json';
   static const String onBoardingParking1 =
@@ -30,4 +31,7 @@ class Assets {
   static const String vechicleTypeMotorcycle =
       'assets/vechicle_type/motorcycle.png';
   static const String vechicleTypeVan = 'assets/vechicle_type/van.png';
+  static const String walletMoney = 'assets/wallet/money.png';
+  static const String walletVisa = 'assets/wallet/visa.png';
+  static const String walletVodafone = 'assets/wallet/vodafone.png';
 }

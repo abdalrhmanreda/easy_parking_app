@@ -1,6 +1,3 @@
-import 'package:easy_parking_app/config/routes/routes_path.dart';
-import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
-import 'package:easy_parking_app/core/user/components/flutter_toast.dart';
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/components/add_garage_details/select_location.dart';
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/controller/insert_garage_cubit.dart';
 import 'package:flutter/material.dart';
@@ -40,9 +37,12 @@ class AddGarageDetailsScreenBody extends StatelessWidget {
           physics: const BouncingScrollPhysics(),
           child: BlocConsumer<InsertGarageCubit, InsertGarageStates>(
             listener: (context, state) {
-              if (state is FailureState) {
-                showToast(message: state.error, state: ToastState.ERROR);
-              }
+              // if (state is FailureState) {
+              //   showToast(message: state.error, state: ToastState.ERROR);
+              // } else if (state is AddGarageSuccessState) {
+              //   CustomNavigation.navigateByNamedTo(
+              //       context, AdminRoutePath.garageFeature);
+              // }
               // TODO: implement listener
             },
             builder: (context, state) {
@@ -96,19 +96,17 @@ class AddGarageDetailsScreenBody extends StatelessWidget {
                   CustomButton(
                     onPressed: () {
                       if (formKey.currentState!.validate()) {
-                        // InsertGarageCubit.get(context).addGarage(
-                        //   garageName: garageNameController.text,
-                        //   location: 'Cairo',
-                        //   numFloor:
-                        //       InsertGarageCubit.get(context).selectedValue,
-                        //   numOfSpace: int.parse(numberOfSpotsController.text),
-                        //   lat: latController.text,
-                        //   lon: lonController.text,
-                        //   description: descController.text,
-                        //   price: '30 \$',
-                        // );
-                        CustomNavigation.navigateByNamedTo(
-                            context, AdminRoutePath.garageFeature);
+                        InsertGarageCubit.get(context).addGarage(
+                          garageName: garageNameController.text,
+                          location: 'Cairo',
+                          numFloor:
+                              InsertGarageCubit.get(context).selectedValue,
+                          numOfSpace: int.parse(numberOfSpotsController.text),
+                          lat: latController.text,
+                          lon: lonController.text,
+                          description: descController.text,
+                          price: '30 \$',
+                        );
                       }
                     },
                     text: S.of(context).onBoardingButtonText,

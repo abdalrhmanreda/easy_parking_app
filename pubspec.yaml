@@ -45,7 +45,7 @@ dependencies:
   bloc: ^8.1.2
   dio: ^5.0.1
   conditional_builder_null_safety: ^0.0.6
-  fluttertoast: ^8.2.1
+#  fluttertoast: ^8.2.1
   custom_navigation_bar: ^0.8.2
   animated_text_kit: ^4.2.2
   smooth_page_indicator: ^1.1.0
@@ -72,6 +72,8 @@ dependencies:
   hive_flutter: ^1.1.0
   table_calendar: ^3.0.9
   rate: ^0.0.2
+  modal_bottom_sheet: ^2.1.2
+  qr_flutter: ^4.1.0
 
 dev_dependencies:
   flutter_test:
@@ -130,6 +132,8 @@ flutter:
     - assets/vechicle_type/
     - assets/location_data/
     - assets/garage_cars/
+    - assets/icons/
+    - assets/wallet/
 
 flutter_intl:
   enabled: true

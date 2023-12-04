@@ -1,12 +1,12 @@
 import 'package:easy_parking_app/ui/user/cubit/app_state.dart';
 import 'package:easy_parking_app/ui/user/features/bookmark/presentation/screens/bookmark_screen.dart';
-import 'package:easy_parking_app/ui/user/features/saved/presentation/screens/saved_screen.dart';
 import 'package:easy_parking_app/ui/user/features/user/presentation/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:iconly/iconly.dart';
 
+import '../../../generated/l10n.dart';
 import '../features/maps/home/presentation/screens/home_screen.dart';
 
 class AppCubit extends Cubit<AppStates> {
@@ -19,16 +19,34 @@ class AppCubit extends Cubit<AppStates> {
     emit(ChangeNavBarState());
   }
 
-  List<Widget> bottomNavigationBarItems = const [
-    Icon(IconlyBroken.home),
-    Icon(IconlyBroken.bookmark),
-    Icon(IconlyBroken.wallet),
-    Icon(IconlyBroken.profile),
-  ];
+  List<BottomNavigationBarItem> bottomNavigationBarItems(context) => [
+        BottomNavigationBarItem(
+          icon: const Padding(
+            padding: EdgeInsets.all(3.0),
+            child: Icon(
+              IconlyBroken.home,
+            ),
+          ),
+          label: S.of(context).home,
+        ),
+        BottomNavigationBarItem(
+          icon: const Padding(
+            padding: EdgeInsets.all(3.0),
+            child: Icon(IconlyBroken.bookmark),
+          ),
+          label: S.of(context).bookMark,
+        ),
+        BottomNavigationBarItem(
+          icon: const Padding(
+            padding: EdgeInsets.all(3.0),
+            child: Icon(IconlyBroken.profile),
+          ),
+          label: S.of(context).profileAppBarTitle,
+        ),
+      ];
 
   List<Widget> screens = const [
     HomeScreen(),
-    SavedScreen(),
     BookMarkScreen(),
     ProfileScreen(),
   ];

@@ -15,6 +15,9 @@ class RoutePath {
   static const String selectBookingDate = '/selectBookingDateScreen';
   static const String typeOfVehicle = '/typeOfVehicleScreen';
   static const String bookingSummary = '/bookingSummaryScreen';
+  static const String paymentMethods = '/paymentMethodsScreen';
+  static const String parkingTicket = '/parkingTicketScreen';
+  static const String goToParkingLot = '/goToParkingLotScreen';
 }
 
 class AdminRoutePath {
