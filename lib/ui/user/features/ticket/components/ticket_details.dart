@@ -17,7 +17,7 @@ class TicketDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        margin: const EdgeInsets.only(bottom: 50),
+        margin: const EdgeInsets.only(bottom: 30),
         decoration: BoxDecoration(
           color: const Color(AppColors.kPrimaryColor),
           borderRadius: BorderRadius.circular(15),
@@ -25,6 +25,7 @@ class TicketDetails extends StatelessWidget {
         child: Column(
           children: [
             CustomWhiteContainer(
+              containerColor: AppColors.kWhiteColor,
               widget: Column(
                 children: [
                   Text(
@@ -48,6 +49,7 @@ class TicketDetails extends StatelessWidget {
               dashColor: const Color(AppColors.kLightGreyColor),
             ),
             CustomWhiteContainer(
+              containerColor: AppColors.kWhiteColor,
               widget: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

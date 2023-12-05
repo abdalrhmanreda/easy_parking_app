@@ -8,7 +8,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../../generated/l10n.dart';
-import '../components/garage_feature/page_view_for_garage.dart';
 import '../components/garage_feature/upload_images.dart';
 
 class GarageFeatureScreen extends StatefulWidget {
@@ -45,11 +44,11 @@ class _GarageFeatureScreenState extends State<GarageFeatureScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        if (InsertGarageCubit.get(context).images.isNotEmpty)
-                          buildPageViewForGarage(
-                            context: context,
-                            images: InsertGarageCubit.get(context).images,
-                          ),
+                        // if (InsertGarageCubit.get(context).images.isNotEmpty)
+                        // buildPageViewForGarage(
+                        //   context: context,
+                        //   images: InsertGarageCubit.get(context).images,
+                        // ),
                         uploadIcon(context),
                         Text(
                           S.of(context).garageImagesAdminInterFace,

@@ -10,6 +10,7 @@ import 'package:easy_parking_app/ui/user/features/booking/screens/booking_summar
 import 'package:easy_parking_app/ui/user/features/enable_location/presentation/screens/enable_location_screen.dart';
 import 'package:easy_parking_app/ui/user/features/payment/screens/payment_methods_screen.dart';
 import 'package:easy_parking_app/ui/user/features/ticket/screens/go_to_parking_lot.dart';
+import 'package:easy_parking_app/ui/user/features/ticket/screens/parking_timer.dart';
 import 'package:easy_parking_app/ui/user/features/user/presentation/screens/profile_screen.dart';
 import 'package:easy_parking_app/ui/user/intro_screens/screens/on_boarding_screen.dart';
 import 'package:easy_parking_app/ui/user/layout/layout_screen.dart';
@@ -79,6 +80,9 @@ Route? generateRoute(RouteSettings settings) {
     case RoutePath.goToParkingLot:
       return MaterialPageRoute<dynamic>(
           builder: (BuildContext context) => const GoToParkingLotScreen());
+    case RoutePath.parkingTimer:
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => const ParkingTimerScreen());
 
     //----------------------------------- Admin ------------------------------------
     case AdminRoutePath.addGarage:

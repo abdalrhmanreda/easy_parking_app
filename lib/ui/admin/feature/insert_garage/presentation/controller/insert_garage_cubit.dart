@@ -5,7 +5,8 @@ import 'package:easy_parking_app/core/user/api/dio_helper.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:multi_image_picker/multi_image_picker.dart';
+
+// import 'package:multiple_images_picker/multiple_images_picker.dart';
 
 import '../../../../../../core/admin/constant/constants.dart';
 import '../../../../../../generated/l10n.dart';
@@ -36,7 +37,7 @@ class InsertGarageCubit extends Cubit<InsertGarageStates> {
             value: false),
       ];
 
-  List<Asset> images = <Asset>[];
+  // List<Asset> images = <Asset>[];
 
   File? garageImage;
   final picker = ImagePicker();
@@ -52,27 +53,27 @@ class InsertGarageCubit extends Cubit<InsertGarageStates> {
     }
   }
 
-  void loadAssets() {
-    emit(LoadingState());
-    MultiImagePicker.pickImages(
-      maxImages: 300,
-      enableCamera: true,
-      selectedAssets: images,
-      materialOptions: const MaterialOptions(
-        actionBarColor: "#a8a8a8",
-        actionBarTitle: "choose photo",
-        allViewTitle: "All Photos",
-        useDetailsView: false,
-        selectCircleStrokeColor: "#000000",
-      ),
-    ).then((value) {
-      images = value;
-      emit(GetPhotoForGarageSuccessState());
-    }).catchError((error) {
-      debugPrint(error.toString());
-      emit(FailureState(error: error.toString()));
-    });
-  }
+  // void loadAssets() {
+  //   emit(LoadingState());
+  //   MultipleImagesPicker.pickImages(
+  //     maxImages: 300,
+  //     enableCamera: true,
+  //     selectedAssets: images,
+  //     materialOptions: const MaterialOptions(
+  //       actionBarColor: "#a8a8a8",
+  //       actionBarTitle: "choose photo",
+  //       allViewTitle: "All Photos",
+  //       useDetailsView: false,
+  //       selectCircleStrokeColor: "#000000",
+  //     ),
+  //   ).then((value) {
+  //     images = value;
+  //     emit(GetPhotoForGarageSuccessState());
+  //   }).catchError((error) {
+  //     debugPrint(error.toString());
+  //     emit(FailureState(error: error.toString()));
+  //   });
+  // }
 
   void updateFeatureValue(int index, bool newValue, context) {
     List<FeatureModel> updatedFeatures = List.from(features(context));

@@ -39,31 +39,33 @@ class BookingSummaryScreenBody extends StatelessWidget {
     return Column(
       children: [
         CustomWhiteContainer(
+            containerColor: AppColors.kWhiteColor,
             widget: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            children: items
-                .map(
-                  (e) => ListTileItem(
-                    title: e.title,
-                    tailing: e.tailing,
-                  ),
-                )
-                .toList(),
-          ),
-        )),
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: items
+                    .map(
+                      (e) => ListTileItem(
+                        title: e.title,
+                        tailing: e.tailing,
+                      ),
+                    )
+                    .toList(),
+              ),
+            )),
         const Gap(25),
         CustomWhiteContainer(
+            containerColor: AppColors.kWhiteColor,
             widget: Column(
-          children: items2
-              .map(
-                (e) => ListTileItem(
-                  title: e.title,
-                  tailing: e.tailing,
-                ),
-              )
-              .toList(),
-        )),
+              children: items2
+                  .map(
+                    (e) => ListTileItem(
+                      title: e.title,
+                      tailing: e.tailing,
+                    ),
+                  )
+                  .toList(),
+            )),
         const Gap(25),
         CustomButton(
           onPressed: () {

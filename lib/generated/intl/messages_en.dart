@@ -58,6 +58,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "endTime": MessageLookupByLibrary.simpleMessage("End Time"),
         "enter": MessageLookupByLibrary.simpleMessage("Entry"),
         "exit": MessageLookupByLibrary.simpleMessage("Exit"),
+        "extendParkingTime":
+            MessageLookupByLibrary.simpleMessage("Extend Parking Time"),
         "forgetPassButton": MessageLookupByLibrary.simpleMessage("Submit"),
         "forgetScreenDescription": MessageLookupByLibrary.simpleMessage(
             "Don\'t worry it happens. Please enter email address associated with your account"),
@@ -127,6 +129,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Parking Details"),
         "parkingSpot": MessageLookupByLibrary.simpleMessage("Parking Spot"),
         "parkingTicket": MessageLookupByLibrary.simpleMessage("Parking Ticket"),
+        "parkingTimer": MessageLookupByLibrary.simpleMessage("Parking Timer"),
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "proceed": MessageLookupByLibrary.simpleMessage("Proceed"),
         "profileAppBarTitle": MessageLookupByLibrary.simpleMessage("Profile"),

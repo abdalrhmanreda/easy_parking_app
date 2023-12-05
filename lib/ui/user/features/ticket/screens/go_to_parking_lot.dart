@@ -1,3 +1,6 @@
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:easy_parking_app/core/user/constant/app_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -17,14 +20,17 @@ class GoToParkingLotScreen extends StatelessWidget {
       body: Stack(
         alignment: Alignment.bottomCenter,
         children: [
-          Image.network(
-            image,
+          CachedNetworkImage(
+            imageUrl: image,
             width: AppConstant.deviceWidth(context),
             height: AppConstant.deviceHeight(context),
             fit: BoxFit.cover,
           ),
           CustomButton(
-            onPressed: () {},
+            onPressed: () {
+              CustomNavigation.navigateByNamedTo(
+                  context, RoutePath.parkingTimer);
+            },
             text: S.of(context).ok,
             height: 37.h,
             width: MediaQuery.of(context).size.width,

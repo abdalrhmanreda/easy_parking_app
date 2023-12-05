@@ -18,6 +18,7 @@ class RoutePath {
   static const String paymentMethods = '/paymentMethodsScreen';
   static const String parkingTicket = '/parkingTicketScreen';
   static const String goToParkingLot = '/goToParkingLotScreen';
+  static const String parkingTimer = '/parkingTimerScreen';
 }
 
 class AdminRoutePath {

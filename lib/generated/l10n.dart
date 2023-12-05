@@ -1159,6 +1159,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Parking Timer`
+  String get parkingTimer {
+    return Intl.message(
+      'Parking Timer',
+      name: 'parkingTimer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Extend Parking Time`
+  String get extendParkingTime {
+    return Intl.message(
+      'Extend Parking Time',
+      name: 'extendParkingTime',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

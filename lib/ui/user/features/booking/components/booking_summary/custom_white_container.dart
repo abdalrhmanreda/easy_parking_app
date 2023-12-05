@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../config/colors/app_colors.dart';
 import '../../../../../../core/user/constant/app_constant.dart';
 
 class CustomWhiteContainer extends StatelessWidget {
-  const CustomWhiteContainer({super.key, required this.widget});
+  const CustomWhiteContainer(
+      {super.key, required this.widget, required this.containerColor});
   final Widget widget;
+  final int containerColor;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class CustomWhiteContainer extends StatelessWidget {
       ),
       width: AppConstant.deviceWidth(context),
       decoration: BoxDecoration(
-        color: const Color(AppColors.kWhiteColor),
+        color: Color(containerColor),
         borderRadius: BorderRadius.circular(10),
       ),
       child: widget,

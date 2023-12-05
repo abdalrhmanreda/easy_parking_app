@@ -1,6 +1,7 @@
 import 'package:easy_parking_app/config/routes/routes_path.dart';
 import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:easy_parking_app/core/user/components/custom_text_form_feild.dart';
+import 'package:easy_parking_app/core/user/constant/app_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:iconly/iconly.dart';
@@ -11,18 +12,19 @@ import '../../../../bookmark/presentation/components/bulid_book_mark_item.dart';
 void bulidSearchBottomSheet(
     BuildContext context, TextEditingController searchController) {
   showModalBottomSheet(
-    enableDrag: true,
+    isScrollControlled: true,
+    clipBehavior: Clip.antiAliasWithSaveLayer,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.only(
-        topRight: Radius.circular(15),
-        topLeft: Radius.circular(15),
+        topRight: Radius.circular(10),
+        topLeft: Radius.circular(10),
       ),
     ),
     context: context,
     builder: (context) => Container(
-      padding: const EdgeInsets.all(15),
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height / 1.5,
+      padding: const EdgeInsets.all(10),
+      width: AppConstant.deviceWidth(context),
+      height: AppConstant.deviceHeight(context) * (3 / 4),
       child: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         child: Column(
@@ -38,6 +40,7 @@ void bulidSearchBottomSheet(
               suffixIcon: IconlyBroken.voice,
               suffixPressed: () {},
               controller: searchController,
+              edgeInsetsGeometry: const EdgeInsets.symmetric(vertical: 10),
             ),
             const Gap(20),
             ListView.builder(

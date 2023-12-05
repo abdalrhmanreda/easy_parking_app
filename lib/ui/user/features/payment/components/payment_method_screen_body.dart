@@ -2,6 +2,7 @@ import 'package:easy_parking_app/ui/user/features/payment/components/payment_met
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../../config/colors/app_colors.dart';
 import '../../../../../core/user/constant/app_constant.dart';
 import '../../../../../generated/assets.dart';
 import '../../../../../generated/l10n.dart';
@@ -13,6 +14,7 @@ class PaymentMethodScreenBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomWhiteContainer(
+      containerColor: AppColors.kWhiteColor,
       widget: SizedBox(
         height: AppConstant.deviceHeight(context) / 1.4,
         child: Padding(

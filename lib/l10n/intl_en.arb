@@ -110,7 +110,9 @@
   "vechicle": "Vechicle",
   "phone": "Phone" ,
   "navigateToParkingLot":"Navigate to parking lot" ,
-  "ok" : "OK"
+  "ok" : "OK" ,
+  "parkingTimer": "Parking Timer" ,
+  "extendParkingTime": "Extend Parking Time"
 
 
 

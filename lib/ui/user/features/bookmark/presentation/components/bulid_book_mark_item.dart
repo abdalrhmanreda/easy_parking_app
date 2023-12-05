@@ -54,11 +54,11 @@ class BookMarkItem extends StatelessWidget {
                   child: Image.asset(
                     Assets.testPCPPhoto3sizedforWeb,
                     fit: BoxFit.cover,
-                    width: MediaQuery.of(context).size.width / 2.7,
+                    width: MediaQuery.of(context).size.width / 2.8,
                     height: MediaQuery.of(context).size.height / 7,
                   ),
                 ),
-                const Gap(20),
+                const Gap(15),
                 bulidDetailsOfGarageItem(
                   context: context,
                   garageName: garageName,

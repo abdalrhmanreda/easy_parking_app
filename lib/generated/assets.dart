@@ -15,6 +15,7 @@ class Assets {
   static const String iconsCar = 'assets/icons/car.png';
   static const String locationDataLocations =
       'assets/location_data/locations.json';
+  static const String mapsStyleMapStyle = 'assets/maps_style/map_style.json';
   static const String onBoardingParking1 =
       'assets/images/on_boarding/parking1.svg';
   static const String onBoardingParking2 =

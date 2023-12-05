@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ListTileItem extends StatelessWidget {
   const ListTileItem({super.key, required this.title, required this.tailing});
@@ -8,8 +9,16 @@ class ListTileItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text(title),
-      trailing: Text(tailing),
+      title: Text(
+        title,
+        style:
+            Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 14.sp),
+      ),
+      trailing: Text(
+        tailing,
+        style:
+            Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 14.sp),
+      ),
     );
   }
 }
