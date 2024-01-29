@@ -5,6 +5,7 @@ import 'package:iconly/iconly.dart';
 
 import '../../../../../../generated/l10n.dart';
 import '../model/profile_item.dart';
+import 'language_dialog.dart';
 
 List<ProfileItem> items(context) => [
       ProfileItem(
@@ -20,12 +21,16 @@ List<ProfileItem> items(context) => [
       ProfileItem(
         icon: IconlyBroken.notification,
         title: S.of(context).profileNotification,
-        onTap: () {},
+        onTap: () {
+          CustomNavigation.navigateByNamedTo(context, RoutePath.notification);
+        },
       ),
       ProfileItem(
         icon: Icons.translate_outlined,
         title: S.of(context).profileLanguage,
-        onTap: () {},
+        onTap: () {
+          showLanguageDialog(context);
+        },
       ),
       ProfileItem(
         icon: Icons.help_outline_sharp,

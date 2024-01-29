@@ -65,7 +65,7 @@ class EasyParkingApp extends StatelessWidget {
                   create: (context) => InsertGarageCubit()..getAllGarage()),
             ],
             child: MaterialApp(
-              initialRoute: RoutePath.login,
+              initialRoute: RoutePath.enableLocation,
               // home: startWidget,
               onGenerateRoute: generateRoute,
               locale: const Locale('en', 'US'),

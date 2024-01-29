@@ -20,6 +20,7 @@ class RoutePath {
   static const String goToParkingLot = '/goToParkingLotScreen';
   static const String parkingTimer = '/parkingTimerScreen';
   static const String helpCenter = '/helpCenterScreen';
+  static const String notification = '/notificationScreen';
 }
 
 class AdminRoutePath {
