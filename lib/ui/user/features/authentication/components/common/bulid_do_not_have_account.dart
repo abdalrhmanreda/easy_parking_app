@@ -3,7 +3,7 @@ import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/user/components/custom_text_button.dart';
+import '../../../../../../../core/user/components/custom_text_button.dart';
 
 Row bulidDoNotHaveAccountAndIfHaveAccount({
   required BuildContext context,

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../../../../config/colors/app_colors.dart';
-import '../../../../../../core/user/components/custom_button.dart';
-import '../../../../../../core/user/components/custom_text_form_feild.dart';
+import '../../../../../../../config/colors/app_colors.dart';
+import '../../../../../../../core/user/components/custom_button.dart';
+import '../../../../../../../core/user/components/custom_text_form_feild.dart';
 import 'build_texts.dart';
 
 class CommonScreen extends StatelessWidget {

@@ -1,5 +1,6 @@
-import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/components/otp_screen_body.dart';
 import 'package:flutter/material.dart';
+
+import '../../components/forget_password/otp_screen_body.dart';
 
 class OTPScreen extends StatelessWidget {
   const OTPScreen({super.key});

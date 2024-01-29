@@ -3,9 +3,9 @@ import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
-import '../../../../../../../../generated/assets.dart';
-import '../../../../../../../../generated/l10n.dart';
-import '../../../components/bulid_common_screen.dart';
+import '../../../../../../../generated/assets.dart';
+import '../../../../../../../generated/l10n.dart';
+import '../common/bulid_common_screen.dart';
 
 class OTPScreenBody extends StatelessWidget {
   const OTPScreenBody({super.key});

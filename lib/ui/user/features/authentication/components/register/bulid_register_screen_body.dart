@@ -3,13 +3,14 @@ import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:gap/gap.dart';
 
-import '../../../../../../../../../config/colors/app_colors.dart';
-import '../../../../../../../../../core/user/components/custom_button.dart';
-import '../../../../../../../../../generated/assets.dart';
-import '../../../../../../../../../generated/l10n.dart';
-import '../../../../components/bulid_do_not_have_account.dart';
-import '../../../login_screen/presentation/components/bulid_login_with_google_container.dart';
+import '../../../../../../../config/colors/app_colors.dart';
+import '../../../../../../../core/user/components/custom_button.dart';
+import '../../../../../../../generated/assets.dart';
+import '../../../../../../../generated/l10n.dart';
+import '../common/bulid_do_not_have_account.dart';
+import '../login/bulid_login_with_google_container.dart';
 import 'bulid_text_form_feild_register_screen.dart';
 
 Padding buildRegisterScreenBody(
@@ -30,6 +31,17 @@ Padding buildRegisterScreenBody(
             Assets.authRegister,
             height: MediaQuery.of(context).size.height / 3,
           ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              S.of(context).signUpScreenTitle,
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyMedium!
+                  .copyWith(fontWeight: FontWeight.bold, fontSize: 25.sp),
+            ),
+          ),
+          Gap(15.h),
           bulidTextFormFeildRegisterScreen(context, nameController,
               emailController, phoneController, passController),
           bulidLoginWithGoogle(context: context, onTap: () {}),

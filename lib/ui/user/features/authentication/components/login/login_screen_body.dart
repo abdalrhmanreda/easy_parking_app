@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../components/bulid_login_screen_body.dart';
+import '../common/bulid_login_screen_body.dart';
 
 class LoginScreenBody extends StatelessWidget {
   const LoginScreenBody({super.key});
@@ -9,6 +9,7 @@ class LoginScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     var emailController = TextEditingController();
     var passController = TextEditingController();
-    return buildLoginScreenBody(context, emailController, passController);
+    return BuildLoginScreenBody(
+        emailController: emailController, passController: passController);
   }
 }

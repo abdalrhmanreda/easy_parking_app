@@ -14,6 +14,8 @@
   "loginScreenPassword": "Password"  ,
   "loginScreenForgetPassword": "Forget Password ?"   ,
   "loginScreenButton": "Login"   ,
+  "signUpScreenTitle": "Sign Up" ,
+  "signInScreenTitle": "Sign in" ,
   "loginScreenLoginWithGoogleButton": "Login With Google" ,
   "forgetScreenDescription": "Don't worry it happens. Please enter email address associated with your account" ,
   "forgetPassButton": "Submit" ,

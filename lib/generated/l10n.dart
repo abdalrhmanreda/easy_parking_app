@@ -200,6 +200,26 @@ class S {
     );
   }
 
+  /// `Sign Up`
+  String get signUpScreenTitle {
+    return Intl.message(
+      'Sign Up',
+      name: 'signUpScreenTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign in`
+  String get signInScreenTitle {
+    return Intl.message(
+      'Sign in',
+      name: 'signInScreenTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Login With Google`
   String get loginScreenLoginWithGoogleButton {
     return Intl.message(
