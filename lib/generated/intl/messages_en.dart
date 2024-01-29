@@ -175,6 +175,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "send": MessageLookupByLibrary.simpleMessage("Send"),
         "serviceProvide":
             MessageLookupByLibrary.simpleMessage("Service we provide"),
+        "signInScreenTitle": MessageLookupByLibrary.simpleMessage("Sign in"),
+        "signUpScreenTitle": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "startHour": MessageLookupByLibrary.simpleMessage("Start Hour"),
         "startTime": MessageLookupByLibrary.simpleMessage("Start Time"),
         "support": MessageLookupByLibrary.simpleMessage("24/7 support  "),

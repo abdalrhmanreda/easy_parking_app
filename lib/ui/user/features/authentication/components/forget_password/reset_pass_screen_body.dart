@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
-import '../../../../../../../../generated/assets.dart';
-import '../../../../../../../../generated/l10n.dart';
-import '../../../components/bulid_common_screen.dart';
+import '../../../../../../../generated/assets.dart';
+import '../../../../../../../generated/l10n.dart';
+import '../common/bulid_common_screen.dart';
 
 class ResetPassScreenBody extends StatelessWidget {
   const ResetPassScreenBody({super.key});

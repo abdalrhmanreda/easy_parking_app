@@ -1,5 +1,6 @@
-import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/forget_pass_screen/components/reset_pass_screen_body.dart';
 import 'package:flutter/material.dart';
+
+import '../../components/forget_password/reset_pass_screen_body.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
   const ResetPasswordScreen({super.key});

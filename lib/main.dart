@@ -13,7 +13,7 @@ import 'package:easy_parking_app/ui/admin/feature/garages/controller/garage_cubi
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/controller/insert_garage_cubit.dart';
 import 'package:easy_parking_app/ui/user/cubit/app_cubit.dart';
 import 'package:easy_parking_app/ui/user/cubit/observer/blocObserver.dart';
-import 'package:easy_parking_app/ui/user/features/authentication/presentation/screens/login_screen/presentation/screens/login_screen.dart';
+import 'package:easy_parking_app/ui/user/features/authentication/screens/login_screen/login_screen.dart';
 import 'package:easy_parking_app/ui/user/features/enable_location/presentation/controller/enable_location_cubit.dart';
 import 'package:easy_parking_app/ui/user/intro_screens/screens/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
@@ -65,7 +65,7 @@ class EasyParkingApp extends StatelessWidget {
                   create: (context) => InsertGarageCubit()..getAllGarage()),
             ],
             child: MaterialApp(
-              initialRoute: RoutePath.enableLocation,
+              initialRoute: RoutePath.login,
               // home: startWidget,
               onGenerateRoute: generateRoute,
               locale: const Locale('en', 'US'),

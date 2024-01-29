@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:gap/gap.dart';
 import 'package:icons_plus/icons_plus.dart';
 
 import '../../../../../../../../../generated/l10n.dart';
@@ -11,8 +13,8 @@ InkWell bulidLoginWithGoogle({
     onTap: onTap,
     child: Container(
       padding: EdgeInsets.symmetric(
-        horizontal: MediaQuery.of(context).size.width / 25,
-        vertical: MediaQuery.of(context).size.height / 100,
+        horizontal: 25.w,
+        vertical: 5.h,
       ),
       decoration: BoxDecoration(
         // color: const Color(AppColors.kLoginWithGoogleColor),
@@ -25,9 +27,7 @@ InkWell bulidLoginWithGoogle({
             Logos.google,
             size: MediaQuery.of(context).size.height / 25,
           ),
-          SizedBox(
-            width: MediaQuery.of(context).size.width / 25,
-          ),
+          Gap(15.w),
           Text(
             S.of(context).loginScreenLoginWithGoogleButton,
             style: Theme.of(context).textTheme.bodyMedium!.copyWith(

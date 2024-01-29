@@ -2,6 +2,7 @@ import 'package:easy_parking_app/config/routes/routes_path.dart';
 import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:gap/gap.dart';
 
 import '../../../../../../../../../config/colors/app_colors.dart';
 import '../../../../../../../../../core/user/components/custom_button.dart';
@@ -18,9 +19,7 @@ Column buildLoginButtons(
           CustomNavigation.navigateByNamedTo(context, RoutePath.forgetPass);
         },
       ),
-      SizedBox(
-        height: MediaQuery.of(context).size.height / 50,
-      ),
+      Gap(15.h),
       CustomButton(
         onPressed: () {
           if (controller.text == 'abdo@gmail.com') {
@@ -36,9 +35,6 @@ Column buildLoginButtons(
         color: AppColors.kPrimaryColor,
         textColor: 0xffffffff,
         fontSize: 14.sp,
-      ),
-      SizedBox(
-        height: MediaQuery.of(context).size.height / 50,
       ),
     ],
   );
