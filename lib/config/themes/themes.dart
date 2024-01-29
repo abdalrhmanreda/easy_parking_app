@@ -8,6 +8,7 @@ import '../../core/user/methods/get_current_local.dart';
 
 class Style {
   static final ThemeData lightTheme = ThemeData(
+    useMaterial3: false,
     scaffoldBackgroundColor: const Color(AppColors.kScaffoldColor),
     colorScheme: ThemeData()
         .colorScheme

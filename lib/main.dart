@@ -35,14 +35,16 @@ void main() async {
   Widget widget;
   dynamic onBoarding = HiveCache.getData(key: 'onBoarding');
   onBoarding ? widget = const LoginScreen() : widget = const OnBoardingScreen();
-  print(onBoarding);
   runApp(EasyParkingApp(
     startWidget: widget,
   ));
 }
 
 class EasyParkingApp extends StatelessWidget {
-  const EasyParkingApp({super.key, required this.startWidget});
+  const EasyParkingApp({
+    super.key,
+    required this.startWidget,
+  });
   final Widget startWidget;
 
   @override

@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "NumberOfFloorAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Number of floors"),
+        "about": MessageLookupByLibrary.simpleMessage("About Us"),
         "address": MessageLookupByLibrary.simpleMessage("Address"),
         "amount": MessageLookupByLibrary.simpleMessage("Amount"),
         "bookMark": MessageLookupByLibrary.simpleMessage("Book Mark"),
@@ -32,9 +33,11 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Book Parking Date"),
         "carLifts": MessageLookupByLibrary.simpleMessage("car lifts ?"),
         "cash": MessageLookupByLibrary.simpleMessage("Cash"),
+        "centerHelpSupport": MessageLookupByLibrary.simpleMessage("FAQ"),
         "choosePayment":
             MessageLookupByLibrary.simpleMessage("Choose Pay Method"),
         "city": MessageLookupByLibrary.simpleMessage("city"),
+        "contact": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "continueButton": MessageLookupByLibrary.simpleMessage("Continue"),
         "createAccountButton":
             MessageLookupByLibrary.simpleMessage("create account"),
@@ -60,6 +63,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "exit": MessageLookupByLibrary.simpleMessage("Exit"),
         "extendParkingTime":
             MessageLookupByLibrary.simpleMessage("Extend Parking Time"),
+        "facebook": MessageLookupByLibrary.simpleMessage("Facebook"),
         "forgetPassButton": MessageLookupByLibrary.simpleMessage("Submit"),
         "forgetScreenDescription": MessageLookupByLibrary.simpleMessage(
             "Don\'t worry it happens. Please enter email address associated with your account"),
@@ -80,12 +84,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "garages": MessageLookupByLibrary.simpleMessage("Garages"),
         "garagesPlaces":
             MessageLookupByLibrary.simpleMessage("Pick Parking spot "),
+        "gmail": MessageLookupByLibrary.simpleMessage("Gmail"),
         "government": MessageLookupByLibrary.simpleMessage("government"),
+        "help": MessageLookupByLibrary.simpleMessage("Help & Support"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "hour": MessageLookupByLibrary.simpleMessage("Hour"),
         "insert": MessageLookupByLibrary.simpleMessage("Insert"),
+        "instagram": MessageLookupByLibrary.simpleMessage("Instagram"),
         "latitudesAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Latitude"),
+        "linkedIn": MessageLookupByLibrary.simpleMessage("LinkedIn"),
         "locationAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Location"),
         "loginScreenButton": MessageLookupByLibrary.simpleMessage("Login"),
@@ -164,6 +172,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "search": MessageLookupByLibrary.simpleMessage("Search"),
         "securityCamara":
             MessageLookupByLibrary.simpleMessage("security camara "),
+        "send": MessageLookupByLibrary.simpleMessage("Send"),
         "serviceProvide":
             MessageLookupByLibrary.simpleMessage("Service we provide"),
         "startHour": MessageLookupByLibrary.simpleMessage("Start Hour"),
@@ -171,6 +180,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "support": MessageLookupByLibrary.simpleMessage("24/7 support  "),
         "tax": MessageLookupByLibrary.simpleMessage("Tax( 10% )"),
         "total": MessageLookupByLibrary.simpleMessage("Total"),
+        "twitter": MessageLookupByLibrary.simpleMessage("Twitter"),
         "vechicle": MessageLookupByLibrary.simpleMessage("Vechicle"),
         "vechicleDetails":
             MessageLookupByLibrary.simpleMessage("Your Vechicle Details"),

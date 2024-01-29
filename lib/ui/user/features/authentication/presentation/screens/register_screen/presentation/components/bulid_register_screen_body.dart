@@ -23,36 +23,38 @@ Padding buildRegisterScreenBody(
     padding: EdgeInsets.symmetric(
       horizontal: MediaQuery.of(context).size.width / 25,
     ),
-    child: Column(
-      children: [
-        SvgPicture.asset(
-          Assets.authRegister,
-          height: MediaQuery.of(context).size.height / 3,
-        ),
-        bulidTextFormFeildRegisterScreen(context, nameController,
-            emailController, phoneController, passController),
-        bulidLoginWithGoogle(context: context, onTap: () {}),
-        CustomButton(
-          onPressed: () {
-            CustomNavigation.navigateByNamedTo(
-                context, RoutePath.enableLocation);
-          },
-          text: S.of(context).registerScreenButton,
-          height: 37.h,
-          width: MediaQuery.of(context).size.width,
-          vertical: 15.h,
-          horizontal: 0,
-          radius: 15,
-          color: AppColors.kPrimaryColor,
-          textColor: 0xffffffff,
-          fontSize: 14.sp,
-        ),
-        bulidDoNotHaveAccountAndIfHaveAccount(
-          context: context,
-          text: S.of(context).registerScreenHaveAccount,
-          textButton: S.of(context).loginScreenButton,
-        )
-      ],
+    child: SingleChildScrollView(
+      child: Column(
+        children: [
+          SvgPicture.asset(
+            Assets.authRegister,
+            height: MediaQuery.of(context).size.height / 3,
+          ),
+          bulidTextFormFeildRegisterScreen(context, nameController,
+              emailController, phoneController, passController),
+          bulidLoginWithGoogle(context: context, onTap: () {}),
+          CustomButton(
+            onPressed: () {
+              CustomNavigation.navigateByNamedTo(
+                  context, RoutePath.enableLocation);
+            },
+            text: S.of(context).registerScreenButton,
+            height: 37.h,
+            width: MediaQuery.of(context).size.width,
+            vertical: 15.h,
+            horizontal: 0,
+            radius: 15,
+            color: AppColors.kPrimaryColor,
+            textColor: 0xffffffff,
+            fontSize: 14.sp,
+          ),
+          bulidDoNotHaveAccountAndIfHaveAccount(
+            context: context,
+            text: S.of(context).registerScreenHaveAccount,
+            textButton: S.of(context).loginScreenButton,
+          )
+        ],
+      ),
     ),
   );
 }
