@@ -124,5 +124,11 @@
   "instagram": "Instagram" ,
   "about": "About Us" ,
   "linkedIn": "LinkedIn" ,
-  "gmail": "Gmail"
+  "gmail": "Gmail" ,
+  "selectLanguage": "Select Language",
+  "english": "English",
+  "arabic": "Arabic",
+  "french": "French",
+  "spanish": "Spanish",
+  "portuguese": "Portuguese"
 }

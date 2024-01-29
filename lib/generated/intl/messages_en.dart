@@ -27,6 +27,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "about": MessageLookupByLibrary.simpleMessage("About Us"),
         "address": MessageLookupByLibrary.simpleMessage("Address"),
         "amount": MessageLookupByLibrary.simpleMessage("Amount"),
+        "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
         "bookMark": MessageLookupByLibrary.simpleMessage("Book Mark"),
         "bookNow": MessageLookupByLibrary.simpleMessage("Book Now"),
         "bookingParkingDate":
@@ -59,6 +60,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Allow Your Location"),
         "endHour": MessageLookupByLibrary.simpleMessage("End Hour"),
         "endTime": MessageLookupByLibrary.simpleMessage("End Time"),
+        "english": MessageLookupByLibrary.simpleMessage("English"),
         "enter": MessageLookupByLibrary.simpleMessage("Entry"),
         "exit": MessageLookupByLibrary.simpleMessage("Exit"),
         "extendParkingTime":
@@ -67,6 +69,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgetPassButton": MessageLookupByLibrary.simpleMessage("Submit"),
         "forgetScreenDescription": MessageLookupByLibrary.simpleMessage(
             "Don\'t worry it happens. Please enter email address associated with your account"),
+        "french": MessageLookupByLibrary.simpleMessage("French"),
         "garageAddedSuccessfully":
             MessageLookupByLibrary.simpleMessage("garage Added Successfully"),
         "garageDescription": MessageLookupByLibrary.simpleMessage(
@@ -139,6 +142,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "parkingTicket": MessageLookupByLibrary.simpleMessage("Parking Ticket"),
         "parkingTimer": MessageLookupByLibrary.simpleMessage("Parking Timer"),
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
+        "portuguese": MessageLookupByLibrary.simpleMessage("Portuguese"),
         "proceed": MessageLookupByLibrary.simpleMessage("Proceed"),
         "profileAppBarTitle": MessageLookupByLibrary.simpleMessage("Profile"),
         "profileCenterHelp":
@@ -172,11 +176,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "search": MessageLookupByLibrary.simpleMessage("Search"),
         "securityCamara":
             MessageLookupByLibrary.simpleMessage("security camara "),
+        "selectLanguage":
+            MessageLookupByLibrary.simpleMessage("Select Language"),
         "send": MessageLookupByLibrary.simpleMessage("Send"),
         "serviceProvide":
             MessageLookupByLibrary.simpleMessage("Service we provide"),
         "signInScreenTitle": MessageLookupByLibrary.simpleMessage("Sign in"),
         "signUpScreenTitle": MessageLookupByLibrary.simpleMessage("Sign Up"),
+        "spanish": MessageLookupByLibrary.simpleMessage("Spanish"),
         "startHour": MessageLookupByLibrary.simpleMessage("Start Hour"),
         "startTime": MessageLookupByLibrary.simpleMessage("Start Time"),
         "support": MessageLookupByLibrary.simpleMessage("24/7 support  "),
