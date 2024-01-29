@@ -7,6 +7,6 @@ class ProfileScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return buildProfileScreenBody(context);
+    return const BuildProfileScreenBody();
   }
 }

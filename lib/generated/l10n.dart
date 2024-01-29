@@ -1179,6 +1179,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Help & Support`
+  String get help {
+    return Intl.message(
+      'Help & Support',
+      name: 'help',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `FAQ`
+  String get centerHelpSupport {
+    return Intl.message(
+      'FAQ',
+      name: 'centerHelpSupport',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contact Us`
+  String get contact {
+    return Intl.message(
+      'Contact Us',
+      name: 'contact',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Send`
+  String get send {
+    return Intl.message(
+      'Send',
+      name: 'send',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Facebook`
+  String get facebook {
+    return Intl.message(
+      'Facebook',
+      name: 'facebook',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Twitter`
+  String get twitter {
+    return Intl.message(
+      'Twitter',
+      name: 'twitter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Instagram`
+  String get instagram {
+    return Intl.message(
+      'Instagram',
+      name: 'instagram',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `About Us`
+  String get about {
+    return Intl.message(
+      'About Us',
+      name: 'about',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `LinkedIn`
+  String get linkedIn {
+    return Intl.message(
+      'LinkedIn',
+      name: 'linkedIn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gmail`
+  String get gmail {
+    return Intl.message(
+      'Gmail',
+      name: 'gmail',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

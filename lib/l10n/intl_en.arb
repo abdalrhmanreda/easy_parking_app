@@ -112,13 +112,15 @@
   "navigateToParkingLot":"Navigate to parking lot" ,
   "ok" : "OK" ,
   "parkingTimer": "Parking Timer" ,
-  "extendParkingTime": "Extend Parking Time"
-
-
-
-
-
-
-
-
+  "extendParkingTime": "Extend Parking Time" ,
+  "help" : "Help & Support" ,
+  "centerHelpSupport": "FAQ" ,
+  "contact": "Contact Us" ,
+  "send": "Send" ,
+  "facebook": "Facebook" ,
+  "twitter": "Twitter" ,
+  "instagram": "Instagram" ,
+  "about": "About Us" ,
+  "linkedIn": "LinkedIn" ,
+  "gmail": "Gmail"
 }
