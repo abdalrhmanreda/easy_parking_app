@@ -21,6 +21,7 @@ class RoutePath {
   static const String parkingTimer = '/parkingTimerScreen';
   static const String helpCenter = '/helpCenterScreen';
   static const String notification = '/notificationScreen';
+  static const String extendParking = '/extendParkingScreen';
 }
 
 class AdminRoutePath {

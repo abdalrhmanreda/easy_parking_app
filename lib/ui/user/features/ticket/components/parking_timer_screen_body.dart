@@ -1,4 +1,6 @@
 import 'package:easy_parking_app/config/colors/app_colors.dart';
+import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:easy_parking_app/core/user/constant/app_constant.dart';
 import 'package:easy_parking_app/generated/assets.dart';
 import 'package:easy_parking_app/ui/user/features/booking/components/booking_summary/custom_white_container.dart';
@@ -82,7 +84,10 @@ class ParkingTimerScreenBody extends StatelessWidget {
           containerColor: AppColors.kLightGreyColor,
         ),
         CustomButton(
-          onPressed: () {},
+          onPressed: () {
+            CustomNavigation.navigateByNamedTo(
+                context, RoutePath.extendParking);
+          },
           text: S.of(context).extendParkingTime,
           height: 37.h,
           width: MediaQuery.of(context).size.width,

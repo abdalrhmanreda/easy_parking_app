@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "NumberOfFloorAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Number of floors"),
         "about": MessageLookupByLibrary.simpleMessage("About Us"),
+        "addDuration": MessageLookupByLibrary.simpleMessage("Add Duration"),
         "address": MessageLookupByLibrary.simpleMessage("Address"),
         "amount": MessageLookupByLibrary.simpleMessage("Amount"),
         "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
@@ -38,6 +39,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "choosePayment":
             MessageLookupByLibrary.simpleMessage("Choose Pay Method"),
         "city": MessageLookupByLibrary.simpleMessage("city"),
+        "confirmPayment":
+            MessageLookupByLibrary.simpleMessage("Confirm Payment"),
         "contact": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "continueButton": MessageLookupByLibrary.simpleMessage("Continue"),
         "createAccountButton":
@@ -65,6 +68,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "exit": MessageLookupByLibrary.simpleMessage("Exit"),
         "extendParkingTime":
             MessageLookupByLibrary.simpleMessage("Extend Parking Time"),
+        "extendParkingTiming":
+            MessageLookupByLibrary.simpleMessage("Extend Parking Timing"),
         "facebook": MessageLookupByLibrary.simpleMessage("Facebook"),
         "forgetPassButton": MessageLookupByLibrary.simpleMessage("Submit"),
         "forgetScreenDescription": MessageLookupByLibrary.simpleMessage(
@@ -109,6 +114,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginScreenPassword": MessageLookupByLibrary.simpleMessage("Password"),
         "longitudesAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Longitude"),
+        "mobileWallet": MessageLookupByLibrary.simpleMessage("Mobile Wallet"),
         "myBookMark": MessageLookupByLibrary.simpleMessage("My Bookmark"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "navigateToParkingLot":
@@ -141,6 +147,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "parkingSpot": MessageLookupByLibrary.simpleMessage("Parking Spot"),
         "parkingTicket": MessageLookupByLibrary.simpleMessage("Parking Ticket"),
         "parkingTimer": MessageLookupByLibrary.simpleMessage("Parking Timer"),
+        "payPal": MessageLookupByLibrary.simpleMessage("PayPal"),
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "portuguese": MessageLookupByLibrary.simpleMessage("Portuguese"),
         "proceed": MessageLookupByLibrary.simpleMessage("Proceed"),
@@ -205,6 +212,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "vechicleDetailsVan": MessageLookupByLibrary.simpleMessage("Van"),
         "viewTicket": MessageLookupByLibrary.simpleMessage("View Ticket"),
         "visa": MessageLookupByLibrary.simpleMessage("Visa"),
+        "visaCard": MessageLookupByLibrary.simpleMessage("Visa Card"),
         "vodafone": MessageLookupByLibrary.simpleMessage("Vodafone cash"),
         "walletDesc": MessageLookupByLibrary.simpleMessage(
             "you can choose the most suitable \npayment method for payment"),

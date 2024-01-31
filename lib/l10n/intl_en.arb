@@ -130,5 +130,12 @@
   "arabic": "Arabic",
   "french": "French",
   "spanish": "Spanish",
-  "portuguese": "Portuguese"
+  "portuguese": "Portuguese" ,
+  "extendParkingTiming": "Extend Parking Timing" ,
+  "confirmPayment": "Confirm Payment" ,
+  "addDuration": "Add Duration" ,
+  "mobileWallet": "Mobile Wallet",
+  "visaCard": "Visa Card" ,
+  "payPal": "PayPal"
+
 }

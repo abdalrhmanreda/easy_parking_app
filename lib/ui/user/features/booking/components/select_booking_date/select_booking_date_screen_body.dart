@@ -1,6 +1,7 @@
 import 'package:easy_parking_app/config/routes/routes_path.dart';
 import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
-import 'package:easy_parking_app/ui/user/features/booking/components/select_booking_date/slider.dart';
+import 'package:easy_parking_app/core/user/components/custom_slider.dart';
+import 'package:easy_parking_app/ui/user/features/booking/components/select_booking_date/select_time_from_to.dart';
 import 'package:easy_parking_app/ui/user/features/booking/components/select_booking_date/table_calender.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -22,16 +23,18 @@ class SelectBookingDateScreenBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const TableCalenderPart(),
-            const Gap(15),
+            Gap(15.h),
             Text(
               S.of(context).duration,
               style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     fontSize: 17.sp,
                   ),
             ),
-            const Gap(25),
-            const SliderPart(),
-            const Gap(15),
+            Gap(25.h),
+            const SelectTimeFromTo(),
+            Gap(15.h),
+            const CustomSlider(),
+            Gap(15.h),
             CustomButton(
               onPressed: () {
                 CustomNavigation.navigateByNamedTo(
