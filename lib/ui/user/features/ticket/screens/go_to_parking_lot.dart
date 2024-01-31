@@ -38,7 +38,7 @@ class GoToParkingLotScreen extends StatelessWidget {
             horizontal: 15,
             radius: 15,
             color: AppColors.kPrimaryColor,
-            textColor: 0xffffffff,
+            textColor: AppColors.kWhiteColor,
             fontSize: 14.sp,
           ),
         ],

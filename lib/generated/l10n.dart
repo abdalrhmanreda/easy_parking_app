@@ -1359,6 +1359,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Extend Parking Timing`
+  String get extendParkingTiming {
+    return Intl.message(
+      'Extend Parking Timing',
+      name: 'extendParkingTiming',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm Payment`
+  String get confirmPayment {
+    return Intl.message(
+      'Confirm Payment',
+      name: 'confirmPayment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Duration`
+  String get addDuration {
+    return Intl.message(
+      'Add Duration',
+      name: 'addDuration',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mobile Wallet`
+  String get mobileWallet {
+    return Intl.message(
+      'Mobile Wallet',
+      name: 'mobileWallet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Visa Card`
+  String get visaCard {
+    return Intl.message(
+      'Visa Card',
+      name: 'visaCard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `PayPal`
+  String get payPal {
+    return Intl.message(
+      'PayPal',
+      name: 'payPal',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

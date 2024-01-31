@@ -25,7 +25,6 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
   Widget build(BuildContext context) {
     var searchController = TextEditingController();
     var markers = HashSet<Marker>();
-
     return BlocConsumer<AppCubit, AppStates>(
       listener: (context, state) {
         // TODO: implement listener
@@ -50,9 +49,6 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                   initialCameraPosition: myCurrentPositionCameraPosition,
                   onMapCreated:
                       (GoogleMapController googleMapController) async {
-                    // String style = await DefaultAssetBundle.of(context)
-                    //     .loadString(Assets.mapsStyleMapStyle);
-                    // googleMapController.setMapStyle(style);
                     mapController.complete(googleMapController);
                   },
                   markers: markers,
