@@ -33,6 +33,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "bookNow": MessageLookupByLibrary.simpleMessage("Book Now"),
         "bookingParkingDate":
             MessageLookupByLibrary.simpleMessage("Book Parking Date"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "carLifts": MessageLookupByLibrary.simpleMessage("car lifts ?"),
         "cash": MessageLookupByLibrary.simpleMessage("Cash"),
         "centerHelpSupport": MessageLookupByLibrary.simpleMessage("FAQ"),
@@ -65,6 +66,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "endTime": MessageLookupByLibrary.simpleMessage("End Time"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "enter": MessageLookupByLibrary.simpleMessage("Entry"),
+        "enterYourEmail":
+            MessageLookupByLibrary.simpleMessage("Enter Your Email"),
+        "enterYourEmailToResetPass": MessageLookupByLibrary.simpleMessage(
+            "Enter Your Email To Reset Password"),
+        "enterYourMessage":
+            MessageLookupByLibrary.simpleMessage("Enter Your Message"),
+        "enterYourName":
+            MessageLookupByLibrary.simpleMessage("Enter Your Name"),
+        "enterYourPhone":
+            MessageLookupByLibrary.simpleMessage("Enter Your Phone"),
         "exit": MessageLookupByLibrary.simpleMessage("Exit"),
         "extendParkingTime":
             MessageLookupByLibrary.simpleMessage("Extend Parking Time"),
@@ -93,6 +104,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "garagesPlaces":
             MessageLookupByLibrary.simpleMessage("Pick Parking spot "),
         "gmail": MessageLookupByLibrary.simpleMessage("Gmail"),
+        "goToGarage": MessageLookupByLibrary.simpleMessage("Go To Garage"),
         "government": MessageLookupByLibrary.simpleMessage("government"),
         "help": MessageLookupByLibrary.simpleMessage("Help & Support"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
@@ -147,6 +159,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "parkingSpot": MessageLookupByLibrary.simpleMessage("Parking Spot"),
         "parkingTicket": MessageLookupByLibrary.simpleMessage("Parking Ticket"),
         "parkingTimer": MessageLookupByLibrary.simpleMessage("Parking Timer"),
+        "pay": MessageLookupByLibrary.simpleMessage("Pay"),
         "payPal": MessageLookupByLibrary.simpleMessage("PayPal"),
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "portuguese": MessageLookupByLibrary.simpleMessage("Portuguese"),
@@ -186,6 +199,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "selectLanguage":
             MessageLookupByLibrary.simpleMessage("Select Language"),
         "send": MessageLookupByLibrary.simpleMessage("Send"),
+        "sendYourMessage":
+            MessageLookupByLibrary.simpleMessage("Send Your Message"),
         "serviceProvide":
             MessageLookupByLibrary.simpleMessage("Service we provide"),
         "signInScreenTitle": MessageLookupByLibrary.simpleMessage("Sign in"),

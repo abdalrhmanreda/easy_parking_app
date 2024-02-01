@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../../core/user/components/payment_implements.dart';
+
 class PaymentMethod extends StatefulWidget {
   const PaymentMethod({super.key});
 
@@ -14,20 +16,27 @@ class PaymentMethod extends StatefulWidget {
 }
 
 class _PaymentMethodState extends State<PaymentMethod> {
+  var phoneController = TextEditingController();
   int value = -1;
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: AppConstant.deviceHeight(context) / 3,
-      child: ListView(
-        children: ExtendTimeCubit.get(context)
-            .paymentMethods(context)
-            .asMap()
-            .entries
-            .map((e) => containerList(
-                ExtendTimeCubit.get(context).paymentMethods(context)[e.key]))
-            .toList(),
-      ),
+    return Column(
+      children: [
+        SizedBox(
+          height: AppConstant.deviceHeight(context) / 3,
+          child: ListView(
+            children: ExtendTimeCubit.get(context)
+                .paymentMethods(context)
+                .asMap()
+                .entries
+                .map((e) => containerList(ExtendTimeCubit.get(context)
+                    .paymentMethods(context)[e.key]))
+                .toList(),
+          ),
+        ),
+        Gap(25.h),
+        PaymentMethodImplement(value: value, phoneController: phoneController),
+      ],
     );
   }
 

@@ -31,7 +31,7 @@ class GoToParkingLotScreen extends StatelessWidget {
               CustomNavigation.navigateByNamedTo(
                   context, RoutePath.parkingTimer);
             },
-            text: S.of(context).ok,
+            text: S.of(context).goToGarage,
             height: 37.h,
             width: MediaQuery.of(context).size.width,
             vertical: 15.h,
