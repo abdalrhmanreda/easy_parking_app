@@ -13,6 +13,7 @@ class Assets {
   static const String garageCarsLeftCar = 'assets/garage_cars/left_car.png';
   static const String garageCarsRightCar = 'assets/garage_cars/right_car.png';
   static const String iconsCar = 'assets/icons/car.png';
+  static const String iconsPhoneNumber = 'assets/icons/phone_number.png';
   static const String locationDataLocations =
       'assets/location_data/locations.json';
   static const String mapsStyleMapStyle = 'assets/maps_style/map_style.json';
@@ -26,6 +27,7 @@ class Assets {
       'assets/images/test/1652687833047.jpg';
   static const String testDb = 'assets/images/test/db.json';
   static const String testGarage = 'assets/images/test/garage.jpg';
+  static const String testModelGarage = 'assets/images/test/model_garage.png';
   static const String testPCPPhoto3sizedforWeb =
       'assets/images/test/PCPPhoto3sizedforWeb.jpg';
   static const String vechicleTypeCar = 'assets/vechicle_type/car.png';

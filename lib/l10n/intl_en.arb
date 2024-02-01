@@ -136,6 +136,15 @@
   "addDuration": "Add Duration" ,
   "mobileWallet": "Mobile Wallet",
   "visaCard": "Visa Card" ,
-  "payPal": "PayPal"
+  "payPal": "PayPal"  ,
+  "goToGarage": "Go To Garage" ,
+  "cancel": "Cancel" ,
+  "pay": "Pay" ,
+  "enterYourName": "Enter Your Name" ,
+  "enterYourEmail": "Enter Your Email" ,
+  "enterYourPhone": "Enter Your Phone" ,
+  "enterYourMessage": "Enter Your Message" ,
+  "sendYourMessage": "Send Your Message" ,
+  "enterYourEmailToResetPass": "Enter Your Email To Reset Password"
 
 }

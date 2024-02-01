@@ -1,5 +1,3 @@
-import 'package:easy_parking_app/config/routes/routes_path.dart';
-import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:easy_parking_app/core/user/components/custom_text_form_feild.dart';
 import 'package:easy_parking_app/core/user/constant/app_constant.dart';
 import 'package:flutter/material.dart';
@@ -8,6 +6,7 @@ import 'package:iconly/iconly.dart';
 
 import '../../../../../../../generated/l10n.dart';
 import '../../../../bookmark/presentation/components/bulid_book_mark_item.dart';
+import 'alert_contain_garage_data.dart';
 
 void bulidSearchBottomSheet(
     BuildContext context, TextEditingController searchController) {
@@ -52,8 +51,8 @@ void bulidSearchBottomSheet(
                 spots: '50',
                 button: S.of(context).bookNow,
                 onPressed: () {
-                  CustomNavigation.navigateByNamedTo(
-                      context, RoutePath.garageDetails);
+                  Navigator.pop(context);
+                  showMyDialog(context);
                 },
               ),
               itemCount: 10,

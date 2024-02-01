@@ -31,7 +31,7 @@ class ExtendParkingTimeScreenBody extends StatelessWidget {
           const CustomSlider(),
           Gap(20.h),
           const PaymentMethod(),
-          Gap(15.h),
+          const Spacer(),
           CustomButton(
             onPressed: () {},
             text: S.of(context).confirmPayment,

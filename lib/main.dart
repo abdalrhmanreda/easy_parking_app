@@ -8,6 +8,7 @@
 */
 
 import 'package:easy_parking_app/core/user/cache/hive_cache.dart';
+import 'package:easy_parking_app/core/user/paymob/paymob_api.dart';
 import 'package:easy_parking_app/ui/admin/cubit/admin_cubit.dart';
 import 'package:easy_parking_app/ui/admin/feature/garages/controller/garage_cubit.dart';
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/controller/insert_garage_cubit.dart';
@@ -20,6 +21,7 @@ import 'package:easy_parking_app/ui/user/intro_screens/screens/on_boarding_scree
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_paymob/flutter_paymob.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'config/routes/router.dart';
@@ -30,6 +32,15 @@ import 'generated/l10n.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  FlutterPaymob.instance.initialize(
+    apiKey: PaymobApi
+        .paymobApiKey, //  // from dashboard Select Settings -> Account Info -> API Key
+    integrationID: PaymobApi
+        .paymobIntegrationIdCard, // // from dashboard Select Developers -> Payment Integrations -> Online Card ID
+    walletIntegrationId: PaymobApi
+        .paymobIntegrationIdWallet, // // from dashboard Select Developers -> Payment Integrations -> Online wallet
+    iFrameID: 804387,
+  );
   Bloc.observer = MyBlocObserver();
   DioHelper.init();
   await HiveCache.openHive();
@@ -67,8 +78,7 @@ class EasyParkingApp extends StatelessWidget {
                   create: (context) => InsertGarageCubit()..getAllGarage()),
             ],
             child: MaterialApp(
-              initialRoute: RoutePath.extendParking,
-              // home: startWidget,
+              initialRoute: RoutePath.enableLocation,
               onGenerateRoute: generateRoute,
               locale: const Locale('en', 'US'),
               localizationsDelegates: const [

@@ -1419,6 +1419,96 @@ class S {
       args: [],
     );
   }
+
+  /// `Go To Garage`
+  String get goToGarage {
+    return Intl.message(
+      'Go To Garage',
+      name: 'goToGarage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pay`
+  String get pay {
+    return Intl.message(
+      'Pay',
+      name: 'pay',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Name`
+  String get enterYourName {
+    return Intl.message(
+      'Enter Your Name',
+      name: 'enterYourName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Email`
+  String get enterYourEmail {
+    return Intl.message(
+      'Enter Your Email',
+      name: 'enterYourEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Phone`
+  String get enterYourPhone {
+    return Intl.message(
+      'Enter Your Phone',
+      name: 'enterYourPhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Message`
+  String get enterYourMessage {
+    return Intl.message(
+      'Enter Your Message',
+      name: 'enterYourMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Send Your Message`
+  String get sendYourMessage {
+    return Intl.message(
+      'Send Your Message',
+      name: 'sendYourMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Email To Reset Password`
+  String get enterYourEmailToResetPass {
+    return Intl.message(
+      'Enter Your Email To Reset Password',
+      name: 'enterYourEmailToResetPass',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
