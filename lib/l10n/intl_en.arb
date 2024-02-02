@@ -145,6 +145,9 @@
   "enterYourPhone": "Enter Your Phone" ,
   "enterYourMessage": "Enter Your Message" ,
   "sendYourMessage": "Send Your Message" ,
-  "enterYourEmailToResetPass": "Enter Your Email To Reset Password"
+  "enterYourEmailToResetPass": "Enter Your Email To Reset Password" ,
+  "distance": "Distance" ,
+  "time": "Time" ,
+  "cost": "Cost"
 
 }

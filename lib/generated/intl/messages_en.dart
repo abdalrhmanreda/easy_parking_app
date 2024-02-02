@@ -44,11 +44,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Confirm Payment"),
         "contact": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "continueButton": MessageLookupByLibrary.simpleMessage("Continue"),
+        "cost": MessageLookupByLibrary.simpleMessage("Cost"),
         "createAccountButton":
             MessageLookupByLibrary.simpleMessage("create account"),
         "date": MessageLookupByLibrary.simpleMessage("Date"),
         "descriptionAdminInterFace":
             MessageLookupByLibrary.simpleMessage("Description"),
+        "distance": MessageLookupByLibrary.simpleMessage("Distance"),
         "doNotHaveAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have account ?"),
         "doesGarageContain":
@@ -210,6 +212,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "startTime": MessageLookupByLibrary.simpleMessage("Start Time"),
         "support": MessageLookupByLibrary.simpleMessage("24/7 support  "),
         "tax": MessageLookupByLibrary.simpleMessage("Tax( 10% )"),
+        "time": MessageLookupByLibrary.simpleMessage("Time"),
         "total": MessageLookupByLibrary.simpleMessage("Total"),
         "twitter": MessageLookupByLibrary.simpleMessage("Twitter"),
         "vechicle": MessageLookupByLibrary.simpleMessage("Vechicle"),
