@@ -8,6 +8,7 @@ import 'package:icons_plus/icons_plus.dart';
 import '../../../../../../../generated/l10n.dart';
 import 'alert_components/details_item.dart';
 import 'alert_components/garage_name_and_rate.dart';
+import 'build_bottom_sheet_details.dart';
 
 Future<void> showMyDialog(BuildContext context) async {
   return showDialog<void>(
@@ -66,6 +67,7 @@ Future<void> showMyDialog(BuildContext context) async {
             child: InkWell(
               onTap: () {
                 Navigator.of(context).pop();
+                bulidGarageDetailsBottomSheet(context);
               },
               child: const CircleAvatar(
                 radius: 25,
