@@ -47,7 +47,6 @@
   "vechicleDetailsMoto": "Moto" ,
   "vechicleDetailsVan": "Van" ,
   "vechicleDetailsType": "Vechicle Type"  ,
-
   "garageDetailsTitleAdminInterFace": "Garage Details" ,
   "garageNameAdminInterFace": "Garage Name" ,
   "NumberOfFloorAdminInterFace": "Number of floors" ,
@@ -101,6 +100,7 @@
   "saved": "Saved" ,
   "myBookMark": "My Bookmark" ,
   "viewTicket": "View Ticket" ,
+
   "choosePayment": "Choose Pay Method" ,
   "walletDesc": "you can choose the most suitable \npayment method for payment" ,
   "vodafone": "Vodafone cash",
@@ -148,6 +148,7 @@
   "enterYourEmailToResetPass": "Enter Your Email To Reset Password" ,
   "distance": "Distance" ,
   "time": "Time" ,
-  "cost": "Cost"
-
+  "cost": "Cost" ,
+  "viewTimer": "View Timer" ,
+  "view": "View"
 }

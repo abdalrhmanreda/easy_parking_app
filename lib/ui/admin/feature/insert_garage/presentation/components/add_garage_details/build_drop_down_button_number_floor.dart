@@ -1,6 +1,7 @@
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/controller/insert_garage_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:gap/gap.dart';
 import 'package:iconly/iconly.dart';
 
 import '../../../../../../../config/colors/app_colors.dart';
@@ -46,14 +47,12 @@ class _BuildDropDownButtonNumberOfFloorAndNumberOfSpotState
                   ],
                 ),
               ),
-              SizedBox(
-                height: AppConstant.deviceHeight(context) / 75,
-              ),
+              Gap(10.h),
               Container(
                 width: AppConstant.deviceWidth(context) / 2.5,
                 clipBehavior: Clip.antiAliasWithSaveLayer,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(10),
                   shape: BoxShape.rectangle,
                   border: Border.all(
                     style: BorderStyle.solid,
@@ -89,12 +88,10 @@ class _BuildDropDownButtonNumberOfFloorAndNumberOfSpotState
                             S.of(context).NumberOfFloorAdminInterFace.length -
                                 1),
                   ),
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
-              SizedBox(
-                height: AppConstant.deviceHeight(context) / 75,
-              ),
+              Gap(10.h),
             ],
           ),
         ),

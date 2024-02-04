@@ -11,4 +11,6 @@ class AppColors {
   static const int kDarkSkyBlueColor = 0xff80acc1;
   static const int kLightGreyColor = 0xfff1f1f1;
   static const int kScaffoldColor = 0xfffaf7f7;
+  static const int kAmberColor = 0xffffc107;
+  static const int kRedColor = 0xffb31206;
 }

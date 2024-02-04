@@ -5,8 +5,7 @@ import 'package:gap/gap.dart';
 import 'package:iconly/iconly.dart';
 
 import '../../../../../../../generated/l10n.dart';
-import '../../../../bookmark/presentation/components/bulid_book_mark_item.dart';
-import 'alert_contain_garage_data.dart';
+import '../../../bookmark/components/common/bookmark_item.dart';
 
 void bulidSearchBottomSheet(
     BuildContext context, TextEditingController searchController) {
@@ -44,16 +43,12 @@ void bulidSearchBottomSheet(
             const Gap(20),
             ListView.builder(
               shrinkWrap: true,
-              itemBuilder: (context, index) => BookMarkItem(
+              itemBuilder: (context, index) => BookmarkItem(
                 garageName: S.of(context).parkName,
                 distance: '150 m',
                 location: 'Naser city , Cairo',
                 spots: '50',
-                button: S.of(context).bookNow,
-                onPressed: () {
-                  Navigator.pop(context);
-                  showMyDialog(context);
-                },
+                state: 'on going',
               ),
               itemCount: 10,
               physics: const NeverScrollableScrollPhysics(),

@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:gap/gap.dart';
 
 import '../../../../../../../config/colors/app_colors.dart';
 import '../../../../../../../core/user/components/custom_text_form_feild.dart';
 import '../../../../../../../core/user/components/validate_method.dart';
-import '../../../../../../../core/user/constant/app_constant.dart';
 import '../../../../../../../core/user/methods/validate_email/vaildate_email.dart';
+import '../../../../../../../generated/l10n.dart';
 
 class AddTextFormFeildWithRichText extends StatelessWidget {
-  AddTextFormFeildWithRichText({
+  const AddTextFormFeildWithRichText({
     super.key,
     required this.title,
     required this.isRequired,
@@ -16,17 +18,17 @@ class AddTextFormFeildWithRichText extends StatelessWidget {
     this.maxLine,
     required this.height,
   });
-  String? title;
+  final String? title;
   final bool isRequired;
   final TextEditingController controller;
-  int? maxLine;
+  final int? maxLine;
   final double height;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(
-        bottom: 15,
+      padding: EdgeInsets.only(
+        bottom: 15.h,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,15 +50,18 @@ class AddTextFormFeildWithRichText extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
-            height: AppConstant.deviceHeight(context) / 75,
-          ),
+          Gap(10.h),
           CustomTextFormField(
             isPassword: title == 'Password' ? true : false,
+            inputFormatters: title == S.of(context).registerScreenUserPhone
+                ? [
+                    FilteringTextInputFormatter.digitsOnly,
+                  ]
+                : [],
             controller: controller,
             type: TextInputType.text,
             border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(15),
+              borderRadius: BorderRadius.circular(10),
             ),
             maxLine: maxLine,
             edgeInsetsGeometry: EdgeInsetsDirectional.symmetric(
@@ -65,12 +70,13 @@ class AddTextFormFeildWithRichText extends StatelessWidget {
             validate: (value) {
               if (title == 'Email Address') {
                 if (!isEmailValid(value!)) {
-                  return 'Email must contain @ & .com' ;
+                  return 'Email must contain @ & .com';
                 }
               }
               if (value!.isEmpty) {
                 return validateMethod(value, title?.toLowerCase());
               }
+              return null;
             },
           ),
         ],

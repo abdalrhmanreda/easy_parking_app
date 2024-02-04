@@ -1,5 +1,6 @@
 import 'package:easy_parking_app/config/colors/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 @immutable
@@ -35,6 +36,7 @@ class CustomTextFormField extends StatelessWidget {
     this.hintMaxLines,
     this.onSaved,
     this.label,
+    this.inputFormatters,
   });
 
   final ScrollController? scrollController;
@@ -66,6 +68,7 @@ class CustomTextFormField extends StatelessWidget {
   final TextDirection? hintTextDirection;
   final int? hintMaxLines;
   final Key? formFieldKey;
+  final List<TextInputFormatter>? inputFormatters;
 
   @override
   Widget build(BuildContext context) {
@@ -83,6 +86,7 @@ class CustomTextFormField extends StatelessWidget {
       minLines: minLine,
       textAlign: TextAlign.start,
       onTap: onTap,
+      inputFormatters: inputFormatters,
       enabled: isEnable,
       focusNode: focusNode,
       textInputAction: TextInputAction.done,
