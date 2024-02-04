@@ -1,7 +1,7 @@
 import 'package:easy_parking_app/core/user/constant/app_constant.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../booking/components/garage_details/garage_details_screen_body.dart';
+import '../../../booking/components/garage_details/garage_details_screen_body.dart';
 
 void bulidGarageDetailsBottomSheet(
   BuildContext context,

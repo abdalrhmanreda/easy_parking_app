@@ -1,11 +1,12 @@
 import 'package:dotted_dashed_line/dotted_dashed_line.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../../core/user/constant/app_constant.dart';
 
 class Places extends StatelessWidget {
-  const Places({super.key, required this.image, required this.angle});
-  final String image;
+  const Places({super.key, required this.widget, required this.angle});
+  final Widget widget;
   final double angle;
 
   @override
@@ -14,8 +15,8 @@ class Places extends StatelessWidget {
       children: [
         if (angle > 0)
           Padding(
-            padding: const EdgeInsets.only(
-              left: 15,
+            padding: EdgeInsets.only(
+              left: 15.w,
             ),
             child: DottedDashedLine(
               height: AppConstant.deviceHeight(context),
@@ -42,11 +43,7 @@ class Places extends StatelessWidget {
                       dashColor: Colors.grey,
                     ),
                   ),
-                Image.asset(
-                  image,
-                  width: 100,
-                  height: 100,
-                )
+                widget,
               ],
             ),
             itemCount: 10,

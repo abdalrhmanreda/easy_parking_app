@@ -1,5 +1,7 @@
 import 'package:easy_parking_app/config/colors/app_colors.dart';
+import 'package:easy_parking_app/config/routes/routes_path.dart';
 import 'package:easy_parking_app/core/user/components/custom_button.dart';
+import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:easy_parking_app/core/user/constant/app_constant.dart';
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/components/garage_feature/build_list_of_feature.dart';
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/controller/insert_garage_cubit.dart';
@@ -69,11 +71,8 @@ class _GarageFeatureScreenState extends State<GarageFeatureScreen> {
                   const ListOfFeature(),
                   CustomButton(
                     onPressed: () {
-                      // showToast(
-                      //     message: S.of(context).garageAddedSuccessfully,
-                      //     state: ToastState.SUCCESS);
-                      // CustomNavigation.navigateByNamedTo(
-                      //     context, AdminRoutePath.getAllGarages);
+                      CustomNavigation.navigateByNamedTo(
+                          context, AdminRoutePath.getAllGarages);
                     },
                     text: S.of(context).insert,
                     radius: 15,

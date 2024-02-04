@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../../../config/colors/app_colors.dart';
+
 class ListOfFeature extends StatefulWidget {
   const ListOfFeature({super.key});
 
@@ -22,6 +24,7 @@ class _ListOfFeatureState extends State<ListOfFeature> {
       children: [
         for (var entry in features.entries)
           CheckboxListTile(
+            activeColor: const Color(AppColors.kPrimaryColor),
             title: Text(entry.key),
             value: entry.value,
             onChanged: (newValue) {

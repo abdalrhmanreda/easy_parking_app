@@ -1,5 +1,6 @@
-import 'package:easy_parking_app/ui/user/features/maps/home/presentation/components/home_screen_body.dart';
 import 'package:flutter/material.dart';
+
+import '../components/home_screen_body.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

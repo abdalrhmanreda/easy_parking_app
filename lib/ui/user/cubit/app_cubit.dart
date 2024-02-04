@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:easy_parking_app/ui/user/cubit/app_state.dart';
-import 'package:easy_parking_app/ui/user/features/bookmark/presentation/screens/bookmark_screen.dart';
 import 'package:easy_parking_app/ui/user/features/user/presentation/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -9,8 +8,9 @@ import 'package:geolocator/geolocator.dart';
 import 'package:iconly/iconly.dart';
 
 import '../../../generated/l10n.dart';
+import '../features/bookmark/screens/bookmark_screen.dart';
 import '../features/enable_location/presentation/controller/location_helper.dart';
-import '../features/maps/home/presentation/screens/home_screen.dart';
+import '../features/maps/home/screens/home_screen.dart';
 
 class AppCubit extends Cubit<AppStates> {
   AppCubit() : super(InitialAppState());

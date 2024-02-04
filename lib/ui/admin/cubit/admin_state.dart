@@ -5,6 +5,8 @@ abstract class AdminStates {}
 
 class AdminInitial extends AdminStates {}
 
+class ChangeBottomNavBarState extends AdminStates {}
+
 class LoadingState extends AdminStates {}
 
 class FailureState extends AdminStates {

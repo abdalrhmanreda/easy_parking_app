@@ -1,3 +1,5 @@
+import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/components/add_garage_details/select_location.dart';
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/controller/insert_garage_cubit.dart';
 import 'package:flutter/material.dart';
@@ -67,21 +69,21 @@ class AddGarageDetailsScreenBody extends StatelessWidget {
                       controller: numberOfSpotsController),
                   AddTextFormFeildWithRichText(
                     title: S.of(context).loginScreenEmailAddress,
-                    maxLine: null,
+                    maxLine: 1,
                     isRequired: true,
                     height: 15,
                     controller: emailController,
                   ),
                   AddTextFormFeildWithRichText(
                     title: S.of(context).registerScreenUserName,
-                    maxLine: null,
+                    maxLine: 1,
                     isRequired: true,
                     height: 15,
                     controller: nameController,
                   ),
                   AddTextFormFeildWithRichText(
                     title: S.of(context).registerScreenUserPhone,
-                    maxLine: null,
+                    maxLine: 1,
                     isRequired: true,
                     height: 15,
                     controller: phoneController,
@@ -96,24 +98,26 @@ class AddGarageDetailsScreenBody extends StatelessWidget {
                   CustomButton(
                     onPressed: () {
                       if (formKey.currentState!.validate()) {
-                        InsertGarageCubit.get(context).addGarage(
-                          garageName: garageNameController.text,
-                          location: 'Cairo',
-                          numFloor:
-                              InsertGarageCubit.get(context).selectedValue,
-                          numOfSpace: int.parse(numberOfSpotsController.text),
-                          lat: latController.text,
-                          lon: lonController.text,
-                          description: descController.text,
-                          price: '30 \$',
-                        );
+                        CustomNavigation.navigateByNamedTo(
+                            context, AdminRoutePath.garageFeature);
+                        // InsertGarageCubit.get(context).addGarage(
+                        //   garageName: garageNameController.text,
+                        //   location: 'Cairo',
+                        //   numFloor:
+                        //       InsertGarageCubit.get(context).selectedValue,
+                        //   numOfSpace: int.parse(numberOfSpotsController.text),
+                        //   lat: latController.text,
+                        //   lon: lonController.text,
+                        //   description: descController.text,
+                        //   price: '30 \$',
+                        // );
                       }
                     },
                     text: S.of(context).onBoardingButtonText,
-                    radius: 15,
+                    radius: 10.r,
                     color: AppColors.kPrimaryColor,
                     textColor: AppColors.kWhiteColor,
-                    height: 37.h,
+                    height: 42.h,
                     width: AppConstant.deviceWidth(context),
                     vertical: 0,
                     horizontal: 0,

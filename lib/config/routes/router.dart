@@ -24,7 +24,7 @@ import '../../ui/user/features/authentication/screens/register_screen/register_s
 import '../../ui/user/features/booking/screens/garage_derails.dart';
 import '../../ui/user/features/booking/screens/select_booking_date_screen.dart';
 import '../../ui/user/features/booking/screens/type_of_vehicle_screen.dart';
-import '../../ui/user/features/maps/home/presentation/screens/home_screen.dart';
+import '../../ui/user/features/maps/home/screens/home_screen.dart';
 import '../../ui/user/features/ticket/screens/parking_ticket.dart';
 
 Route? generateRoute(RouteSettings settings) {
