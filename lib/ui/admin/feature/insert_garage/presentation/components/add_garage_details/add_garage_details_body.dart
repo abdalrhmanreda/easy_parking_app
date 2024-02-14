@@ -15,22 +15,27 @@ import 'add_garage_item.dart';
 import 'build_drop_down_button_number_floor.dart';
 import 'build_text_form_feild_lat_lon.dart';
 
-class AddGarageDetailsScreenBody extends StatelessWidget {
+class AddGarageDetailsScreenBody extends StatefulWidget {
   const AddGarageDetailsScreenBody({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-    TextEditingController garageNameController = TextEditingController();
-    TextEditingController descController = TextEditingController();
-    TextEditingController latController = TextEditingController();
-    TextEditingController lonController = TextEditingController();
-    TextEditingController emailController = TextEditingController();
-    TextEditingController passController = TextEditingController();
-    TextEditingController nameController = TextEditingController();
-    TextEditingController phoneController = TextEditingController();
-    TextEditingController numberOfSpotsController = TextEditingController();
+  State<AddGarageDetailsScreenBody> createState() =>
+      _AddGarageDetailsScreenBodyState();
+}
 
+class _AddGarageDetailsScreenBodyState
+    extends State<AddGarageDetailsScreenBody> {
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  TextEditingController garageNameController = TextEditingController();
+  TextEditingController descController = TextEditingController();
+  TextEditingController latController = TextEditingController();
+  TextEditingController lonController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController nameController = TextEditingController();
+  TextEditingController phoneController = TextEditingController();
+  TextEditingController numberOfSpotsController = TextEditingController();
+  @override
+  Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(15),
       child: Form(
@@ -129,5 +134,18 @@ class AddGarageDetailsScreenBody extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    garageNameController.dispose();
+    descController.dispose();
+    latController.dispose();
+    lonController.dispose();
+    emailController.dispose();
+    nameController.dispose();
+    phoneController.dispose();
+    numberOfSpotsController.dispose();
   }
 }

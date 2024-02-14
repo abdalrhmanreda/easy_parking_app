@@ -3,6 +3,8 @@ class RoutePath {
   static const String onBoarding = '/onBoardingScreen';
   static const String enableLocation = '/enableLocationScreen';
   static const String login = '/loginScreen';
+  static const String carDetails = '/carDetailsScreen';
+  static const String editProfile = '/editProfileScreen';
   static const String forgetPass = '/forgetPasswordScreen';
   static const String otp = '/otpScreen';
   static const String resetPass = '/resetPasswordScreen';

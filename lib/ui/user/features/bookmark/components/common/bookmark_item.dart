@@ -9,6 +9,7 @@ import '../../../../../../core/user/components/custom_button.dart';
 import '../../../../../../core/user/constant/app_constant.dart';
 import '../../../../../../generated/assets.dart';
 import '../../../../../../generated/l10n.dart';
+import '../../../maps/home/components/build_bottom_sheet_details.dart';
 import 'bulid_garage_details_item.dart';
 
 class BookmarkItem extends StatelessWidget {
@@ -78,7 +79,22 @@ class BookmarkItem extends StatelessWidget {
                       textColor: AppColors.kWhiteColor,
                       fontSize: 12.sp,
                     )
-                  : Container()),
+                  : state == 'search'
+                      ? CustomButton(
+                          onPressed: () {
+                            bulidGarageDetailsBottomSheet(context);
+                          },
+                          text: S.of(context).bookNow,
+                          height: 25.h,
+                          width: MediaQuery.of(context).size.width / 2,
+                          vertical: 0,
+                          horizontal: 10.w,
+                          radius: 15.r,
+                          color: AppColors.kPrimaryColor,
+                          textColor: AppColors.kWhiteColor,
+                          fontSize: 12.sp,
+                        )
+                      : Container()),
         ],
       ),
     );

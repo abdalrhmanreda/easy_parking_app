@@ -1,3 +1,5 @@
+import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
@@ -21,7 +23,10 @@ class OngoingButtons extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CustomButton(
-              onPressed: () {},
+              onPressed: () {
+                CustomNavigation.navigateByNamedTo(
+                    context, RoutePath.parkingTimer);
+              },
               text: 'View Timer',
               height: 25.h,
               width: MediaQuery.of(context).size.width / 3.2,
@@ -33,7 +38,10 @@ class OngoingButtons extends StatelessWidget {
               fontSize: 12.sp,
             ),
             CustomButton(
-              onPressed: () {},
+              onPressed: () {
+                CustomNavigation.navigateByNamedTo(
+                    context, RoutePath.parkingTicket);
+              },
               text: S.of(context).viewTicket,
               height: 25.h,
               width: MediaQuery.of(context).size.width / 3.2,

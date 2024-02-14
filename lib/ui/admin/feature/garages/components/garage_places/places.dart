@@ -1,4 +1,6 @@
 import 'package:dotted_dashed_line/dotted_dashed_line.dart';
+import 'package:easy_parking_app/config/routes/routes_path.dart';
+import 'package:easy_parking_app/core/user/components/custom_navigatation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -43,7 +45,13 @@ class Places extends StatelessWidget {
                       dashColor: Colors.grey,
                     ),
                   ),
-                widget,
+                InkWell(
+                  onTap: () {
+                    CustomNavigation.navigateByNamedTo(
+                        context, RoutePath.bookingSummary);
+                  },
+                  child: widget,
+                ),
               ],
             ),
             itemCount: 10,

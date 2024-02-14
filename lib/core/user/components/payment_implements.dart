@@ -6,9 +6,11 @@ import 'package:quickalert/models/quickalert_type.dart';
 import 'package:quickalert/widgets/quickalert_dialog.dart';
 
 import '../../../config/colors/app_colors.dart';
+import '../../../config/routes/routes_path.dart';
 import '../../../generated/assets.dart';
 import '../../../generated/l10n.dart';
 import 'custom_button.dart';
+import 'custom_navigatation.dart';
 
 class PaymentMethodImplement extends StatelessWidget {
   const PaymentMethodImplement({
@@ -69,6 +71,7 @@ class PaymentMethodImplement extends StatelessWidget {
                     : null;
               });
         }
+        CustomNavigation.navigateByNamedTo(context, RoutePath.parkingTicket);
       },
       text: S.of(context).pay,
       height: 42.h,

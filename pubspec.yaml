@@ -79,6 +79,7 @@ dependencies:
   flutter_paymob: ^1.0.2
   quickalert: ^1.0.2
   toastification: ^1.2.0
+  flutter_osm_plugin: ^0.70.4
 
 dev_dependencies:
   flutter_test:

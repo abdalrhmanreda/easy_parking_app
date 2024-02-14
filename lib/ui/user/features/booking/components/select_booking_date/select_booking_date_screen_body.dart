@@ -38,7 +38,7 @@ class SelectBookingDateScreenBody extends StatelessWidget {
             CustomButton(
               onPressed: () {
                 CustomNavigation.navigateByNamedTo(
-                    context, RoutePath.bookingSummary);
+                    context, AdminRoutePath.garagePlaces);
               },
               text: S.of(context).continueButton,
               height: 37.h,

@@ -72,37 +72,39 @@ class BulidDetailsOfGarageItem extends StatelessWidget {
           ],
         ),
         Gap(5.h),
-        Row(
-          children: [
-            // Assuming 'text' and 'icon' are provided as parameters
-            IconAndText(
-              text: hour,
-              icon: const Icon(
-                IconlyBroken.time_circle,
-                size: 22,
-                color: Color(AppColors.kPrimaryColor),
+        state == 'search'
+            ? Container()
+            : Row(
+                children: [
+                  // Assuming 'text' and 'icon' are provided as parameters
+                  IconAndText(
+                    text: hour,
+                    icon: const Icon(
+                      IconlyBroken.time_circle,
+                      size: 22,
+                      color: Color(AppColors.kPrimaryColor),
+                    ),
+                  ),
+                  Gap(10.w),
+                  state == 'on going'
+                      ? ContainerState(
+                          state: state,
+                          textColor: AppColors.kPrimaryColor,
+                          borderColor: AppColors.kPrimaryColor,
+                        )
+                      : (state == 'complete'
+                          ? ContainerState(
+                              state: state,
+                              textColor: AppColors.kPrimaryColor,
+                              borderColor: AppColors.kPrimaryColor,
+                            )
+                          : ContainerState(
+                              state: state,
+                              textColor: AppColors.kRedColor,
+                              borderColor: AppColors.kRedColor,
+                            )),
+                ],
               ),
-            ),
-            Gap(10.w),
-            state == 'on going'
-                ? ContainerState(
-                    state: state,
-                    textColor: AppColors.kPrimaryColor,
-                    borderColor: AppColors.kPrimaryColor,
-                  )
-                : (state == 'complete'
-                    ? ContainerState(
-                        state: state,
-                        textColor: AppColors.kPrimaryColor,
-                        borderColor: AppColors.kPrimaryColor,
-                      )
-                    : ContainerState(
-                        state: state,
-                        textColor: AppColors.kRedColor,
-                        borderColor: AppColors.kRedColor,
-                      )),
-          ],
-        ),
       ],
     );
   }

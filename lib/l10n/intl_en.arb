@@ -150,5 +150,7 @@
   "time": "Time" ,
   "cost": "Cost" ,
   "viewTimer": "View Timer" ,
-  "view": "View"
+  "view": "View" ,
+  "edit": "Edit" ,
+  "delete": "Delete"
 }

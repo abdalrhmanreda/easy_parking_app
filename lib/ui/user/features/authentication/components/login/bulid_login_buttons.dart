@@ -23,7 +23,8 @@ Column buildLoginButtons(
       CustomButton(
         onPressed: () {
           if (controller.text == 'abdo@gmail.com') {
-            CustomNavigation.navigateByNamedTo(context, RoutePath.layout);
+            CustomNavigation.navigateByNamedTo(
+                context, RoutePath.enableLocation);
           }
         },
         text: S.of(context).loginScreenButton,
