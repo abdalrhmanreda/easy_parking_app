@@ -17,12 +17,14 @@ class AddTextFormFeildWithRichText extends StatelessWidget {
     required this.controller,
     this.maxLine,
     required this.height,
+    this.onTap,
   });
   final String? title;
   final bool isRequired;
   final TextEditingController controller;
   final int? maxLine;
   final double height;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -59,6 +61,7 @@ class AddTextFormFeildWithRichText extends StatelessWidget {
                   ]
                 : [],
             controller: controller,
+            onTap: onTap,
             type: TextInputType.text,
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),

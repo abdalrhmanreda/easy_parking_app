@@ -79,7 +79,7 @@ class EasyParkingApp extends StatelessWidget {
               BlocProvider(create: (context) => BookMarkCubit()),
             ],
             child: MaterialApp(
-              initialRoute: RoutePath.enableLocation,
+              initialRoute: RoutePath.editProfile,
               // home: AdminLayout(),
               onGenerateRoute: generateRoute,
               locale: const Locale('en', 'US'),

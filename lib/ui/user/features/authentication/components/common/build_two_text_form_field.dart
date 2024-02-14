@@ -53,7 +53,7 @@ class BulidTwoTextFromField extends StatelessWidget {
           type: secondType,
           isPassword: isPassForSecond,
           maxLine: 1,
-          controller: firstController,
+          controller: secondController,
           label: secondLabel,
           prefixIcon: secondPrefixIcon,
           border: OutlineInputBorder(

@@ -48,7 +48,7 @@ void bulidSearchBottomSheet(
                 distance: '150 m',
                 location: 'Naser city , Cairo',
                 spots: '50',
-                state: 'on going',
+                state: 'search',
               ),
               itemCount: 10,
               physics: const NeverScrollableScrollPhysics(),
