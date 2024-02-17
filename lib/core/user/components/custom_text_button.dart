@@ -1,19 +1,18 @@
 import 'package:easy_parking_app/config/colors/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomTextButton extends StatelessWidget {
-  CustomTextButton({
+  const CustomTextButton({
     super.key,
     required this.onPressed,
     required this.text,
-    this.textStyle,
+    this.fontSize,
   });
 
   final VoidCallback onPressed;
   final String text;
-  TextStyle? textStyle;
+  final double? fontSize;
   @override
   Widget build(BuildContext context) {
     return TextButton(
@@ -25,7 +24,7 @@ class CustomTextButton extends StatelessWidget {
           color: const Color(
             AppColors.kPrimaryColor,
           ),
-          fontSize: 13 .sp,
+          fontSize: fontSize,
           fontWeight: FontWeight.w600,
         ),
       ),

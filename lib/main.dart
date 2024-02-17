@@ -14,6 +14,7 @@ import 'package:easy_parking_app/ui/admin/feature/garages/controller/garage_cubi
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/controller/insert_garage_cubit.dart';
 import 'package:easy_parking_app/ui/user/cubit/app_cubit.dart';
 import 'package:easy_parking_app/ui/user/cubit/observer/blocObserver.dart';
+import 'package:easy_parking_app/ui/user/features/authentication/controller/auth_cubit.dart';
 import 'package:easy_parking_app/ui/user/features/authentication/screens/login_screen/login_screen.dart';
 import 'package:easy_parking_app/ui/user/features/bookmark/controller/book_mark_cubit.dart';
 import 'package:easy_parking_app/ui/user/features/enable_location/presentation/controller/enable_location_cubit.dart';
@@ -71,6 +72,7 @@ class EasyParkingApp extends StatelessWidget {
           child: MultiBlocProvider(
             providers: [
               BlocProvider(create: (context) => AppCubit()),
+              BlocProvider(create: (context) => AuthCubit()),
               BlocProvider(create: (context) => AdminCubit()),
               BlocProvider(create: (context) => ExtendTimeCubit()),
               BlocProvider(create: (context) => EnableLocationCubit()),
@@ -79,7 +81,7 @@ class EasyParkingApp extends StatelessWidget {
               BlocProvider(create: (context) => BookMarkCubit()),
             ],
             child: MaterialApp(
-              initialRoute: RoutePath.editProfile,
+              initialRoute: RoutePath.login,
               // home: AdminLayout(),
               onGenerateRoute: generateRoute,
               locale: const Locale('en', 'US'),

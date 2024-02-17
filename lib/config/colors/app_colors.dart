@@ -7,6 +7,8 @@ class AppColors {
   static const int kWhiteColor = 0xffffffff;
   static const int kBlackColor = 0xff000000;
   static const int starColor = 0xffed0013;
+  static const int kGreyColor = 0xff82898d;
+
   static const int kSkyBlueColor = 0xffe5eff5;
   static const int kDarkSkyBlueColor = 0xff80acc1;
   static const int kLightGreyColor = 0xfff1f1f1;

@@ -2,7 +2,6 @@ import 'package:easy_parking_app/config/routes/routes_path.dart';
 import 'package:easy_parking_app/ui/admin/feature/garages/screens/garage_places.dart';
 import 'package:easy_parking_app/ui/admin/feature/garages/screens/get_all_garage.dart';
 import 'package:easy_parking_app/ui/admin/feature/insert_garage/presentation/screens/garage_feature.dart';
-import 'package:easy_parking_app/ui/user/features/authentication/screens/add_car_detail/add_car_details.dart';
 import 'package:easy_parking_app/ui/user/features/booking/screens/booking_summary_screen.dart';
 import 'package:easy_parking_app/ui/user/features/center_help/screens/help_center_screen.dart';
 import 'package:easy_parking_app/ui/user/features/enable_location/presentation/screens/enable_location_screen.dart';
@@ -11,7 +10,6 @@ import 'package:easy_parking_app/ui/user/features/notification/screens/notificat
 import 'package:easy_parking_app/ui/user/features/payment/screens/payment_methods_screen.dart';
 import 'package:easy_parking_app/ui/user/features/ticket/screens/go_to_parking_lot.dart';
 import 'package:easy_parking_app/ui/user/features/ticket/screens/parking_timer.dart';
-import 'package:easy_parking_app/ui/user/features/user/presentation/screens/edit_profile.dart';
 import 'package:easy_parking_app/ui/user/features/user/presentation/screens/profile_screen.dart';
 import 'package:easy_parking_app/ui/user/intro_screens/screens/on_boarding_screen.dart';
 import 'package:easy_parking_app/ui/user/layout/layout_screen.dart';
@@ -97,12 +95,12 @@ Route? generateRoute(RouteSettings settings) {
     case RoutePath.extendParking:
       return MaterialPageRoute<dynamic>(
           builder: (BuildContext context) => const ExtendParkingTimingScreen());
-    case RoutePath.carDetails:
-      return MaterialPageRoute<dynamic>(
-          builder: (BuildContext context) => const AddCarDetailsScreen());
-    case RoutePath.editProfile:
-      return MaterialPageRoute<dynamic>(
-          builder: (BuildContext context) => const EditProfile());
+    // case RoutePath.carDetails:
+    //   return MaterialPageRoute<dynamic>(
+    //       builder: (BuildContext context) => const AddCarDetailsScreen());
+    // case RoutePath.editProfile:
+    //   return MaterialPageRoute<dynamic>(
+    //       builder: (BuildContext context) => const EditProfile());
     //----------------------------------- Admin ------------------------------------
     case AdminRoutePath.addGarage:
       return MaterialPageRoute<dynamic>(

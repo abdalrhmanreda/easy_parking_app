@@ -13,6 +13,7 @@ class Assets {
   static const String garageCarsLeftCar = 'assets/garage_cars/left_car.png';
   static const String garageCarsRightCar = 'assets/garage_cars/right_car.png';
   static const String iconsCar = 'assets/icons/car.png';
+  static const String iconsGoogle = 'assets/icons/google.png';
   static const String iconsPhoneNumber = 'assets/icons/phone_number.png';
   static const String locationDataLocations =
       'assets/location_data/locations.json';
