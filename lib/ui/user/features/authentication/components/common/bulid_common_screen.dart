@@ -1,10 +1,12 @@
+import 'package:easy_parking_app/core/user/methods/get_responsive_text/responsive_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:gap/gap.dart';
 
 import '../../../../../../../config/colors/app_colors.dart';
 import '../../../../../../../core/user/components/custom_button.dart';
-import '../../../../../../../core/user/components/custom_text_form_feild.dart';
+import '../register/full_name.dart';
 import 'build_texts.dart';
 
 class CommonScreen extends StatelessWidget {
@@ -42,31 +44,20 @@ class CommonScreen extends StatelessWidget {
           children: [
             SvgPicture.asset(
               image,
-              height: MediaQuery.of(context).size.height / 2,
+              height: MediaQuery.of(context).size.height / 2.5,
             ),
             buildTexts(
               context: context,
               title: title,
               description: description,
             ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height / 30,
+            Gap(15.h),
+            TitleAndTextFormFeild(
+              nameController: controller,
+              title: label,
+              hint: label,
             ),
-            CustomTextFormField(
-              type: TextInputType.emailAddress,
-              isPassword: false,
-              maxLine: 1,
-              onSubmitted: onSubmitted(),
-              controller: controller,
-              label: label,
-              prefixIcon: prefixIcon,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(15),
-              ),
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height / 30,
-            ),
+            Gap(15.h),
             CustomButton(
               onPressed: onPressed,
               text: buttonText,
@@ -74,10 +65,10 @@ class CommonScreen extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               vertical: 15.h,
               horizontal: 0,
-              radius: 15,
+              radius: 10.r,
               color: AppColors.kPrimaryColor,
               textColor: 0xffffffff,
-              fontSize: 14.sp,
+              fontSize: getResponsiveFontSize(context, fontSize: 17.sp),
             ),
           ],
         ),
